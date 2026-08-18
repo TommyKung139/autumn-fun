@@ -38,21 +38,14 @@
   </div>
 
   <div class="card" id="seatmap">
-    <h2>島語 午宴位置圖（餐檯＋座位）</h2>
-    <p class="muted">上半部是九大主題餐檯（食物在哪裡），下半部是桌次座位（人坐在哪裡）；兩者依島語店內動線由上而下排列，方便同仁一次掌握「吃什麼在哪裡拿、自己坐哪一桌」。個人桌次請至「行程查詢」輸入員工編號查看，也可以直接在下方地圖找自己的桌號，例如 C8、C9。</p>
-
-    <h3>九大主題餐檯</h3>
-    <p class="hint">餐檯名稱與主題依島語店內看板整理，實際擺設與供應內容以現場為準。</p>
-    <div style="overflow:auto; border:1px solid var(--line); border-radius:12px; padding:14px; background:#fffefb; margin-bottom:6px;">
-      <div id="buffetGrid" style="display:grid; gap:4px;"></div>
-    </div>
-    <div class="chips" id="buffetLegend" style="margin-top:10px;"></div>
-
-    <h3 style="margin-top:26px;">桌次座位圖</h3>
+    <h2>島語 午宴位置圖（餐檯＋座位合併圖）</h2>
+    <p class="muted">上方橘色區塊是九大主題餐檯（食物在哪裡拿），下方色塊是桌次座位（人坐在哪一桌），合併成同一張圖方便對照。像「C8、C9」這種桌號代表兩桌併成一桌，坐的是同一桌（C8C9桌），不是兩個不同位置。個人桌次請至「行程查詢」輸入員工編號查看，也可以直接在下方地圖找自己的桌號。</p>
+    <p class="hint">餐檯與桌次分別整理自島語店內看板與內部分桌規劃表，合併圖為排版對照示意，非精確測繪的現場實際比例，正確位置請以現場動線與工作人員指引為準。</p>
+    <div class="chips" id="buffetLegend"></div>
     <div class="chips" id="seatLegend"></div>
     <div id="seatSearchHint" class="hint" style="display:none;"></div>
     <div style="overflow:auto; border:1px solid var(--line); border-radius:12px; padding:14px; background:#fffefb;">
-      <div id="seatGrid" style="display:grid; gap:3px;"></div>
+      <div id="combinedGrid" style="display:grid; gap:3px;"></div>
     </div>
   </div>
 
@@ -84,53 +77,11 @@
     try {
       const res = await CTBC.apiFetch('/api/reference');
       const data = await res.json();
-      renderBuffetMap(data.buffet_stations);
-      renderSeatMap(data.table_layout);
+      renderCombinedMap(data.buffet_stations, data.table_layout);
     } catch (err) {
       if (err && err.message === 'unauthorized') return;
     }
   })();
-
-  function renderBuffetMap(layout) {
-    if (!layout || !layout.stations) return;
-
-    const grid = document.getElementById('buffetGrid');
-    grid.style.gridTemplateColumns = 'repeat(' + layout.grid_cols + ', 62px)';
-    grid.style.gridTemplateRows = 'repeat(' + layout.grid_rows + ', 46px)';
-
-    const tiles = layout.stations.map((s) => {
-      const isFacility = !!s.is_facility;
-      const bg = isFacility ? '#f1eee6' : '#f7e6c4';
-      const fg = isFacility ? '#6b5a47' : '#8a5a12';
-      const style =
-        'grid-column:' + s.col + ' / span ' + s.col_span +
-        '; grid-row:' + s.row + ' / span ' + s.row_span +
-        '; background:' + bg + '; border:1.5px solid ' + (isFacility ? '#ddd6c4' : '#e8c98a') + '; color:' + fg + ';';
-      return (
-        '<div style="' + style + ' border-radius:8px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; overflow:hidden; padding:2px;" title="' +
-        s.code + '｜' + s.theme + '">' +
-        '<div style="font-weight:800; font-size:14px;">' + s.code + '</div>' +
-        (isFacility ? '' : '<div style="font-size:9px; line-height:1.1;">' + s.theme + '</div>') +
-        '</div>'
-      );
-    });
-
-    // entrance arrow tile
-    if (layout.entrance) {
-      tiles.push(
-        '<div style="grid-column:' + layout.entrance.col + '; grid-row:' + layout.entrance.row +
-        '; display:flex; flex-direction:column; align-items:center; justify-content:center; color:var(--brand-dark); font-size:11px;">' +
-        '<div style="font-size:18px; line-height:1;">↑</div>' + (layout.entrance_label || '入口') + '</div>'
-      );
-    }
-
-    grid.innerHTML = tiles.join('');
-
-    document.getElementById('buffetLegend').innerHTML = layout.stations
-      .filter((s) => !s.is_facility)
-      .map((s) => '<div class="chip">' + s.code + '　' + s.theme + '</div>')
-      .join('');
-  }
 
   const DEPT_COLORS = {
     '經策': { bg: '#D9EAF7', fg: '#1c4a72', label: '經營策略處' },
@@ -144,54 +95,110 @@
     for (const key of ['經策', '數平', '作資', '總務', '空位']) {
       if (deptRaw.indexOf(key) === 0) return key;
     }
-    // fallback: first matching keyword anywhere
     for (const key of ['經策', '數平', '作資', '總務', '空位']) {
       if (deptRaw.indexOf(key) !== -1) return key;
     }
     return '空位';
   }
 
-  function renderSeatMap(layout) {
-    if (!layout || !layout.tables) return;
+  // Buffet-station grid (9 cols) and table grid (27 cols) come from two different
+  // sources, so we scale the buffet grid's columns up 1:3 to line up with the
+  // 27-column table grid, and stack a labelled divider row between them so both
+  // render as one continuous map instead of two unrelated diagrams.
+  function renderCombinedMap(buffet, tables) {
+    if (!buffet || !buffet.stations || !tables || !tables.tables) return;
 
-    document.getElementById('seatLegend').innerHTML = Object.keys(DEPT_COLORS)
-      .map((k) => {
-        const c = DEPT_COLORS[k];
-        return '<div class="chip" style="background:' + c.bg + '; color:' + c.fg + '; border-color:' + c.bg + ';">' + c.label + '</div>';
-      })
-      .join('') + '<div class="chip" style="background:#fff7cc; border-color:#e8d67a;">🔎 你的桌次</div>';
+    const COL_SCALE = 3; // 9 buffet cols * 3 = 27, matches table grid width
+    const BUFFET_ROWS = buffet.grid_rows;
+    const DIVIDER_ROWS = 1;
+    const TABLE_ROW_OFFSET = BUFFET_ROWS + DIVIDER_ROWS;
+    const totalRows = TABLE_ROW_OFFSET + tables.grid_rows;
+    const totalCols = tables.grid_cols; // 27
 
-    const grid = document.getElementById('seatGrid');
-    grid.style.gridTemplateColumns = 'repeat(' + layout.grid_cols + ', 24px)';
-    grid.style.gridTemplateRows = 'repeat(' + layout.grid_rows + ', 20px)';
+    const grid = document.getElementById('combinedGrid');
+    const rowSizes = 'repeat(' + BUFFET_ROWS + ', 42px) 26px ' + 'repeat(' + tables.grid_rows + ', 20px)';
+    grid.style.gridTemplateColumns = 'repeat(' + totalCols + ', 24px)';
+    grid.style.gridTemplateRows = rowSizes;
 
+    const tiles = [];
+
+    // --- buffet stations (scaled into the shared 27-col width) ---
+    buffet.stations.forEach((s) => {
+      const isFacility = !!s.is_facility;
+      const bg = isFacility ? '#f1eee6' : '#f7e6c4';
+      const fg = isFacility ? '#6b5a47' : '#8a5a12';
+      const colStart = (s.col - 1) * COL_SCALE + 1;
+      const colSpan = s.col_span * COL_SCALE;
+      const style =
+        'grid-column:' + colStart + ' / span ' + colSpan +
+        '; grid-row:' + s.row + ' / span ' + s.row_span +
+        '; background:' + bg + '; border:1.5px solid ' + (isFacility ? '#ddd6c4' : '#e8c98a') + '; color:' + fg + ';';
+      tiles.push(
+        '<div style="' + style + ' border-radius:8px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; overflow:hidden; padding:2px;" title="' +
+        s.code + '｜' + s.theme + '">' +
+        '<div style="font-weight:800; font-size:13px;">' + s.code + '</div>' +
+        (isFacility ? '' : '<div style="font-size:8.5px; line-height:1.1;">' + s.theme + '</div>') +
+        '</div>'
+      );
+    });
+
+    if (buffet.entrance) {
+      const ec = (buffet.entrance.col - 1) * COL_SCALE + 1;
+      tiles.push(
+        '<div style="grid-column:' + ec + ' / span ' + COL_SCALE + '; grid-row:' + buffet.entrance.row +
+        '; display:flex; flex-direction:column; align-items:center; justify-content:center; color:var(--brand-dark); font-size:10px;">' +
+        '<div style="font-size:16px; line-height:1;">↑</div>' + (buffet.entrance_label || '入口') + '</div>'
+      );
+    }
+
+    // --- divider row ---
+    tiles.push(
+      '<div style="grid-column:1 / span ' + totalCols + '; grid-row:' + (BUFFET_ROWS + 1) +
+      '; display:flex; align-items:center; justify-content:center; font-size:11px; color:var(--ink-soft); border-top:1px dashed var(--line); border-bottom:1px dashed var(--line);">↓ 座位區（桌次）↓</div>'
+    );
+
+    // --- tables (offset down below the buffet band) ---
     const params = new URLSearchParams(location.search);
     const highlight = (params.get('table') || '').trim();
-    let matchedEl = null;
 
-    grid.innerHTML = layout.tables
-      .map((t) => {
-        const key = primaryDeptKey(t.dept_raw);
-        const c = DEPT_COLORS[key];
-        const isHighlight = highlight && t.code.replace(/\s+/g, '').includes(highlight.replace(/\s+/g, ''));
-        const style =
-          'grid-column:' + t.grid_col + ' / span ' + t.col_span +
-          '; grid-row:' + t.grid_row + ' / span ' + t.row_span +
-          '; background:' + (isHighlight ? '#fff7cc' : c.bg) +
-          '; border:1.5px solid ' + (isHighlight ? '#e8d67a' : c.bg) +
-          '; color:' + c.fg + ';';
-        return (
-          '<div class="seat-table" data-code="' + t.code + '" title="' + t.code + '（' + t.dept_raw + '，' + t.count + ' 人）" style="' + style +
-          ' border-radius:4px; font-size:10px; display:flex; align-items:center; justify-content:center; overflow:hidden; white-space:nowrap; cursor:default;">' +
-          t.code.replace(/\s+/g, '') + '</div>'
-        );
-      })
-      .join('');
+    tables.tables.forEach((t) => {
+      const key = primaryDeptKey(t.dept_raw);
+      const c = DEPT_COLORS[key];
+      const isHighlight = highlight && t.code.replace(/\s+/g, '').includes(highlight.replace(/\s+/g, ''));
+      const style =
+        'grid-column:' + t.grid_col + ' / span ' + t.col_span +
+        '; grid-row:' + (t.grid_row + TABLE_ROW_OFFSET) + ' / span ' + t.row_span +
+        '; background:' + (isHighlight ? '#fff7cc' : c.bg) +
+        '; border:1.5px solid ' + (isHighlight ? '#e8d67a' : c.bg) +
+        '; color:' + c.fg + ';';
+      tiles.push(
+        '<div class="seat-table" data-code="' + t.code + '" title="' + t.code + '（' + t.dept_raw + '，' + t.count + ' 人）" style="' + style +
+        ' border-radius:4px; font-size:10px; display:flex; align-items:center; justify-content:center; overflow:hidden; white-space:nowrap; cursor:default;">' +
+        t.code.replace(/\s+/g, '') + '</div>'
+      );
+    });
+
+    grid.innerHTML = tiles.join('');
+
+    document.getElementById('buffetLegend').innerHTML =
+      '<div class="chip" style="background:#f7e6c4; border-color:#e8c98a; font-weight:700;">🍽 餐檯：</div>' +
+      buffet.stations
+        .filter((s) => !s.is_facility)
+        .map((s) => '<div class="chip">' + s.code + '　' + s.theme + '</div>')
+        .join('');
+
+    document.getElementById('seatLegend').innerHTML =
+      '<div class="chip" style="font-weight:700;">🪑 桌次：</div>' +
+      Object.keys(DEPT_COLORS)
+        .map((k) => {
+          const c = DEPT_COLORS[k];
+          return '<div class="chip" style="background:' + c.bg + '; color:' + c.fg + '; border-color:' + c.bg + ';">' + c.label + '</div>';
+        })
+        .join('') + '<div class="chip" style="background:#fff7cc; border-color:#e8d67a;">🔎 你的桌次</div>';
 
     if (highlight) {
-      matchedEl = grid.querySelector('.seat-table[data-code]');
       const hint = document.getElementById('seatSearchHint');
-      const found = layout.tables.some((t) => t.code.replace(/\s+/g, '').includes(highlight.replace(/\s+/g, '')));
+      const found = tables.tables.some((t) => t.code.replace(/\s+/g, '').includes(highlight.replace(/\s+/g, '')));
       hint.style.display = 'block';
       hint.textContent = found
         ? '已為你標示桌次「' + highlight + '」（黃色標示）。'
