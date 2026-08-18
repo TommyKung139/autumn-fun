@@ -19,8 +19,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第五車",
   "table": "A2",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -46,8 +46,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第一車",
   "table": "A2",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -73,8 +73,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第五車",
   "table": "A1",
   "hsr_outbound": {
    "train_no": "1505",
@@ -124,8 +124,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第九車",
   "table": "A6",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -151,8 +151,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第一車",
   "table": "A2",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -178,8 +178,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第五車",
   "table": "A2",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -205,8 +205,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第一車",
   "table": "A20",
   "hsr_outbound": {
    "train_no": "205",
@@ -256,8 +256,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第五車",
   "table": "A2",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -283,8 +283,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第五車",
   "table": "A5",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -310,8 +310,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第九車",
   "table": "A6",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -337,8 +337,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第五車",
   "table": "A5",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -364,8 +364,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第八車",
   "table": "A6",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -391,8 +391,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第一車",
   "table": "A5",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -418,8 +418,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第八車",
   "table": "A6",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -445,8 +445,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第八車",
   "table": "A6",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -472,8 +472,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第五車",
   "table": "A2",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -499,8 +499,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第九車",
   "table": "A5",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -526,8 +526,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第一車",
   "table": "A2",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -553,8 +553,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第九車",
   "table": "A9",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -580,8 +580,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第一車",
   "table": "A27 & A28",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -607,8 +607,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第一車",
   "table": "A30 & A31",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -634,8 +634,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第一車",
   "table": "A27 & A28",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -661,8 +661,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第五車",
   "table": "A30 & A31",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -688,8 +688,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第八車",
   "table": "A27 & A28",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -715,8 +715,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第五車",
   "table": "A30 & A31",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -742,8 +742,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第一車",
   "table": "A27 & A28",
   "hsr_outbound": {
    "train_no": "609",
@@ -793,8 +793,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第一車",
   "table": "A28A & A29",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -820,8 +820,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第一車",
   "table": "A30 & A31",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -847,8 +847,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第一車",
   "table": "A35",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -874,8 +874,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第一車",
   "table": "A30 & A31",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -901,8 +901,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第一車",
   "table": "A36",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -928,8 +928,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第五車",
   "table": "A28A & A29",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -955,8 +955,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第八車",
   "table": "A28A & A29",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -982,8 +982,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第五車",
   "table": "A33",
   "hsr_outbound": {
    "train_no": "1505",
@@ -1033,8 +1033,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第八車",
   "table": "A28A & A29",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1060,8 +1060,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第一車",
   "table": "A28A & A29",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1087,8 +1087,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第九車",
   "table": "A34",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1114,8 +1114,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第五車",
   "table": "A34",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1141,8 +1141,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第八車",
   "table": "A34",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1168,8 +1168,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第八車",
   "table": "A35",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1195,8 +1195,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第一車",
   "table": "A34",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1222,8 +1222,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第五車",
   "table": "A34",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1249,8 +1249,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第五車",
   "table": "A36",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1276,8 +1276,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第五車",
   "table": "A35",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1303,8 +1303,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第八車",
   "table": "A34",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1330,8 +1330,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第一車",
   "table": "A34",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1357,8 +1357,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第五車",
   "table": "A35",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1384,8 +1384,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第一車",
   "table": "A34",
   "hsr_outbound": {
    "train_no": "609",
@@ -1425,8 +1425,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第八車",
   "table": "A36",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1452,8 +1452,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第五車",
   "table": "A28A & A29",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1479,8 +1479,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第九車",
   "table": "A36",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1506,8 +1506,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第五車",
   "table": "A1",
   "hsr_outbound": {
    "train_no": "1505",
@@ -1566,8 +1566,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第五車",
   "table": "A14",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1593,8 +1593,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第五車",
   "table": "A14",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1620,8 +1620,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第八車",
   "table": "A17A & A18",
   "hsr_outbound": {
    "train_no": "205",
@@ -1661,8 +1661,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第五車",
   "table": "A15",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1688,8 +1688,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第五車",
   "table": "A15",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1715,8 +1715,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第五車",
   "table": "A14",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1742,8 +1742,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第五車｜漢神>不看球(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第五車",
   "table": "A15",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1769,8 +1769,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第四車｜經策31人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第四車",
+  "activity_bus": "第一車",
   "table": "A27 & A28",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1796,8 +1796,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第九車",
   "table": "A15",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1823,8 +1823,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第一車",
   "table": "A10",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1860,8 +1860,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第九車",
   "table": "A24",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1887,8 +1887,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第九車",
   "table": "A24",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -1914,8 +1914,8 @@
    "c3_6": 1,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第四車",
   "table": "A21",
   "hsr_outbound": {
    "train_no": "1505",
@@ -1974,8 +1974,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第一車",
   "table": "A24",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2001,8 +2001,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第四車",
   "table": "A23",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2028,8 +2028,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第四車",
   "table": "A24",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2055,8 +2055,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第九車",
   "table": "A19",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2082,8 +2082,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第一車",
   "table": "A19",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2109,8 +2109,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第四車",
   "table": "A23",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2136,8 +2136,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第八車",
   "table": "A24",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2163,8 +2163,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第四車",
   "table": "A9",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2190,8 +2190,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第四車",
   "table": "A23",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2217,8 +2217,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第四車",
   "table": "A23",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2244,8 +2244,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第四車",
   "table": "A23",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2271,8 +2271,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第四車",
   "table": "A23",
   "hsr_outbound": null,
   "hsr_return": {
@@ -2305,8 +2305,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第四車",
   "table": "A10",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2332,8 +2332,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第四車",
   "table": "A10",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2359,8 +2359,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第四車",
   "table": "A10",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2386,8 +2386,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第四車",
   "table": "A25",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2413,8 +2413,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第四車",
   "table": "A25",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2440,8 +2440,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第四車",
   "table": "A25",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2467,8 +2467,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第四車",
   "table": "A25",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2494,8 +2494,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第四車",
   "table": "A25",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2521,8 +2521,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第四車",
   "table": "A26",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2548,8 +2548,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第四車",
   "table": "A26",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2575,8 +2575,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第八車",
   "table": "A26",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2602,8 +2602,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第四車",
   "table": "A26",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2629,8 +2629,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第三車｜經策33人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第三車",
+  "activity_bus": "第四車",
   "table": "A26",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2656,8 +2656,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第四車",
   "table": "A7",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2683,8 +2683,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第四車",
   "table": "A9",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2710,8 +2710,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第四車",
   "table": "A9",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2737,8 +2737,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第四車",
   "table": "A9",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2764,8 +2764,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第四車",
   "table": "A7",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2810,8 +2810,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第四車",
   "table": "A8",
   "hsr_outbound": {
    "train_no": "609",
@@ -2851,8 +2851,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第四車",
   "table": "A8",
   "hsr_outbound": {
    "train_no": "609",
@@ -2892,8 +2892,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第四車",
   "table": "A9",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2919,8 +2919,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第一車",
   "table": "A11 & A12",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2946,8 +2946,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第一車",
   "table": "A11 & A12",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -2973,8 +2973,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第一車",
   "table": "A11 & A12",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3000,8 +3000,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第九車",
   "table": "A11 & A12",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3027,8 +3027,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第九車",
   "table": "A11 & A12",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3054,8 +3054,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第九車",
   "table": "A11 & A12",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3081,8 +3081,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第四車｜漢神>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第四車",
   "table": "A12A & A13",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3108,8 +3108,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第八車",
   "table": "A12A & A13",
   "hsr_outbound": {
    "train_no": "1505",
@@ -3186,8 +3186,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第二車｜經策35人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第二車",
+  "activity_bus": "第九車",
   "table": "A10",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3213,8 +3213,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第一車",
   "table": "A5",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3240,8 +3240,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第一車",
   "table": "A4",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3267,8 +3267,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第一車",
   "table": "A4",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3294,8 +3294,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第一車",
   "table": "A4",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3321,8 +3321,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第一車",
   "table": "A5",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3348,8 +3348,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第一車",
   "table": "A5",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3375,8 +3375,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第八車",
   "table": "A4",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3402,8 +3402,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第八車",
   "table": "A4",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3429,8 +3429,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第一車",
   "table": "A3",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3456,8 +3456,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第一車",
   "table": "A3",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3483,8 +3483,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第一車",
   "table": "A3",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3510,8 +3510,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第一車",
   "table": "A3",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3537,8 +3537,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第一車｜經策36人",
-  "activity_bus": "第一車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第一車",
+  "activity_bus": "第一車",
   "table": "A3",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -3564,8 +3564,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第八車",
   "table": "C12",
   "hsr_outbound": {
    "train_no": "1505",
@@ -3605,8 +3605,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第九車",
   "table": "C12",
   "hsr_outbound": {
    "train_no": "1505",
@@ -3646,8 +3646,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第八車",
   "table": "A38&A38A",
   "hsr_outbound": {
    "train_no": "1505",
@@ -3687,8 +3687,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第六車",
   "table": "C13、C14",
   "hsr_outbound": {
    "train_no": "1505",
@@ -3738,8 +3738,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第二車",
   "table": "C19",
   "hsr_outbound": {
    "train_no": "1505",
@@ -3779,8 +3779,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第九車",
   "table": "C13、C14",
   "hsr_outbound": {
    "train_no": "609",
@@ -3820,8 +3820,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第二車",
   "table": "C13、C14",
   "hsr_outbound": {
    "train_no": "205",
@@ -3861,8 +3861,8 @@
    "c3_6": 0,
    "under3": 1
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第六車",
   "table": "C13、C14",
   "hsr_outbound": {
    "train_no": "1505",
@@ -3921,8 +3921,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第九車",
   "table": "A38&A38A",
   "hsr_outbound": {
    "train_no": "1505",
@@ -3962,8 +3962,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第九車",
   "table": "C19",
   "hsr_outbound": {
    "train_no": "205",
@@ -4003,8 +4003,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第六車",
   "table": "C17、C18",
   "hsr_outbound": {
    "train_no": "1505",
@@ -4071,8 +4071,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第八車",
   "table": "C17、C18",
   "hsr_outbound": {
    "train_no": "609",
@@ -4105,8 +4105,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第八車",
   "table": "C17、C18",
   "hsr_outbound": {
    "train_no": "205",
@@ -4146,8 +4146,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第八車",
   "table": "C17、C18",
   "hsr_outbound": {
    "train_no": "205",
@@ -4187,8 +4187,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第九車",
   "table": "C17、C18",
   "hsr_outbound": {
    "train_no": "609",
@@ -4228,8 +4228,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第八車",
   "table": "A17A & A18",
   "hsr_outbound": {
    "train_no": "1505",
@@ -4269,8 +4269,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第六車",
   "table": "C17、C18",
   "hsr_outbound": {
    "train_no": "205",
@@ -4310,8 +4310,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第八車",
   "table": "C8、C9",
   "hsr_outbound": {
    "train_no": "205",
@@ -4351,8 +4351,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第六車",
   "table": "A38&A38A",
   "hsr_outbound": {
    "train_no": "205",
@@ -4392,8 +4392,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第八車",
   "table": "C20",
   "hsr_outbound": {
    "train_no": "205",
@@ -4443,8 +4443,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第八車",
   "table": "C4",
   "hsr_outbound": {
    "train_no": "205",
@@ -4484,8 +4484,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第二車",
   "table": "C4",
   "hsr_outbound": {
    "train_no": "205",
@@ -4525,8 +4525,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第八車",
   "table": "C4",
   "hsr_outbound": {
    "train_no": "1505",
@@ -4566,8 +4566,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第八車",
   "table": "C20",
   "hsr_outbound": {
    "train_no": "205",
@@ -4607,8 +4607,8 @@
    "c3_6": 0,
    "under3": 1
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第六車",
   "table": "C4",
   "hsr_outbound": {
    "train_no": "1505",
@@ -4658,8 +4658,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第二車",
   "table": "C20",
   "hsr_outbound": {
    "train_no": "1505",
@@ -4699,8 +4699,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第六車",
   "table": "A38&A38A",
   "hsr_outbound": {
    "train_no": null,
@@ -4740,8 +4740,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第六車",
   "table": "C15、C16",
   "hsr_outbound": {
    "train_no": null,
@@ -4781,8 +4781,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第六車",
   "table": "C15、C16",
   "hsr_outbound": {
    "train_no": "1505",
@@ -4822,8 +4822,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第二車",
   "table": "C15、C16",
   "hsr_outbound": {
    "train_no": "205",
@@ -4863,8 +4863,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第八車",
   "table": "C15、C16",
   "hsr_outbound": {
    "train_no": "205",
@@ -4904,8 +4904,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第二車",
   "table": "C15、C16",
   "hsr_outbound": {
    "train_no": "205",
@@ -4945,8 +4945,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第二車",
   "table": "C15、C16",
   "hsr_outbound": {
    "train_no": "1505",
@@ -4986,8 +4986,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第二車",
   "table": "C15、C16",
   "hsr_outbound": {
    "train_no": "1505",
@@ -5027,8 +5027,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第八車",
   "table": "A38&A38A",
   "hsr_outbound": {
    "train_no": "205",
@@ -5068,8 +5068,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第二車",
   "table": "C5",
   "hsr_outbound": {
    "train_no": "1505",
@@ -5109,8 +5109,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第九車",
   "table": "C5",
   "hsr_outbound": {
    "train_no": "1505",
@@ -5169,8 +5169,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第八車",
   "table": "A16 & A17",
   "hsr_outbound": {
    "train_no": "205",
@@ -5210,8 +5210,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第二車",
   "table": "A16 & A17",
   "hsr_outbound": {
    "train_no": "1505",
@@ -5251,8 +5251,8 @@
    "c3_6": 0,
    "under3": 1
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第九車",
   "table": "C5",
   "hsr_outbound": null,
   "hsr_return": {
@@ -5304,8 +5304,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第二車",
   "table": "A16 & A17",
   "hsr_outbound": {
    "train_no": "1505",
@@ -5345,8 +5345,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第二車",
   "table": "A17A & A18",
   "hsr_outbound": {
    "train_no": "205",
@@ -5386,8 +5386,8 @@
    "c3_6": 0,
    "under3": 1
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第六車",
   "table": "A17A & A18",
   "hsr_outbound": {
    "train_no": "1505",
@@ -5437,8 +5437,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第二車",
   "table": "A16 & A17",
   "hsr_outbound": {
    "train_no": "1505",
@@ -5478,8 +5478,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第六車",
   "table": "A17A & A18",
   "hsr_outbound": {
    "train_no": "1505",
@@ -5519,8 +5519,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第八車",
   "table": "A16 & A17",
   "hsr_outbound": {
    "train_no": "1505",
@@ -5560,8 +5560,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第九車",
   "table": "C3",
   "hsr_outbound": {
    "train_no": "1505",
@@ -5628,8 +5628,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第六車",
   "table": "C2",
   "hsr_outbound": {
    "train_no": "1505",
@@ -5669,8 +5669,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第九車",
   "table": "C1",
   "hsr_outbound": {
    "train_no": "1505",
@@ -5710,8 +5710,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第六車",
   "table": "C6、C7",
   "hsr_outbound": {
    "train_no": "205",
@@ -5751,8 +5751,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第六車",
   "table": "C6、C7",
   "hsr_outbound": {
    "train_no": "1505",
@@ -5792,8 +5792,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第六車",
   "table": null,
   "hsr_outbound": {
    "train_no": "205",
@@ -5860,8 +5860,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第九車",
   "table": "C1",
   "hsr_outbound": {
    "train_no": "205",
@@ -5901,8 +5901,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第八車",
   "table": "C1",
   "hsr_outbound": {
    "train_no": "205",
@@ -5942,8 +5942,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第六車",
   "table": "C1",
   "hsr_outbound": {
    "train_no": "1505",
@@ -5983,8 +5983,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第九車",
   "table": "C6、C7",
   "hsr_outbound": {
    "train_no": "205",
@@ -6024,8 +6024,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第六車",
   "table": "C6、C7",
   "hsr_outbound": {
    "train_no": "205",
@@ -6065,8 +6065,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第六車",
   "table": "C1",
   "hsr_outbound": {
    "train_no": "205",
@@ -6106,8 +6106,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第六車",
   "table": "C2",
   "hsr_outbound": {
    "train_no": "205",
@@ -6147,8 +6147,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第九車",
   "table": "C6、C7",
   "hsr_outbound": {
    "train_no": "1505",
@@ -6188,8 +6188,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第六車",
   "table": "C3",
   "hsr_outbound": {
    "train_no": "205",
@@ -6229,8 +6229,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第六車",
   "table": "C6、C7",
   "hsr_outbound": {
    "train_no": "1505",
@@ -6270,8 +6270,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第九車",
   "table": "C2",
   "hsr_outbound": {
    "train_no": "1505",
@@ -6311,8 +6311,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第九車",
   "table": "C2",
   "hsr_outbound": {
    "train_no": "1505",
@@ -6352,8 +6352,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第六車",
   "table": "C2",
   "hsr_outbound": {
    "train_no": "1505",
@@ -6403,8 +6403,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第九車",
   "table": "C3",
   "hsr_outbound": {
    "train_no": "1505",
@@ -6444,8 +6444,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第九車",
   "table": "C6、C7",
   "hsr_outbound": {
    "train_no": "609",
@@ -6485,8 +6485,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第六車",
   "table": "C2",
   "hsr_outbound": {
    "train_no": "205",
@@ -6526,8 +6526,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第二車",
   "table": "C1",
   "hsr_outbound": null,
   "hsr_return": {
@@ -6570,8 +6570,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第六車｜數平28人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第六車",
+  "activity_bus": "第九車",
   "table": "C3",
   "hsr_outbound": {
    "train_no": "205",
@@ -6611,12 +6611,31 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第二車",
   "table": "A37",
   "hsr_outbound": null,
   "hsr_return": null,
-  "dependents": []
+  "dependents": [
+   {
+    "name": "黃毓智",
+    "relation": "夫妻",
+    "age_band": "12-65歲",
+    "outbound_station": "台中高鐵站(台中同仁專用)",
+    "return_station": "台中高鐵站(台中同仁專用)",
+    "afternoon_activity": "(B)洲際漢神踩點巡禮",
+    "evening_activity": "(A)洲際球場觀賽"
+   },
+   {
+    "name": "姚育祺",
+    "relation": "父子",
+    "age_band": "6-12歲",
+    "outbound_station": "台中高鐵站(台中同仁專用)",
+    "return_station": "台中高鐵站(台中同仁專用)",
+    "afternoon_activity": "(B)洲際漢神踩點巡禮",
+    "evening_activity": "(A)洲際球場觀賽"
+   }
+  ]
  },
  {
   "emp_id": "Z00017001",
@@ -6638,8 +6657,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第二車",
   "table": "C10、C11",
   "hsr_outbound": {
    "train_no": "205",
@@ -6679,8 +6698,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第二車",
   "table": "C10、C11",
   "hsr_outbound": {
    "train_no": "1505",
@@ -6720,8 +6739,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第八車",
   "table": "C10、C11",
   "hsr_outbound": {
    "train_no": "205",
@@ -6761,8 +6780,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第六車",
   "table": "C10、C11",
   "hsr_outbound": {
    "train_no": "1505",
@@ -6795,8 +6814,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第六車",
   "table": "C10、C11",
   "hsr_outbound": {
    "train_no": "1505",
@@ -6836,8 +6855,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第二車",
   "table": "C10、C11",
   "hsr_outbound": {
    "train_no": "1505",
@@ -6870,8 +6889,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第二車",
   "table": "C8、C9",
   "hsr_outbound": {
    "train_no": "205",
@@ -6911,8 +6930,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第二車",
   "table": "C8、C9",
   "hsr_outbound": {
    "train_no": "205",
@@ -6952,8 +6971,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第二車",
   "table": "C8、C9",
   "hsr_outbound": {
    "train_no": "205",
@@ -6993,8 +7012,8 @@
    "c3_6": 0,
    "under3": 1
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第二車",
   "table": "C8、C9",
   "hsr_outbound": {
    "train_no": "1505",
@@ -7044,8 +7063,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第九車｜綠美圖>不看球(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第九車",
   "table": "A17A & A18",
   "hsr_outbound": {
    "train_no": "205",
@@ -7078,8 +7097,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第二車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第二車",
   "table": "C10、C11",
   "hsr_outbound": {
    "train_no": "205",
@@ -7119,8 +7138,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第五車｜數平37+總務1人",
-  "activity_bus": "第六車｜漢神>不看球(高鐵)",
+  "morning_bus": "第五車",
+  "activity_bus": "第六車",
   "table": "C17、C18",
   "hsr_outbound": {
    "train_no": "205",
@@ -7160,8 +7179,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第七車｜數平37人",
-  "activity_bus": "第八車｜綠美圖>看球>回家(高鐵)",
+  "morning_bus": "第七車",
+  "activity_bus": "第八車",
   "table": "A16 & A17",
   "hsr_outbound": {
    "train_no": "205",
@@ -7201,7 +7220,7 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
+  "morning_bus": "第八車",
   "activity_bus": null,
   "table": "B1",
   "hsr_outbound": null,
@@ -7228,7 +7247,7 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
+  "morning_bus": "第八車",
   "activity_bus": null,
   "table": "B14",
   "hsr_outbound": null,
@@ -7255,8 +7274,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第三車",
   "table": "B2",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7282,8 +7301,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第三車",
   "table": "B14",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7309,8 +7328,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B14",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7336,8 +7355,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B14",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7363,8 +7382,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B5",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7390,8 +7409,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B3",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7417,8 +7436,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B6",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7444,8 +7463,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B2",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7471,8 +7490,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B6",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7498,8 +7517,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B16",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7525,8 +7544,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B3",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7552,8 +7571,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B3",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7579,8 +7598,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B12",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7606,7 +7625,7 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
+  "morning_bus": "第八車",
   "activity_bus": null,
   "table": "B1",
   "hsr_outbound": null,
@@ -7633,7 +7652,7 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
+  "morning_bus": "第八車",
   "activity_bus": null,
   "table": "B12",
   "hsr_outbound": null,
@@ -7660,8 +7679,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第三車",
   "table": "B3",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7687,8 +7706,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B2",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7714,8 +7733,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第三車",
   "table": "B5",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7741,8 +7760,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": null,
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7768,8 +7787,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第三車",
   "table": "B12",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7795,8 +7814,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B2",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7822,8 +7841,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B2",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7849,8 +7868,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B3",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7876,8 +7895,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第三車",
   "table": "B12",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7903,7 +7922,7 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
+  "morning_bus": "第八車",
   "activity_bus": null,
   "table": "B9",
   "hsr_outbound": null,
@@ -7930,8 +7949,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B9",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7957,8 +7976,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B8",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -7984,7 +8003,7 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
+  "morning_bus": "第九車",
   "activity_bus": null,
   "table": "B11",
   "hsr_outbound": null,
@@ -8039,8 +8058,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第三車",
   "table": "B10",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8066,8 +8085,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B10",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8093,8 +8112,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第三車",
   "table": "B8",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8120,8 +8139,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B15",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8147,8 +8166,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B13",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8174,8 +8193,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第七車",
   "table": "B13",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8201,8 +8220,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第三車",
   "table": "B7",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8228,8 +8247,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第八車｜作資37人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第八車",
+  "activity_bus": "第三車",
   "table": "B7",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8255,8 +8274,8 @@
    "c3_6": 0,
    "under3": 2
   },
-  "morning_bus": "第九車｜作資28人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第九車",
+  "activity_bus": "第七車",
   "table": "B4",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8328,8 +8347,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第九車",
+  "activity_bus": "第三車",
   "table": "B15",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8355,7 +8374,7 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
+  "morning_bus": "第九車",
   "activity_bus": null,
   "table": "B15",
   "hsr_outbound": null,
@@ -8382,7 +8401,7 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
+  "morning_bus": "第九車",
   "activity_bus": null,
   "table": "B16",
   "hsr_outbound": null,
@@ -8409,7 +8428,7 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
+  "morning_bus": "第九車",
   "activity_bus": null,
   "table": "B16",
   "hsr_outbound": null,
@@ -8436,8 +8455,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第九車",
+  "activity_bus": "第七車",
   "table": "B15",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8463,8 +8482,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第九車",
+  "activity_bus": "第七車",
   "table": "B15",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8490,8 +8509,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第九車",
+  "activity_bus": "第七車",
   "table": "A31A & A32",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8517,8 +8536,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第九車",
+  "activity_bus": "第七車",
   "table": "A31A & A32",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8544,8 +8563,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第九車",
+  "activity_bus": "第三車",
   "table": "A31A & A32",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8571,8 +8590,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第九車",
+  "activity_bus": "第七車",
   "table": "A31A & A32",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8598,8 +8617,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第九車",
+  "activity_bus": "第三車",
   "table": "A31A & A32",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8625,8 +8644,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第九車",
+  "activity_bus": "第七車",
   "table": "A31A & A32",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8652,8 +8671,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第九車",
+  "activity_bus": "第三車",
   "table": "A31A & A32",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8679,8 +8698,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第九車",
+  "activity_bus": "第三車",
   "table": "B1",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8706,8 +8725,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
-  "activity_bus": "第七車｜漢神>不看球(高鐵)",
+  "morning_bus": "第九車",
+  "activity_bus": "第七車",
   "table": "B1",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8733,8 +8752,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第九車",
+  "activity_bus": "第三車",
   "table": "B15",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8760,8 +8779,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第九車",
+  "activity_bus": "第三車",
   "table": "B15",
   "hsr_outbound": null,
   "hsr_return": null,
@@ -8787,8 +8806,8 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": "第九車｜作資28人",
-  "activity_bus": "第三車｜漢神>看球>回家(高鐵)",
+  "morning_bus": "第九車",
+  "activity_bus": "第三車",
   "table": "B15",
   "hsr_outbound": null,
   "hsr_return": null,

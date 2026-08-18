@@ -39,6 +39,22 @@ name_index = {}
 for eid, e in employees.items():
     name_index.setdefault(e['name'], []).append(eid)
 
+def normalize_emp_id(raw_id):
+    """Fix common data-entry typos in employee IDs, e.g. 'Z0034011' (missing a
+    leading zero -> only 7 digits) should be 'Z00034011' (8 digits). Only
+    zero-pads when the corrected ID actually exists in the employee roster,
+    so it never invents a match."""
+    if not raw_id or raw_id in employees:
+        return raw_id
+    m = re.match(r'^([A-Za-z]+)(\d+)$', str(raw_id).strip())
+    if not m:
+        return raw_id
+    prefix, digits = m.group(1), m.group(2)
+    padded = prefix.upper() + digits.zfill(8)
+    if padded in employees:
+        return padded
+    return raw_id
+
 def strip_name(raw):
     if not raw: return raw, None
     raw = raw.strip()
@@ -58,19 +74,28 @@ def match_emp_id(raw_name):
 
 # ---------- 2. Dependents ----------
 ws2 = wb['(彙整)報名表(眷屬)']
+dep_matched, dep_unmatched = 0, []
 for row in ws2.iter_rows(min_row=4, values_only=True):
     emp_name, emp_id = row[4], row[5]
     dep_name, relation = row[6], row[7]
     age_band = row[17]
     hsr_out, hsr_back = row[18], row[19]
     afternoon, evening = row[20], row[21]
-    if not emp_id or emp_id not in employees:
+    if not emp_id:
         continue
+    emp_id = normalize_emp_id(emp_id)
+    if emp_id not in employees:
+        dep_unmatched.append((emp_id, emp_name, dep_name))
+        continue
+    dep_matched += 1
     employees[emp_id]['dependents'].append({
         'name': dep_name, 'relation': relation, 'age_band': age_band,
         'outbound_station': hsr_out, 'return_station': hsr_back,
         'afternoon_activity': afternoon, 'evening_activity': evening,
     })
+print('dependents matched', dep_matched, 'unmatched', len(dep_unmatched))
+for u in dep_unmatched:
+    print('  unmatched dependent row (no corresponding attending employee found):', u)
 
 # ---------- 3. Bus table 1 (morning, rows 5-46) & table 2 (afternoon, rows 50-90) ----------
 ws3 = wb['分車表 (2)']
@@ -80,7 +105,7 @@ def parse_bus_table(header_row, row_start, row_end, field):
     for c in range(2, ws3.max_column+1):
         v = ws3.cell(row=header_row, column=c).value
         if v and isinstance(v, str) and '車' in v:
-            car_cols[c] = v.split('\n')[0] + '｜' + '/'.join(v.split('\n')[1:])
+            car_cols[c] = v.split('\n')[0].strip()
     m, u = 0, 0
     for r in range(row_start, row_end+1):
         for c, label in car_cols.items():
