@@ -1,0 +1,321 @@
+{
+ "batch_overview": [
+  {
+   "seq": 1,
+   "location": "洲際",
+   "date": "8/15*球賽",
+   "unit": "國際個金事業總處(51)\n個金作業暨資訊處(個訊二(228)+作業規劃部(91))",
+   "leader": "建虹總處長",
+   "staff_count": 299,
+   "family_count": 37,
+   "total_count": 336,
+   "captain": "曾欽達"
+  },
+  {
+   "seq": 2,
+   "location": "洲際",
+   "date": "8/29*球賽",
+   "unit": "經營策略處(136) 、數位平台經營處(98)\n個金作業暨資訊處(個客服_ C(129))",
+   "leader": "竹屏/雅婷處長",
+   "staff_count": 309,
+   "family_count": 38,
+   "total_count": 347,
+   "captain": "孔昱棠\n劉妍廷"
+  },
+  {
+   "seq": 3,
+   "location": "洲際",
+   "date": "2026-09-12",
+   "unit": "財富管理經營處(79)、私人銀行處(65)\n個金作業暨資訊處(個客服_ B(206))",
+   "leader": "Jeffrey/John處長",
+   "staff_count": 319,
+   "family_count": 33,
+   "total_count": 352,
+   "captain": "梁妙瑜\n張雯琳"
+  },
+  {
+   "seq": 4,
+   "location": "洲際",
+   "date": "2026-10-03",
+   "unit": "財富管理產品處(307)+業務資訊整合小組(13)",
+   "leader": "隋爸總處長\nHenry處長",
+   "staff_count": 267,
+   "family_count": 28,
+   "total_count": 295,
+   "captain": "袁鈺雯"
+  },
+  {
+   "seq": 5,
+   "location": "洲際",
+   "date": "2026-11-14",
+   "unit": "消費金融事業處(債權經營部(381))",
+   "leader": "仕豐部長",
+   "staff_count": 314,
+   "family_count": 11,
+   "total_count": 325,
+   "captain": "廖淑雯"
+  },
+  {
+   "seq": 6,
+   "location": "洲際",
+   "date": "2026-12-05",
+   "unit": "支付金融事業處(164)、個金作業暨資訊處(個訊一(183))",
+   "leader": "德風處長",
+   "staff_count": 316,
+   "family_count": 30,
+   "total_count": 346,
+   "captain": "黃郁翔"
+  },
+  {
+   "seq": 7,
+   "location": "洲際",
+   "date": "2026-12-12",
+   "unit": "個金作業暨資訊處(個客服_ A(209))",
+   "leader": "重建處長",
+   "staff_count": 197,
+   "family_count": 8,
+   "total_count": 205,
+   "captain": "黃玉珍"
+  },
+  {
+   "seq": 8,
+   "location": "麗寶",
+   "date": "9/19*水陸",
+   "unit": "個金作業暨資訊處(集作(235)、洗防(125))",
+   "leader": "惠霖/恭賢部長",
+   "staff_count": 300,
+   "family_count": 21,
+   "total_count": 321,
+   "captain": "林螢偉"
+  },
+  {
+   "seq": 9,
+   "location": "麗寶",
+   "date": "10/31*水陸",
+   "unit": "消費金融事業處\n(擔保放款產品部(37)+無擔保放款產品部(台北/台中)(56)+\n擔保放款業務部(53)+無擔保放款業務部_台北LAC (130))",
+   "leader": "凱炫處長",
+   "staff_count": 271,
+   "family_count": 48,
+   "total_count": 319,
+   "captain": "楊朝景\n謝雅婷"
+  },
+  {
+   "seq": 10,
+   "location": "麗寶",
+   "date": "2026-11-07",
+   "unit": "消費金融事業處(無擔保放款業務部_台北TM (250))+\n無擔保放款業務部_高雄(79))",
+   "leader": "怡伸部長",
+   "staff_count": 251,
+   "family_count": 38,
+   "total_count": 289,
+   "captain": "(台北) 林怡君\n(高雄)陳姣蓓"
+  },
+  {
+   "seq": 11,
+   "location": "麗寶",
+   "date": "2026-11-21",
+   "unit": "消費金融事業處(無擔保放款業務部_台中 (314))",
+   "leader": "志宏部長",
+   "staff_count": 270,
+   "family_count": 19,
+   "total_count": 289,
+   "captain": "韓明娟"
+  }
+ ],
+ "milestones": [
+  {
+   "location": "洲際",
+   "batch_name": "第一梯",
+   "final_count_date": "2026-07-15",
+   "insurance_date": "2026-07-17",
+   "family_pay_date": "2026-07-30",
+   "seat_plan_date": "2026-08-03",
+   "edm_date": "2026-08-07",
+   "ticket_date": "2026-08-10",
+   "depart_date": "2026-08-15",
+   "captain": "曾欽達",
+   "staff": "潘萱蓉、呂家萱、何捷甫、吳仲閔"
+  },
+  {
+   "location": "洲際",
+   "batch_name": "第二梯",
+   "final_count_date": "2026-07-29",
+   "insurance_date": "2026-07-31",
+   "family_pay_date": "2026-08-13",
+   "seat_plan_date": "2026-08-17",
+   "edm_date": "2026-08-21",
+   "ticket_date": "2026-08-24",
+   "depart_date": "2026-08-29",
+   "captain": "孔昱棠",
+   "staff": "林芝萱、符永琦、劉妍廷、劉伯洪、陳彥旭、羅婉甄、李仲琦、范景婷"
+  },
+  {
+   "location": "洲際",
+   "batch_name": "第三梯",
+   "final_count_date": "2026-08-12",
+   "insurance_date": "2026-08-14",
+   "family_pay_date": "2026-08-27",
+   "seat_plan_date": "2026-08-31",
+   "edm_date": "2026-09-04",
+   "ticket_date": "2026-09-07",
+   "depart_date": "2026-09-12",
+   "captain": "梁妙瑜",
+   "staff": "張雯琳、陳佑任、廖曼君、黃筱雯、徐寶樹、葉倫佑、廖祿慶、蘇怡菱"
+  },
+  {
+   "location": "洲際",
+   "batch_name": "第四梯",
+   "final_count_date": "2026-09-02",
+   "insurance_date": "2026-09-04",
+   "family_pay_date": "2026-09-17",
+   "seat_plan_date": "2026-09-21",
+   "edm_date": "2026-09-25",
+   "ticket_date": "2026-09-28",
+   "depart_date": "2026-10-03",
+   "captain": "袁鈺雯",
+   "staff": "陳瀅伃、楊于萱、凃勝傑、呂卉蓁、江佳芸"
+  },
+  {
+   "location": "洲際",
+   "batch_name": "第五梯",
+   "final_count_date": "2026-10-14",
+   "insurance_date": "2026-10-16",
+   "family_pay_date": "2026-10-29",
+   "seat_plan_date": "2026-11-02",
+   "edm_date": "2026-11-06",
+   "ticket_date": "2026-11-09",
+   "depart_date": "2026-11-14",
+   "captain": "廖淑雯",
+   "staff": "NA"
+  },
+  {
+   "location": "洲際",
+   "batch_name": "第六梯",
+   "final_count_date": "2026-11-04",
+   "insurance_date": "2026-11-06",
+   "family_pay_date": "2026-11-19",
+   "seat_plan_date": "2026-11-23",
+   "edm_date": "2026-11-27",
+   "ticket_date": "2026-11-30",
+   "depart_date": "2026-12-05",
+   "captain": "黃郁翔",
+   "staff": "吳宗燁、謝亞承、陳呈睿、李翊綺、崔庭榕、康詩芸、陳冠中"
+  },
+  {
+   "location": "洲際",
+   "batch_name": "第七梯",
+   "final_count_date": "2026-11-11",
+   "insurance_date": "2026-11-13",
+   "family_pay_date": "2026-11-26",
+   "seat_plan_date": "2026-11-30",
+   "edm_date": "2026-12-04",
+   "ticket_date": "2026-12-07",
+   "depart_date": "2026-12-12",
+   "captain": "黃玉珍",
+   "staff": "蔡昇宏、陳逸凡、李成駿、葉淑惠、彭冠筌、吳杰濬"
+  },
+  {
+   "location": "麗寶",
+   "batch_name": "第八梯",
+   "final_count_date": "2026-08-19",
+   "insurance_date": "2026-08-21",
+   "family_pay_date": "2026-09-03",
+   "seat_plan_date": "2026-09-07",
+   "edm_date": "2026-09-11",
+   "ticket_date": "2026-09-14",
+   "depart_date": "2026-09-19",
+   "captain": "林螢偉",
+   "staff": "侯穎如"
+  },
+  {
+   "location": "麗寶",
+   "batch_name": "第九梯",
+   "final_count_date": "2026-09-30",
+   "insurance_date": "2026-10-02",
+   "family_pay_date": "2026-10-15",
+   "seat_plan_date": "2026-10-19",
+   "edm_date": "2026-10-23",
+   "ticket_date": "2026-10-26",
+   "depart_date": "2026-10-31",
+   "captain": "謝雅婷",
+   "staff": "邱莉淇、黃怡萍、林芳妤、楊朝景"
+  },
+  {
+   "location": "麗寶",
+   "batch_name": "第十梯",
+   "final_count_date": "2026-10-07",
+   "insurance_date": "2026-10-09",
+   "family_pay_date": "2026-10-22",
+   "seat_plan_date": "2026-10-26",
+   "edm_date": "2026-10-30",
+   "ticket_date": "2026-11-02",
+   "depart_date": "2026-11-07",
+   "captain": "(台北)林怡君",
+   "staff": "(高雄)陳姣蓓"
+  },
+  {
+   "location": "麗寶",
+   "batch_name": "第十一梯次",
+   "final_count_date": "2026-10-21",
+   "insurance_date": "2026-10-23",
+   "family_pay_date": "2026-11-05",
+   "seat_plan_date": "2026-11-09",
+   "edm_date": "2026-11-13",
+   "ticket_date": "2026-11-16",
+   "depart_date": "2026-11-21",
+   "captain": "韓明娟",
+   "staff": "NA"
+  }
+ ],
+ "family_pricing": [
+  {
+   "location": "洲際",
+   "region": "台北／高雄(含高鐵)",
+   "non_regular_staff": 6000,
+   "age_65_up": 4000,
+   "age_12_65": 4750,
+   "age_3_12_seat": 3000,
+   "age_3_12_noseat": 1250,
+   "under_3": 300
+  },
+  {
+   "location": "洲際",
+   "region": "台中(不含高鐵)",
+   "non_regular_staff": 4500,
+   "age_65_up": 3200,
+   "age_12_65": 3200,
+   "age_3_12_seat": 2300,
+   "age_3_12_noseat": 1250,
+   "under_3": 300
+  },
+  {
+   "location": "麗寶",
+   "region": "台北／高雄(含高鐵)",
+   "non_regular_staff": 6000,
+   "age_65_up": 5200,
+   "age_12_65": 5800,
+   "age_3_12_seat": 4000,
+   "age_3_12_noseat": 2000,
+   "under_3": 300
+  },
+  {
+   "location": "麗寶",
+   "region": "台中(不含高鐵)",
+   "non_regular_staff": 4800,
+   "age_65_up": 4500,
+   "age_12_65": 4300,
+   "age_3_12_seat": 3200,
+   "age_3_12_noseat": 2000,
+   "under_3": 300
+  }
+ ],
+ "table_zone_notes": [
+  "板前：6席",
+  "C區：85席",
+  "混合桌會標示席數"
+ ],
+ "venue_name": "台中洲際島語",
+ "this_batch": "第二梯",
+ "this_batch_date": "2026-08-29",
+ "this_batch_units": "經營策略處、數位平台經營處、個金作業暨資訊處(個客服C)"
+}

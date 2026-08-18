@@ -1,0 +1,9 @@
+{
+  "name": "ctbc-2026-autumn-outing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "中信 2026 秋郊 第二梯（8/29）行程查詢系統",
+  "engines": {
+    "node": "20.x"
+  }
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>通關密碼 - 中信 2026 秋郊 第二梯</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<div class="login-wrap">
+  <div class="brand" style="justify-content:center; margin-bottom:18px;">
+    <div class="logo">秋</div>
+    <div>
+      <h1>2026 秋郊．第二梯</h1>
+      <p>行程查詢系統（內部同仁專用）</p>
+    </div>
+  </div>
+  <div class="card">
+    <h2>請輸入通關密碼</h2>
+    <p class="muted">本系統含同仁出團行程資訊，僅供 8/29 第二梯（經策／數平／作資）同仁使用。密碼請見活動公告或詢問各單位福委／梯長。</p>
+    <form id="loginForm">
+      <div class="search-box" style="margin-top:10px;">
+        <input type="password" id="password" placeholder="請輸入通關密碼" autocomplete="current-password" required />
+        <button type="submit">登入</button>
+      </div>
+    </form>
+    <div id="msg" style="margin-top:12px;"></div>
+  </div>
+  <p class="footer-note">中信商業銀行 2026 秋郊活動｜資料僅用於行程查詢，請勿外流</p>
+</div>
+
+<script src="/app.js"></script>
+<script>
+  document.getElementById('loginForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const password = document.getElementById('password').value;
+    const msg = document.getElementById('msg');
+    msg.innerHTML = '<p class="muted">登入中...</p>';
+    try {
+      const res = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        msg.innerHTML = '<div class="error-box">' + (data.error || '登入失敗') + '</div>';
+        return;
+      }
+      CTBC.setToken(data.token);
+      const params = new URLSearchParams(location.search);
+      const next = params.get('next');
+      location.href = next ? decodeURIComponent(next) : '/index.html';
+    } catch (err) {
+      msg.innerHTML = '<div class="error-box">連線發生問題，請稍後再試。</div>';
+    }
+  });
+</script>
+</body>
+</html>

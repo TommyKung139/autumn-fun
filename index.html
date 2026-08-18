@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>我的行程查詢 - 中信 2026 秋郊 第二梯</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <div class="logo">秋</div>
+      <div>
+        <h1>2026 秋郊．第二梯行程查詢</h1>
+        <p>8/29（六）｜經營策略處・數位平台經營處・個金作業暨資訊處(客服C)</p>
+      </div>
+    </div>
+    <nav class="tabs">
+      <a href="/index.html">行程查詢</a>
+      <a href="/roster.html">出團名單</a>
+      <a href="/info.html">梯次總覽／注意事項</a>
+      <a href="#" id="logoutLink">登出</a>
+    </nav>
+  </header>
+
+  <div class="card">
+    <h2>輸入員工編號查詢行程</h2>
+    <p class="muted">請輸入您本人的員工編號（或您想查詢的同仁員工編號，例如 Z00012345），即可查看該員工是否參加、集合車站、下午／晚上行程、遊覽車與桌次等資訊。</p>
+    <form id="searchForm" class="search-box">
+      <input type="text" id="empId" placeholder="請輸入員工編號，例如 Z00012345" autocomplete="off" />
+      <button type="submit">查詢行程</button>
+    </form>
+    <p class="hint">＊本頁僅顯示行程安排相關資訊，不含身分證字號、生日、電話等個人資料。</p>
+  </div>
+
+  <div id="result"></div>
+
+  <p class="footer-note">資料來源：2026秋郊報名表（第二梯）｜如發現行程資訊有誤，請聯繫梯長 孔昱棠／劉妍廷</p>
+</div>
+
+<script src="/app.js"></script>
+<script>
+  (async function init() {
+    const ok = await CTBC.requireAuthOrRedirect();
+    if (!ok) return;
+    CTBC.highlightNav();
+    document.getElementById('logoutLink').addEventListener('click', function (e) {
+      e.preventDefault();
+      CTBC.logout();
+    });
+
+    const params = new URLSearchParams(location.search);
+    const pre = params.get('id');
+    if (pre) {
+      document.getElementById('empId').value = pre;
+      doSearch(pre);
+    }
+  })();
+
+  document.getElementById('searchForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const id = document.getElementById('empId').value.trim();
+    if (id) doSearch(id);
+  });
+
+  function activityLabel(v) {
+    return v || '<span class="muted">（未填寫／不適用）</span>';
+  }
+
+  function renderHsr(hsr, title) {
+    if (!hsr) {
+      return (
+        '<div class="ticket"><div class="ticket-head"><span class="t-brand">THSR 台灣高鐵</span><span class="pill">' +
+        title +
+        '</span></div><p class="muted" style="margin:6px 0 0;">此梯次尚未指定明確車廂座位，將以現場公告或梯長通知為準。</p></div>'
+      );
+    }
+    return (
+      '<div class="ticket">' +
+      '<div class="ticket-head"><span class="t-brand">THSR 台灣高鐵</span><span class="pill">' + title + '</span></div>' +
+      '<div class="ticket-grid">' +
+      '<div><div class="k">車次</div><div class="v">' + (hsr.train_no || '-') + '</div></div>' +
+      '<div><div class="k">車廂</div><div class="v">' + (hsr.car || '-') + '</div></div>' +
+      '<div><div class="k">座位</div><div class="v">' + (hsr.row_idx != null ? hsr.row_idx : '') + (hsr.seat_letter || '') + '</div></div>' +
+      '<div><div class="k">站別</div><div class="v" style="font-size:15px;">' + (hsr.station || '-') + '</div></div>' +
+      '</div>' +
+      (hsr.note ? '<p class="muted" style="margin:10px 0 0;">備註：' + hsr.note + '</p>' : '') +
+      '</div>'
+    );
+  }
+
+  function renderDependents(deps) {
+    if (!deps || !deps.length) return '<p class="muted">無攜眷。</p>';
+    return (
+      '<table><thead><tr><th>眷屬姓名</th><th>關係</th><th>年齡分類</th><th>下午行程</th><th>晚間行程</th></tr></thead><tbody>' +
+      deps
+        .map(
+          (d) =>
+            '<tr><td>' + (d.name||'') + '</td><td>' + (d.relation||'') + '</td><td>' + (d.age_band||'') + '</td><td>' + (d.afternoon_activity||'') + '</td><td>' + (d.evening_activity||'') + '</td></tr>'
+        )
+        .join('') +
+      '</tbody></table>'
+    );
+  }
+
+  async function doSearch(id) {
+    const box = document.getElementById('result');
+    box.innerHTML = '<div class="card"><p class="muted">查詢中...</p></div>';
+    try {
+      const res = await CTBC.apiFetch('/api/lookup?id=' + encodeURIComponent(id));
+      const data = await res.json();
+      if (!res.ok) {
+        box.innerHTML = '<div class="card"><div class="error-box">' + data.error + '</div></div>';
+        return;
+      }
+      const e = data.employee;
+      const famTotal =
+        (Number(e.family_summary.adult)||0) + (Number(e.family_summary.c6_12)||0) +
+        (Number(e.family_summary.c3_6)||0) + (Number(e.family_summary.under3)||0);
+
+      box.innerHTML =
+        '<div class="card">' +
+        '<h2>' + e.name + ' <span class="pill brand">' + e.emp_id + '</span> <span class="pill">' + e.batch + '</span></h2>' +
+        '<div class="grid2">' +
+        '<div class="field"><div class="label">處別／部門</div><div class="value">' + (e.division||'') + (e.department ? '／'+e.department : '') + '</div></div>' +
+        '<div class="field"><div class="label">地區</div><div class="value">' + (e.region||'-') + '</div></div>' +
+        '<div class="field"><div class="label">餐食</div><div class="value">' + (e.meal||'-') + '</div></div>' +
+        '<div class="field"><div class="label">攜眷</div><div class="value">' + (e.bring_family ? ('是，共 '+famTotal+' 人') : '否') + '</div></div>' +
+        '</div>' +
+
+        '<h3>下午／晚間行程選擇</h3>' +
+        '<div class="grid2">' +
+        '<div class="field"><div class="label">洲際下午行程</div><div class="value">' + activityLabel(e.afternoon_activity) + '</div></div>' +
+        '<div class="field"><div class="label">洲際晚間行程</div><div class="value">' + activityLabel(e.evening_activity) + '</div></div>' +
+        '</div>' +
+
+        '<h3>遊覽車與宴會桌次</h3>' +
+        '<div class="grid2">' +
+        '<div class="field"><div class="label">上午集合遊覽車</div><div class="value">' + (e.morning_bus||'尚未安排／請洽梯長') + '</div></div>' +
+        '<div class="field"><div class="label">下午行程遊覽車</div><div class="value">' + (e.activity_bus||'尚未安排／請洽梯長') + '</div></div>' +
+        '<div class="field"><div class="label">晚宴桌次（台中洲際島語）</div><div class="value">' + (e.table||'尚未安排／請洽梯長') + '</div></div>' +
+        '<div class="field"><div class="label">高鐵去程／回程站</div><div class="value">' + (e.outbound_station||'-') + ' → ' + (e.return_station||'-') + '</div></div>' +
+        '</div>' +
+
+        '<h3>高鐵車票資訊（如已排定車廂座位）</h3>' +
+        '<div class="grid2">' +
+        renderHsr(e.hsr_outbound, '去程') +
+        renderHsr(e.hsr_return, '回程') +
+        '</div>' +
+
+        '<h3>攜眷資訊</h3>' +
+        renderDependents(e.dependents) +
+        '</div>';
+    } catch (err) {
+      if (err && err.message === 'unauthorized') return;
+      box.innerHTML = '<div class="card"><div class="error-box">查詢時發生問題，請稍後再試。</div></div>';
+    }
+  }
+</script>
+</body>
+</html>
