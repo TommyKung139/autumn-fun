@@ -1128,5 +1128,765 @@
    "col": 5,
    "row": 5
   }
+ },
+ "combined_layout": {
+  "grid_rows": 52,
+  "grid_cols": 64,
+  "items": [
+   {
+    "type": "table",
+    "code": "板前",
+    "dept_raw": "數平5／總務1",
+    "count": 6,
+    "col": 15,
+    "row": 1,
+    "col_span": 8,
+    "row_span": 7
+   },
+   {
+    "type": "table",
+    "code": "C6 C7",
+    "dept_raw": "數平7",
+    "count": 7,
+    "col": 13,
+    "row": 34,
+    "col_span": 6,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "C1",
+    "dept_raw": "數平8",
+    "count": 8,
+    "col": 7,
+    "row": 35,
+    "col_span": 2,
+    "row_span": 2
+   },
+   {
+    "type": "table",
+    "code": "A7 A8",
+    "dept_raw": "經策6",
+    "count": 6,
+    "col": 62,
+    "row": 1,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "C8 C9",
+    "dept_raw": "數平8",
+    "count": 8,
+    "col": 15,
+    "row": 37,
+    "col_span": 5,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A1",
+    "dept_raw": "經策5",
+    "count": 5,
+    "col": 54,
+    "row": 3,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A2",
+    "dept_raw": "經策7",
+    "count": 7,
+    "col": 57,
+    "row": 3,
+    "col_span": 3,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A3",
+    "dept_raw": "經策5",
+    "count": 5,
+    "col": 60,
+    "row": 3,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A9",
+    "dept_raw": "經策3",
+    "count": 6,
+    "col": 63,
+    "row": 5,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "C2",
+    "dept_raw": "數平8",
+    "count": 8,
+    "col": 7,
+    "row": 39,
+    "col_span": 2,
+    "row_span": 2
+   },
+   {
+    "type": "table",
+    "code": "C10 C11",
+    "dept_raw": "數平7",
+    "count": 7,
+    "col": 13,
+    "row": 40,
+    "col_span": 5,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A4",
+    "dept_raw": "經策5",
+    "count": 5,
+    "col": 54,
+    "row": 7,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A5",
+    "dept_raw": "經策7",
+    "count": 7,
+    "col": 57,
+    "row": 7,
+    "col_span": 3,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A6",
+    "dept_raw": "經策5",
+    "count": 5,
+    "col": 60,
+    "row": 7,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A10",
+    "dept_raw": "經策6",
+    "count": 6,
+    "col": 63,
+    "row": 8,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "C12",
+    "dept_raw": "數平2",
+    "count": 2,
+    "col": 15,
+    "row": 42,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "C3",
+    "dept_raw": "數平5",
+    "count": 5,
+    "col": 7,
+    "row": 43,
+    "col_span": 2,
+    "row_span": 2
+   },
+   {
+    "type": "table",
+    "code": "C13 C14",
+    "dept_raw": "數平7",
+    "count": 7,
+    "col": 13,
+    "row": 44,
+    "col_span": 5,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A23",
+    "dept_raw": "經策6",
+    "count": 6,
+    "col": 64,
+    "row": 13,
+    "col_span": 1,
+    "row_span": 2
+   },
+   {
+    "type": "table",
+    "code": "C4",
+    "dept_raw": "數平5",
+    "count": 5,
+    "col": 7,
+    "row": 47,
+    "col_span": 2,
+    "row_span": 2
+   },
+   {
+    "type": "table",
+    "code": "C15 C16",
+    "dept_raw": "數平7",
+    "count": 7,
+    "col": 13,
+    "row": 47,
+    "col_span": 5,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A24",
+    "dept_raw": "經策5",
+    "count": 5,
+    "col": 64,
+    "row": 16,
+    "col_span": 1,
+    "row_span": 2
+   },
+   {
+    "type": "table",
+    "code": "A11 A12",
+    "dept_raw": "經策8",
+    "count": 6,
+    "col": 54,
+    "row": 17,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A12 A13",
+    "dept_raw": "經策9",
+    "count": 7,
+    "col": 57,
+    "row": 17,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A19",
+    "dept_raw": "經策2",
+    "count": 2,
+    "col": 60,
+    "row": 17,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A21",
+    "dept_raw": "經策3",
+    "count": 3,
+    "col": 61,
+    "row": 17,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "C17 C18",
+    "dept_raw": "數平7",
+    "count": 7,
+    "col": 13,
+    "row": 49,
+    "col_span": 5,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "C5",
+    "dept_raw": "數平8",
+    "count": 8,
+    "col": 7,
+    "row": 50,
+    "col_span": 2,
+    "row_span": 2
+   },
+   {
+    "type": "table",
+    "code": "A25",
+    "dept_raw": "經策5",
+    "count": 5,
+    "col": 64,
+    "row": 20,
+    "col_span": 1,
+    "row_span": 2
+   },
+   {
+    "type": "table",
+    "code": "A14",
+    "dept_raw": "經策4",
+    "count": 4,
+    "col": 55,
+    "row": 21,
+    "col_span": 1,
+    "row_span": 2
+   },
+   {
+    "type": "table",
+    "code": "A15",
+    "dept_raw": "經策4",
+    "count": 4,
+    "col": 58,
+    "row": 21,
+    "col_span": 1,
+    "row_span": 2
+   },
+   {
+    "type": "table",
+    "code": "A20",
+    "dept_raw": "經策2",
+    "count": 2,
+    "col": 60,
+    "row": 21,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A22",
+    "dept_raw": "經策3",
+    "count": 3,
+    "col": 61,
+    "row": 21,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "C19",
+    "dept_raw": "數平2",
+    "count": 2,
+    "col": 13,
+    "row": 52,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "C20",
+    "dept_raw": "數平4",
+    "count": 4,
+    "col": 19,
+    "row": 52,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A26",
+    "dept_raw": "經策6",
+    "count": 6,
+    "col": 64,
+    "row": 22,
+    "col_span": 1,
+    "row_span": 2
+   },
+   {
+    "type": "table",
+    "code": "A16 A17",
+    "dept_raw": "數平8",
+    "count": 6,
+    "col": 54,
+    "row": 25,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A17 A18",
+    "dept_raw": "數平9",
+    "count": 7,
+    "col": 57,
+    "row": 25,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "B1",
+    "dept_raw": "作資5",
+    "count": 5,
+    "col": 20,
+    "row": 40,
+    "col_span": 2,
+    "row_span": 2
+   },
+   {
+    "type": "table",
+    "code": "B5",
+    "dept_raw": "作資2",
+    "count": 2,
+    "col": 26,
+    "row": 41,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "B8",
+    "dept_raw": "作資2",
+    "count": 2,
+    "col": 29,
+    "row": 41,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A33",
+    "dept_raw": "經策2",
+    "count": 2,
+    "col": 64,
+    "row": 29,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "B11",
+    "dept_raw": "作資4",
+    "count": 4,
+    "col": 35,
+    "row": 42,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "B2",
+    "dept_raw": "作資5",
+    "count": 5,
+    "col": 20,
+    "row": 42,
+    "col_span": 2,
+    "row_span": 2
+   },
+   {
+    "type": "table",
+    "code": "A27 A28",
+    "dept_raw": "經策10",
+    "count": 6,
+    "col": 55,
+    "row": 31,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A28 A29",
+    "dept_raw": "經策7",
+    "count": 7,
+    "col": 57,
+    "row": 31,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "B6",
+    "dept_raw": "作資2",
+    "count": 2,
+    "col": 26,
+    "row": 43,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "B9",
+    "dept_raw": "作資2",
+    "count": 2,
+    "col": 29,
+    "row": 43,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A34",
+    "dept_raw": "經策8",
+    "count": 8,
+    "col": 62,
+    "row": 32,
+    "col_span": 3,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "B12",
+    "dept_raw": "作資4",
+    "count": 4,
+    "col": 35,
+    "row": 44,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "B3",
+    "dept_raw": "作資5",
+    "count": 5,
+    "col": 20,
+    "row": 44,
+    "col_span": 2,
+    "row_span": 2
+   },
+   {
+    "type": "table",
+    "code": "B7",
+    "dept_raw": "作資2",
+    "count": 2,
+    "col": 26,
+    "row": 45,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "B10",
+    "dept_raw": "作資2",
+    "count": 2,
+    "col": 29,
+    "row": 45,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A30 A31",
+    "dept_raw": "作資7／空位3",
+    "count": 6,
+    "col": 55,
+    "row": 36,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A31 A32",
+    "dept_raw": "經策3／作資3／空位1",
+    "count": 7,
+    "col": 57,
+    "row": 36,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A35",
+    "dept_raw": "經策5",
+    "count": 5,
+    "col": 62,
+    "row": 36,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A36",
+    "dept_raw": "經策3／空位1",
+    "count": 4,
+    "col": 64,
+    "row": 36,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "B13",
+    "dept_raw": "作資2",
+    "count": 2,
+    "col": 33,
+    "row": 46,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "B4",
+    "dept_raw": "作資6",
+    "count": 6,
+    "col": 20,
+    "row": 46,
+    "col_span": 2,
+    "row_span": 2
+   },
+   {
+    "type": "table",
+    "code": "A38",
+    "dept_raw": "空位5",
+    "count": 5,
+    "col": 63,
+    "row": 39,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "A37",
+    "dept_raw": "空位3",
+    "count": 3,
+    "col": 60,
+    "row": 40,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "B14",
+    "dept_raw": "作資4",
+    "count": 4,
+    "col": 33,
+    "row": 48,
+    "col_span": 4,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "B15",
+    "dept_raw": "作資8",
+    "count": 8,
+    "col": 26,
+    "row": 50,
+    "col_span": 6,
+    "row_span": 1
+   },
+   {
+    "type": "table",
+    "code": "B16",
+    "dept_raw": "作資4",
+    "count": 4,
+    "col": 28,
+    "row": 52,
+    "col_span": 2,
+    "row_span": 1
+   },
+   {
+    "type": "food",
+    "code": "極",
+    "theme": "串揚劇場",
+    "col": 24,
+    "row": 1,
+    "col_span": 6,
+    "row_span": 9
+   },
+   {
+    "type": "food",
+    "code": "燦",
+    "theme": "酥香炙宴",
+    "col": 30,
+    "row": 1,
+    "col_span": 6,
+    "row_span": 9
+   },
+   {
+    "type": "food",
+    "code": "煲",
+    "theme": "暖心食補",
+    "col": 36,
+    "row": 1,
+    "col_span": 6,
+    "row_span": 9
+   },
+   {
+    "type": "food",
+    "code": "膳",
+    "theme": "經典華筵",
+    "col": 42,
+    "row": 1,
+    "col_span": 6,
+    "row_span": 9
+   },
+   {
+    "type": "food",
+    "code": "炙",
+    "theme": "炭火盛宴",
+    "col": 48,
+    "row": 1,
+    "col_span": 6,
+    "row_span": 9
+   },
+   {
+    "type": "food",
+    "code": "盛",
+    "theme": "旬味和韻",
+    "col": 24,
+    "row": 10,
+    "col_span": 3,
+    "row_span": 18
+   },
+   {
+    "type": "food",
+    "code": "鮮",
+    "theme": "大海巡禮",
+    "col": 28,
+    "row": 13,
+    "col_span": 10,
+    "row_span": 7
+   },
+   {
+    "type": "food",
+    "code": "沁",
+    "theme": "微醺序章",
+    "col": 28,
+    "row": 20,
+    "col_span": 10,
+    "row_span": 7
+   },
+   {
+    "type": "food",
+    "code": "自助飲料",
+    "theme": "自助飲料",
+    "col": 6,
+    "row": 27,
+    "col_span": 8,
+    "row_span": 7,
+    "is_facility": true
+   },
+   {
+    "type": "food",
+    "code": "續",
+    "theme": "甜點樂章",
+    "col": 1,
+    "row": 40,
+    "col_span": 5,
+    "row_span": 9
+   },
+   {
+    "type": "facility",
+    "code": "服務台",
+    "col": 58,
+    "row": 20,
+    "col_span": 6,
+    "row_span": 7
+   },
+   {
+    "type": "facility",
+    "code": "柱",
+    "col": 44,
+    "row": 27,
+    "col_span": 5,
+    "row_span": 6
+   }
+  ],
+  "entrance": {
+   "col": 37,
+   "row": 49,
+   "col_span": 6,
+   "row_span": 4,
+   "label": "大門 入口"
+  }
  }
 }
