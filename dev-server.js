@@ -12,10 +12,9 @@ process.env.AUTH_SECRET = process.env.AUTH_SECRET || 'test-secret';
 const login = require('./api/login');
 const verify = require('./api/verify');
 const lookup = require('./api/lookup');
-const roster = require('./api/roster');
 const reference = require('./api/reference');
 
-const routes = { '/api/login': login, '/api/verify': verify, '/api/lookup': lookup, '/api/roster': roster, '/api/reference': reference };
+const routes = { '/api/login': login, '/api/verify': verify, '/api/lookup': lookup, '/api/reference': reference };
 
 function augmentRes(res) {
   res.status = (code) => { res.statusCode = code; return res; };

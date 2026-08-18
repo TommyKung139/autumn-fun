@@ -1027,5 +1027,106 @@
     "grid_col": 5
    }
   ]
+ },
+ "buffet_stations": {
+  "grid_rows": 5,
+  "grid_cols": 9,
+  "entrance_label": "入口",
+  "stations": [
+   {
+    "code": "極",
+    "theme": "串揚劇場",
+    "col": 4,
+    "row": 1,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "code": "燦",
+    "theme": "酥香炙宴",
+    "col": 5,
+    "row": 1,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "code": "煲",
+    "theme": "暖心食補",
+    "col": 6,
+    "row": 1,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "code": "膳",
+    "theme": "經典華筵",
+    "col": 7,
+    "row": 1,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "code": "炙",
+    "theme": "炭火盛宴",
+    "col": 8,
+    "row": 1,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "code": "洗手台",
+    "theme": "洗手台",
+    "col": 9,
+    "row": 1,
+    "col_span": 1,
+    "row_span": 1,
+    "is_facility": true
+   },
+   {
+    "code": "鮮",
+    "theme": "大海巡禮",
+    "col": 5,
+    "row": 2,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "code": "盛",
+    "theme": "旬味和韻",
+    "col": 3,
+    "row": 3,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "code": "沁",
+    "theme": "微醺序章",
+    "col": 5,
+    "row": 3,
+    "col_span": 1,
+    "row_span": 1
+   },
+   {
+    "code": "自助飲料",
+    "theme": "自助飲料",
+    "col": 1,
+    "row": 3,
+    "col_span": 1,
+    "row_span": 1,
+    "is_facility": true
+   },
+   {
+    "code": "續",
+    "theme": "甜點樂章",
+    "col": 1,
+    "row": 4,
+    "col_span": 1,
+    "row_span": 1
+   }
+  ],
+  "entrance": {
+   "col": 5,
+   "row": 5
+  }
  }
 }

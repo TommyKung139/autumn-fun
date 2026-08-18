@@ -19,7 +19,6 @@
     </div>
     <nav class="tabs">
       <a href="/index.html">行程查詢</a>
-      <a href="/roster.html">出團名單</a>
       <a href="/info.html">場地介紹</a>
       <a href="#" id="logoutLink">登出</a>
     </nav>
@@ -39,8 +38,17 @@
   </div>
 
   <div class="card" id="seatmap">
-    <h2>島語 午宴座位圖</h2>
-    <p class="muted">依據分桌座位圖整理，桌次相對位置僅供參考（實際現場擺設以當天為準）。個人桌次請至「行程查詢」輸入員工編號查看；也可以直接在下方地圖找到自己的桌號，例如 C8、C9。</p>
+    <h2>島語 午宴位置圖（餐檯＋座位）</h2>
+    <p class="muted">上半部是九大主題餐檯（食物在哪裡），下半部是桌次座位（人坐在哪裡）；兩者依島語店內動線由上而下排列，方便同仁一次掌握「吃什麼在哪裡拿、自己坐哪一桌」。個人桌次請至「行程查詢」輸入員工編號查看，也可以直接在下方地圖找自己的桌號，例如 C8、C9。</p>
+
+    <h3>九大主題餐檯</h3>
+    <p class="hint">餐檯名稱與主題依島語店內看板整理，實際擺設與供應內容以現場為準。</p>
+    <div style="overflow:auto; border:1px solid var(--line); border-radius:12px; padding:14px; background:#fffefb; margin-bottom:6px;">
+      <div id="buffetGrid" style="display:grid; gap:4px;"></div>
+    </div>
+    <div class="chips" id="buffetLegend" style="margin-top:10px;"></div>
+
+    <h3 style="margin-top:26px;">桌次座位圖</h3>
     <div class="chips" id="seatLegend"></div>
     <div id="seatSearchHint" class="hint" style="display:none;"></div>
     <div style="overflow:auto; border:1px solid var(--line); border-radius:12px; padding:14px; background:#fffefb;">
@@ -76,11 +84,53 @@
     try {
       const res = await CTBC.apiFetch('/api/reference');
       const data = await res.json();
+      renderBuffetMap(data.buffet_stations);
       renderSeatMap(data.table_layout);
     } catch (err) {
       if (err && err.message === 'unauthorized') return;
     }
   })();
+
+  function renderBuffetMap(layout) {
+    if (!layout || !layout.stations) return;
+
+    const grid = document.getElementById('buffetGrid');
+    grid.style.gridTemplateColumns = 'repeat(' + layout.grid_cols + ', 62px)';
+    grid.style.gridTemplateRows = 'repeat(' + layout.grid_rows + ', 46px)';
+
+    const tiles = layout.stations.map((s) => {
+      const isFacility = !!s.is_facility;
+      const bg = isFacility ? '#f1eee6' : '#f7e6c4';
+      const fg = isFacility ? '#6b5a47' : '#8a5a12';
+      const style =
+        'grid-column:' + s.col + ' / span ' + s.col_span +
+        '; grid-row:' + s.row + ' / span ' + s.row_span +
+        '; background:' + bg + '; border:1.5px solid ' + (isFacility ? '#ddd6c4' : '#e8c98a') + '; color:' + fg + ';';
+      return (
+        '<div style="' + style + ' border-radius:8px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; overflow:hidden; padding:2px;" title="' +
+        s.code + '｜' + s.theme + '">' +
+        '<div style="font-weight:800; font-size:14px;">' + s.code + '</div>' +
+        (isFacility ? '' : '<div style="font-size:9px; line-height:1.1;">' + s.theme + '</div>') +
+        '</div>'
+      );
+    });
+
+    // entrance arrow tile
+    if (layout.entrance) {
+      tiles.push(
+        '<div style="grid-column:' + layout.entrance.col + '; grid-row:' + layout.entrance.row +
+        '; display:flex; flex-direction:column; align-items:center; justify-content:center; color:var(--brand-dark); font-size:11px;">' +
+        '<div style="font-size:18px; line-height:1;">↑</div>' + (layout.entrance_label || '入口') + '</div>'
+      );
+    }
+
+    grid.innerHTML = tiles.join('');
+
+    document.getElementById('buffetLegend').innerHTML = layout.stations
+      .filter((s) => !s.is_facility)
+      .map((s) => '<div class="chip">' + s.code + '　' + s.theme + '</div>')
+      .join('');
+  }
 
   const DEPT_COLORS = {
     '經策': { bg: '#D9EAF7', fg: '#1c4a72', label: '經營策略處' },
