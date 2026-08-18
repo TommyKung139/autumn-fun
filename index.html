@@ -20,7 +20,7 @@
     <nav class="tabs">
       <a href="/index.html">行程查詢</a>
       <a href="/roster.html">出團名單</a>
-      <a href="/info.html">梯次總覽／注意事項</a>
+      <a href="/info.html">場地介紹</a>
       <a href="#" id="logoutLink">登出</a>
     </nav>
   </header>
@@ -140,7 +140,9 @@
         '<div class="grid2">' +
         '<div class="field"><div class="label">上午集合遊覽車</div><div class="value">' + (e.morning_bus||'尚未安排／請洽梯長') + '</div></div>' +
         '<div class="field"><div class="label">下午行程遊覽車</div><div class="value">' + (e.activity_bus||'尚未安排／請洽梯長') + '</div></div>' +
-        '<div class="field"><div class="label">晚宴桌次（台中洲際島語）</div><div class="value">' + (e.table||'尚未安排／請洽梯長') + '</div></div>' +
+        '<div class="field"><div class="label">午宴桌次（台中洲際島語）</div><div class="value">' + (e.table||'尚未安排／請洽梯長') +
+        (e.table ? ' <a href="/info.html?table=' + encodeURIComponent(e.table) + '#seatmap" style="font-size:12px; margin-left:6px;">在座位圖上查看 →</a>' : '') +
+        '</div></div>' +
         '<div class="field"><div class="label">高鐵去程／回程站</div><div class="value">' + (e.outbound_station||'-') + ' → ' + (e.return_station||'-') + '</div></div>' +
         '</div>' +
 
