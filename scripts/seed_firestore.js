@@ -11,10 +11,18 @@
 // account JSON key (projectId / clientEmail / privateKey fields).
 //
 // Safe to re-run: it overwrites each employee document with the current
-// contents of data/employees.json (so if you edited data/employees.json by
-// hand, re-running this pushes those edits to Firestore). It will NOT touch
-// any fields you've since changed via the /edit.html page and does not delete
-// documents for emp_ids no longer present in the file.
+// contents of data/employees.json. It does not delete documents for emp_ids no
+// longer present in the file.
+//
+// IMPORTANT: a full re-run REPLACES each document, so any change made through
+// the /edit.html editor since the last seed is overwritten. If you only need to
+// push a few corrected records, pass their employee IDs and everything else is
+// left untouched:
+//
+//   node scripts/seed_firestore.js Z00014282 Z00062381
+//
+// With no arguments it seeds all employees (this is what you want the first
+// time, when the collection is still empty).
 
 const fs = require('fs');
 const path = require('path');
@@ -58,8 +66,22 @@ async function main() {
   const db = admin.firestore();
 
   const employeesPath = path.join(__dirname, '..', 'data', 'employees.json');
-  const employees = JSON.parse(fs.readFileSync(employeesPath, 'utf8'));
-  console.log(`Loaded ${employees.length} employee records from data/employees.json`);
+  const all = JSON.parse(fs.readFileSync(employeesPath, 'utf8'));
+  console.log(`Loaded ${all.length} employee records from data/employees.json`);
+
+  // Optional positional args: only push these employee IDs.
+  const only = process.argv.slice(2).map((s) => s.trim().toUpperCase()).filter(Boolean);
+  let employees = all;
+  if (only.length) {
+    const wanted = new Set(only);
+    employees = all.filter((e) => wanted.has(String(e.emp_id).toUpperCase()));
+    const missing = only.filter((id) => !employees.some((e) => String(e.emp_id).toUpperCase() === id));
+    if (missing.length) {
+      console.error('These employee IDs are not in data/employees.json:', missing.join(', '));
+      process.exit(1);
+    }
+    console.log(`Selective mode: writing only ${employees.length} record(s): ${only.join(', ')}`);
+  }
 
   let batch = db.batch();
   let opsInBatch = 0;

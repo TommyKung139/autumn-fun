@@ -79,7 +79,7 @@
   "hsr_outbound": {
    "train_no": "1505",
    "car": "4車",
-   "seat_letter": "C",
+   "seat_letter": "A",
    "row_idx": 9,
    "station": "南港",
    "note": null
@@ -1512,10 +1512,10 @@
   "hsr_outbound": {
    "train_no": "1505",
    "car": "4車",
-   "seat_letter": "E",
+   "seat_letter": "B",
    "row_idx": 9,
-   "station": null,
-   "note": "票4車20B 座4車9E"
+   "station": "南港",
+   "note": null
   },
   "hsr_return": {
    "train_no": "144",
@@ -1621,24 +1621,10 @@
    "under3": 0
   },
   "morning_bus": "第四車",
-  "activity_bus": "第八車",
-  "table": "A17A & A18",
-  "hsr_outbound": {
-   "train_no": "205",
-   "car": "4車",
-   "seat_letter": "A",
-   "row_idx": 2,
-   "station": "台北",
-   "note": null
-  },
-  "hsr_return": {
-   "train_no": "684",
-   "car": "3車",
-   "seat_letter": "A",
-   "row_idx": 16,
-   "station": "台北",
-   "note": null
-  },
+  "activity_bus": "第五車",
+  "table": "A14",
+  "hsr_outbound": null,
+  "hsr_return": null,
   "dependents": []
  },
  {
@@ -3114,10 +3100,10 @@
   "hsr_outbound": {
    "train_no": "1505",
    "car": "3車",
-   "seat_letter": "C",
-   "row_idx": 18,
-   "station": null,
-   "note": "票3車18C 位3車18C"
+   "seat_letter": "B",
+   "row_idx": 17,
+   "station": "台北",
+   "note": null
   },
   "hsr_return": {
    "train_no": "684",
@@ -4044,11 +4030,25 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": null,
-  "activity_bus": null,
-  "table": null,
-  "hsr_outbound": null,
-  "hsr_return": null,
+  "morning_bus": "第五車",
+  "activity_bus": "第八車",
+  "table": "A17A & A18",
+  "hsr_outbound": {
+   "train_no": "205",
+   "car": "4車",
+   "seat_letter": "A",
+   "row_idx": 2,
+   "station": "台北",
+   "note": null
+  },
+  "hsr_return": {
+   "train_no": "684",
+   "car": "3車",
+   "seat_letter": "A",
+   "row_idx": 16,
+   "station": "台北",
+   "note": null
+  },
   "dependents": []
  },
  {
@@ -4703,10 +4703,10 @@
   "activity_bus": "第六車",
   "table": "A38&A38A",
   "hsr_outbound": {
-   "train_no": null,
-   "car": null,
-   "seat_letter": null,
-   "row_idx": 12,
+   "train_no": "1505",
+   "car": "4車",
+   "seat_letter": "D",
+   "row_idx": 11,
    "station": "南港",
    "note": null
   },
@@ -4744,10 +4744,10 @@
   "activity_bus": "第六車",
   "table": "C15、C16",
   "hsr_outbound": {
-   "train_no": null,
-   "car": null,
-   "seat_letter": null,
-   "row_idx": 12,
+   "train_no": "1505",
+   "car": "4車",
+   "seat_letter": "E",
+   "row_idx": 11,
    "station": "南港",
    "note": null
   },
@@ -5601,11 +5601,25 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": null,
-  "activity_bus": null,
-  "table": null,
-  "hsr_outbound": null,
-  "hsr_return": null,
+  "morning_bus": "第六車",
+  "activity_bus": "第九車",
+  "table": "C8、C9",
+  "hsr_outbound": {
+   "train_no": "1505",
+   "car": "4車",
+   "seat_letter": "C",
+   "row_idx": 15,
+   "station": "南港",
+   "note": null
+  },
+  "hsr_return": {
+   "train_no": "144",
+   "car": "3車",
+   "seat_letter": "B",
+   "row_idx": 16,
+   "station": "南港",
+   "note": null
+  },
   "dependents": []
  },
  {
@@ -5833,11 +5847,25 @@
    "c3_6": 0,
    "under3": 0
   },
-  "morning_bus": null,
-  "activity_bus": null,
-  "table": null,
-  "hsr_outbound": null,
-  "hsr_return": null,
+  "morning_bus": "第六車",
+  "activity_bus": "第六車",
+  "table": "C2",
+  "hsr_outbound": {
+   "train_no": "205",
+   "car": "4車",
+   "seat_letter": "B",
+   "row_idx": 19,
+   "station": "板橋",
+   "note": null
+  },
+  "hsr_return": {
+   "train_no": "144",
+   "car": "2車",
+   "seat_letter": "D",
+   "row_idx": 4,
+   "station": "板橋",
+   "note": null
+  },
   "dependents": []
  },
  {
@@ -7762,7 +7790,7 @@
   },
   "morning_bus": "第八車",
   "activity_bus": "第七車",
-  "table": null,
+  "table": "B16",
   "hsr_outbound": null,
   "hsr_return": null,
   "dependents": []

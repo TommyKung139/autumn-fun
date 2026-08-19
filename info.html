@@ -185,10 +185,20 @@
     return '空位';
   }
 
-  // Strip spaces AND common separators (、，, - etc.) so a query like "C8、C9" or
-  // "C8-C9" still matches a stored code like "C8 C9".
-  function normalizeCode(s) {
-    return (s || '').replace(/[\s、，,．\.\-]+/g, '');
+  // A table code can be a single table ("A14") or several tables pushed together
+  // ("C8、C9", "A12A & A13", "A38&A38A"). Compare by the set of individual table
+  // labels rather than by string, so any separator style - 、 ， & - space - still
+  // matches, and a lookup for one table finds the merged group it belongs to.
+  function codeTokens(s) {
+    return (String(s || '').toUpperCase().match(/[ABC]\d+[A-Z]?/g) || []);
+  }
+
+  function codesMatch(a, b) {
+    const ta = codeTokens(a), tb = codeTokens(b);
+    if (ta.length && tb.length) return ta.some((t) => tb.indexOf(t) !== -1);
+    // Fall back to a plain comparison for non-standard labels such as 板前.
+    const norm = (s) => String(s || '').replace(/[\s、，,．\.\-&]+/g, '');
+    return !!norm(a) && norm(a) === norm(b);
   }
 
   // Single unified grid built from data/reference.json's combined_layout, which was
@@ -204,13 +214,13 @@
 
     const params = new URLSearchParams(location.search);
     const highlightRaw = (params.get('table') || '').trim();
-    const highlight = normalizeCode(highlightRaw);
+    const highlight = highlightRaw;
 
     const tiles = layout.items.map((it) => {
       if (it.type === 'table') {
         const key = primaryDeptKey(it.dept_raw);
         const c = DEPT_COLORS[key];
-        const isHighlight = highlight && normalizeCode(it.code).includes(highlight);
+        const isHighlight = highlight && codesMatch(highlight, it.code);
         const style =
           'grid-column:' + it.col + ' / span ' + it.col_span +
           '; grid-row:' + it.row + ' / span ' + it.row_span +
@@ -275,7 +285,7 @@
         .join('') + '<div class="chip" style="background:#fff7cc; border-color:#e8d67a;">🔎 你的桌次</div>';
 
     if (highlight) {
-      const found = layout.items.some((it) => it.type === 'table' && normalizeCode(it.code).includes(highlight));
+      const found = layout.items.some((it) => it.type === 'table' && codesMatch(highlight, it.code));
       if (found) {
         const hint = document.getElementById('seatSearchHint');
         hint.style.display = 'block';

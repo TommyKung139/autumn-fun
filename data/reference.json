@@ -1191,7 +1191,7 @@
       {
         "type": "table",
         "code": "A4",
-        "dept_raw": "經策5",
+        "dept_raw": "經策",
         "count": 5,
         "col": 78,
         "row": 2,
@@ -1201,7 +1201,7 @@
       {
         "type": "table",
         "code": "A1",
-        "dept_raw": "經策5",
+        "dept_raw": "經策",
         "count": 5,
         "col": 83,
         "row": 2,
@@ -1237,8 +1237,8 @@
       },
       {
         "type": "table",
-        "code": "A30 A31",
-        "dept_raw": "作資7／空位3",
+        "code": "A30 & A31",
+        "dept_raw": "經策／空位",
         "count": 6,
         "col": 53,
         "row": 6,
@@ -1247,8 +1247,8 @@
       },
       {
         "type": "table",
-        "code": "A31 A32",
-        "dept_raw": "經策3／作資3／空位1",
+        "code": "A31A & A32",
+        "dept_raw": "作資",
         "count": 7,
         "col": 53,
         "row": 9,
@@ -1257,8 +1257,8 @@
       },
       {
         "type": "table",
-        "code": "A27 A28",
-        "dept_raw": "經策10",
+        "code": "A27 & A28",
+        "dept_raw": "經策",
         "count": 6,
         "col": 58,
         "row": 6,
@@ -1267,8 +1267,8 @@
       },
       {
         "type": "table",
-        "code": "A28 A29",
-        "dept_raw": "經策7",
+        "code": "A28A & A29",
+        "dept_raw": "經策／空位",
         "count": 7,
         "col": 58,
         "row": 9,
@@ -1278,7 +1278,7 @@
       {
         "type": "table",
         "code": "A14",
-        "dept_raw": "經策4",
+        "dept_raw": "經策",
         "count": 4,
         "col": 63,
         "row": 6,
@@ -1288,7 +1288,7 @@
       {
         "type": "table",
         "code": "A15",
-        "dept_raw": "經策4",
+        "dept_raw": "經策",
         "count": 4,
         "col": 63,
         "row": 9,
@@ -1297,8 +1297,8 @@
       },
       {
         "type": "table",
-        "code": "A16 A17",
-        "dept_raw": "數平8",
+        "code": "A16 & A17",
+        "dept_raw": "數平",
         "count": 6,
         "col": 66,
         "row": 6,
@@ -1307,8 +1307,8 @@
       },
       {
         "type": "table",
-        "code": "A17 A18",
-        "dept_raw": "數平9",
+        "code": "A17A & A18",
+        "dept_raw": "數平",
         "count": 7,
         "col": 66,
         "row": 9,
@@ -1317,8 +1317,8 @@
       },
       {
         "type": "table",
-        "code": "A11 A12",
-        "dept_raw": "經策8",
+        "code": "A11 & A12",
+        "dept_raw": "經策",
         "count": 6,
         "col": 71,
         "row": 6,
@@ -1327,8 +1327,8 @@
       },
       {
         "type": "table",
-        "code": "A12 A13",
-        "dept_raw": "經策9",
+        "code": "A12A & A13",
+        "dept_raw": "經策",
         "count": 7,
         "col": 71,
         "row": 9,
@@ -1346,7 +1346,7 @@
       {
         "type": "table",
         "code": "A5",
-        "dept_raw": "經策7",
+        "dept_raw": "經策",
         "count": 7,
         "col": 78,
         "row": 6,
@@ -1356,7 +1356,7 @@
       {
         "type": "table",
         "code": "A2",
-        "dept_raw": "經策7",
+        "dept_raw": "經策",
         "count": 7,
         "col": 83,
         "row": 6,
@@ -1366,7 +1366,7 @@
       {
         "type": "table",
         "code": "A6",
-        "dept_raw": "經策5",
+        "dept_raw": "經策",
         "count": 5,
         "col": 78,
         "row": 11,
@@ -1376,7 +1376,7 @@
       {
         "type": "table",
         "code": "A3",
-        "dept_raw": "經策5",
+        "dept_raw": "經策",
         "count": 5,
         "col": 83,
         "row": 11,
@@ -1386,7 +1386,7 @@
       {
         "type": "table",
         "code": "A37",
-        "dept_raw": "空位3",
+        "dept_raw": "數平",
         "count": 3,
         "col": 61,
         "row": 14,
@@ -1396,7 +1396,7 @@
       {
         "type": "table",
         "code": "A35",
-        "dept_raw": "經策5",
+        "dept_raw": "經策／空位",
         "count": 5,
         "col": 65,
         "row": 14,
@@ -1406,7 +1406,7 @@
       {
         "type": "table",
         "code": "A36",
-        "dept_raw": "經策3／空位1",
+        "dept_raw": "經策",
         "count": 4,
         "col": 69,
         "row": 14,
@@ -1416,7 +1416,7 @@
       {
         "type": "table",
         "code": "A20",
-        "dept_raw": "經策2",
+        "dept_raw": "經策",
         "count": 2,
         "col": 74,
         "row": 14,
@@ -1426,7 +1426,7 @@
       {
         "type": "table",
         "code": "A19",
-        "dept_raw": "經策2",
+        "dept_raw": "經策",
         "count": 2,
         "col": 76,
         "row": 14,
@@ -1436,7 +1436,7 @@
       {
         "type": "table",
         "code": "A22",
-        "dept_raw": "經策3",
+        "dept_raw": "經策／空位",
         "count": 3,
         "col": 74,
         "row": 15,
@@ -1446,7 +1446,7 @@
       {
         "type": "table",
         "code": "A21",
-        "dept_raw": "經策3",
+        "dept_raw": "經策",
         "count": 3,
         "col": 76,
         "row": 15,
@@ -1455,9 +1455,9 @@
       },
       {
         "type": "table",
-        "code": "A38",
-        "dept_raw": "空位5",
-        "count": 5,
+        "code": "A38&A38A",
+        "dept_raw": "數平",
+        "count": 6,
         "col": 60,
         "row": 17,
         "col_span": 4,
@@ -1466,7 +1466,7 @@
       {
         "type": "table",
         "code": "A34",
-        "dept_raw": "經策8",
+        "dept_raw": "經策",
         "count": 8,
         "col": 65,
         "row": 17,
@@ -1476,7 +1476,7 @@
       {
         "type": "table",
         "code": "A33",
-        "dept_raw": "經策2",
+        "dept_raw": "經策",
         "count": 2,
         "col": 70,
         "row": 17,
@@ -1494,7 +1494,7 @@
       {
         "type": "table",
         "code": "A26",
-        "dept_raw": "經策6",
+        "dept_raw": "經策／空位",
         "count": 6,
         "col": 76,
         "row": 17,
@@ -1504,7 +1504,7 @@
       {
         "type": "table",
         "code": "A25",
-        "dept_raw": "經策5",
+        "dept_raw": "經策",
         "count": 5,
         "col": 80,
         "row": 17,
@@ -1514,7 +1514,7 @@
       {
         "type": "table",
         "code": "A24",
-        "dept_raw": "經策5",
+        "dept_raw": "經策",
         "count": 5,
         "col": 84,
         "row": 17,
@@ -1524,7 +1524,7 @@
       {
         "type": "table",
         "code": "A23",
-        "dept_raw": "經策6",
+        "dept_raw": "經策",
         "count": 6,
         "col": 88,
         "row": 17,
@@ -1534,7 +1534,7 @@
       {
         "type": "table",
         "code": "A10",
-        "dept_raw": "經策6",
+        "dept_raw": "經策",
         "count": 6,
         "col": 92,
         "row": 17,
@@ -1544,7 +1544,7 @@
       {
         "type": "table",
         "code": "A9",
-        "dept_raw": "經策3",
+        "dept_raw": "經策",
         "count": 6,
         "col": 96,
         "row": 17,
@@ -1553,13 +1553,23 @@
       },
       {
         "type": "table",
-        "code": "A7 A8",
-        "dept_raw": "經策6",
-        "count": 6,
+        "code": "A7",
+        "dept_raw": "經策",
+        "count": 4,
         "col": 92,
         "row": 19,
         "col_span": 8,
-        "row_span": 3
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "A8",
+        "dept_raw": "經策",
+        "count": 2,
+        "col": 92,
+        "row": 21,
+        "col_span": 8,
+        "row_span": 2
       },
       {
         "type": "food",
@@ -1574,7 +1584,7 @@
       {
         "type": "table",
         "code": "B11",
-        "dept_raw": "作資4",
+        "dept_raw": "作資",
         "count": 4,
         "col": 24,
         "row": 17,
@@ -1584,7 +1594,7 @@
       {
         "type": "table",
         "code": "B12",
-        "dept_raw": "作資4",
+        "dept_raw": "作資",
         "count": 4,
         "col": 29,
         "row": 17,
@@ -1603,7 +1613,7 @@
       {
         "type": "table",
         "code": "B8",
-        "dept_raw": "作資2",
+        "dept_raw": "作資",
         "count": 2,
         "col": 23,
         "row": 20,
@@ -1613,7 +1623,7 @@
       {
         "type": "table",
         "code": "B9",
-        "dept_raw": "作資2",
+        "dept_raw": "作資",
         "count": 2,
         "col": 27,
         "row": 20,
@@ -1623,7 +1633,7 @@
       {
         "type": "table",
         "code": "B10",
-        "dept_raw": "作資2",
+        "dept_raw": "作資",
         "count": 2,
         "col": 31,
         "row": 20,
@@ -1633,7 +1643,7 @@
       {
         "type": "table",
         "code": "B13",
-        "dept_raw": "作資2",
+        "dept_raw": "作資",
         "count": 2,
         "col": 36,
         "row": 19,
@@ -1643,8 +1653,8 @@
       {
         "type": "table",
         "code": "B5",
-        "dept_raw": "作資2",
-        "count": 2,
+        "dept_raw": "作資",
+        "count": 3,
         "col": 23,
         "row": 23,
         "col_span": 3,
@@ -1653,8 +1663,8 @@
       {
         "type": "table",
         "code": "B6",
-        "dept_raw": "作資2",
-        "count": 2,
+        "dept_raw": "作資",
+        "count": 3,
         "col": 27,
         "row": 23,
         "col_span": 3,
@@ -1663,8 +1673,8 @@
       {
         "type": "table",
         "code": "B7",
-        "dept_raw": "作資2",
-        "count": 2,
+        "dept_raw": "作資",
+        "count": 3,
         "col": 31,
         "row": 23,
         "col_span": 3,
@@ -1673,7 +1683,7 @@
       {
         "type": "table",
         "code": "B15",
-        "dept_raw": "作資8",
+        "dept_raw": "作資",
         "count": 8,
         "col": 44,
         "row": 19,
@@ -1683,7 +1693,7 @@
       {
         "type": "table",
         "code": "B16",
-        "dept_raw": "作資4",
+        "dept_raw": "作資",
         "count": 4,
         "col": 48,
         "row": 19,
@@ -1693,7 +1703,7 @@
       {
         "type": "table",
         "code": "B1",
-        "dept_raw": "作資5",
+        "dept_raw": "作資",
         "count": 5,
         "col": 23,
         "row": 25,
@@ -1703,7 +1713,7 @@
       {
         "type": "table",
         "code": "B2",
-        "dept_raw": "作資5",
+        "dept_raw": "作資",
         "count": 5,
         "col": 27,
         "row": 25,
@@ -1713,7 +1723,7 @@
       {
         "type": "table",
         "code": "B3",
-        "dept_raw": "作資5",
+        "dept_raw": "作資",
         "count": 5,
         "col": 31,
         "row": 25,
@@ -1723,7 +1733,7 @@
       {
         "type": "table",
         "code": "B4",
-        "dept_raw": "作資6",
+        "dept_raw": "作資",
         "count": 6,
         "col": 35,
         "row": 25,
@@ -1733,7 +1743,7 @@
       {
         "type": "table",
         "code": "B14",
-        "dept_raw": "作資4",
+        "dept_raw": "作資",
         "count": 4,
         "col": 35,
         "row": 21,
@@ -1743,7 +1753,7 @@
       {
         "type": "table",
         "code": "C20",
-        "dept_raw": "數平4",
+        "dept_raw": "數平",
         "count": 4,
         "col": 2,
         "row": 31,
@@ -1753,7 +1763,7 @@
       {
         "type": "table",
         "code": "C19",
-        "dept_raw": "數平2",
+        "dept_raw": "數平",
         "count": 2,
         "col": 6,
         "row": 31,
@@ -1762,8 +1772,8 @@
       },
       {
         "type": "table",
-        "code": "C17 C18",
-        "dept_raw": "數平7",
+        "code": "C17、C18",
+        "dept_raw": "數平",
         "count": 7,
         "col": 3,
         "row": 33,
@@ -1773,8 +1783,8 @@
       {
         "type": "table",
         "code": "C5",
-        "dept_raw": "數平8",
-        "count": 8,
+        "dept_raw": "數平",
+        "count": 7,
         "col": 10,
         "row": 35,
         "col_span": 3,
@@ -1782,8 +1792,8 @@
       },
       {
         "type": "table",
-        "code": "C15 C16",
-        "dept_raw": "數平7",
+        "code": "C15、C16",
+        "dept_raw": "數平",
         "count": 7,
         "col": 3,
         "row": 35,
@@ -1793,7 +1803,7 @@
       {
         "type": "table",
         "code": "C4",
-        "dept_raw": "數平5",
+        "dept_raw": "數平",
         "count": 5,
         "col": 3,
         "row": 37,
@@ -1802,8 +1812,8 @@
       },
       {
         "type": "table",
-        "code": "C13 C14",
-        "dept_raw": "數平7",
+        "code": "C13、C14",
+        "dept_raw": "數平",
         "count": 7,
         "col": 3,
         "row": 39,
@@ -1813,7 +1823,7 @@
       {
         "type": "table",
         "code": "C12",
-        "dept_raw": "數平2",
+        "dept_raw": "數平",
         "count": 2,
         "col": 5,
         "row": 42,
@@ -1823,7 +1833,7 @@
       {
         "type": "table",
         "code": "C3",
-        "dept_raw": "數平5",
+        "dept_raw": "數平",
         "count": 5,
         "col": 3,
         "row": 44,
@@ -1832,8 +1842,8 @@
       },
       {
         "type": "table",
-        "code": "C10 C11",
-        "dept_raw": "數平7",
+        "code": "C10、C11",
+        "dept_raw": "數平",
         "count": 7,
         "col": 3,
         "row": 46,
@@ -1843,7 +1853,7 @@
       {
         "type": "table",
         "code": "C2",
-        "dept_raw": "數平8",
+        "dept_raw": "數平",
         "count": 8,
         "col": 3,
         "row": 48,
@@ -1852,9 +1862,9 @@
       },
       {
         "type": "table",
-        "code": "C8 C9",
-        "dept_raw": "數平8",
-        "count": 8,
+        "code": "C8、C9",
+        "dept_raw": "數平",
+        "count": 7,
         "col": 3,
         "row": 51,
         "col_span": 7,
@@ -1863,8 +1873,8 @@
       {
         "type": "table",
         "code": "C1",
-        "dept_raw": "數平8",
-        "count": 8,
+        "dept_raw": "數平",
+        "count": 7,
         "col": 10,
         "row": 53,
         "col_span": 3,
@@ -1872,8 +1882,8 @@
       },
       {
         "type": "table",
-        "code": "C6 C7",
-        "dept_raw": "數平7",
+        "code": "C6、C7",
+        "dept_raw": "數平",
         "count": 7,
         "col": 3,
         "row": 53,

@@ -70,6 +70,19 @@
 
   function renderTimingLine(timing) {
     if (!timing) return '';
+    // 台中同仁 gather at the office instead of taking the train.
+    if (timing.local) {
+      const body = timing.time
+        ? timing.time + '　' + (timing.label || '公司集合出發')
+        : '台中同仁，依現場安排返回公司／台中高鐵站';
+      return (
+        '<div style="grid-column:1 / -1;"><div class="k">台中同仁集合</div><div class="v" style="font-size:15px;">' +
+        body + '</div>' + (timing.note ? '<p class="muted" style="margin:4px 0 0;">' + timing.note + '</p>' : '') + '</div>'
+      );
+    }
+    if (timing.self_return) {
+      return '<div style="grid-column:1 / -1;"><div class="k">回程</div><div class="v" style="font-size:15px;">自行回家（未搭乘團體回程高鐵）</div></div>';
+    }
     const groupTag = timing.group_label ? '（' + timing.group_label + '）' : '';
     if (timing.time) {
       return (
