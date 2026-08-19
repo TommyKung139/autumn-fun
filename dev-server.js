@@ -7,14 +7,27 @@ const path = require('path');
 const url = require('url');
 
 process.env.SITE_PASSWORD = process.env.SITE_PASSWORD || 'testpass';
+process.env.EDITOR_PASSWORD = process.env.EDITOR_PASSWORD || 'editortest';
 process.env.AUTH_SECRET = process.env.AUTH_SECRET || 'test-secret';
+// No FIREBASE_* env vars set here on purpose: lib/firestore.js falls back to a
+// local JSON-file-backed mock store (data/employees.local.json) so the whole app,
+// including the editor save flow, can be exercised without a real Firebase project.
 
 const login = require('./api/login');
+const editorLogin = require('./api/editor-login');
 const verify = require('./api/verify');
 const lookup = require('./api/lookup');
 const reference = require('./api/reference');
+const employeeUpdate = require('./api/employee-update');
 
-const routes = { '/api/login': login, '/api/verify': verify, '/api/lookup': lookup, '/api/reference': reference };
+const routes = {
+  '/api/login': login,
+  '/api/editor-login': editorLogin,
+  '/api/verify': verify,
+  '/api/lookup': lookup,
+  '/api/reference': reference,
+  '/api/employee-update': employeeUpdate,
+};
 
 function augmentRes(res) {
   res.status = (code) => { res.statusCode = code; return res; };

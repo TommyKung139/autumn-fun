@@ -22,10 +22,10 @@ module.exports = (req, res) => {
     return;
   }
 
-  const token = createToken();
+  const token = createToken('viewer');
   res.setHeader(
     'Set-Cookie',
     `ctbc_token=${encodeURIComponent(token)}; Path=/; Max-Age=${60 * 60 * 24 * 30}; HttpOnly; SameSite=Lax`
   );
-  res.status(200).json({ token });
+  res.status(200).json({ token, role: 'viewer' });
 };

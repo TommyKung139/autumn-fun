@@ -5,5 +5,8 @@
   "description": "中信 2026 秋郊 第二梯（8/29）行程查詢系統",
   "engines": {
     "node": "20.x"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.6.0"
   }
 }

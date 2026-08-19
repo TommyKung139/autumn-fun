@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="noindex, nofollow" />
-<title>場地介紹 - 中信 2026 秋郊 第二梯</title>
+<title>行程介紹 - 中信 2026 秋郊 第二梯</title>
 <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
@@ -14,15 +14,17 @@
       <div class="logo">秋</div>
       <div>
         <h1>2026 秋郊．第二梯行程查詢</h1>
-        <p>8/29（六）｜場地介紹與座位圖</p>
+        <p>8/29（六）｜行程介紹與座位圖</p>
       </div>
     </div>
     <nav class="tabs">
       <a href="/index.html">行程查詢</a>
-      <a href="/info.html">場地介紹</a>
+      <a href="/info.html">行程介紹</a>
       <a href="#" id="logoutLink">登出</a>
     </nav>
   </header>
+
+  <div id="scheduleSection"></div>
 
   <div class="card">
     <h2>台中洲際島語 場地介紹</h2>
@@ -61,7 +63,7 @@
     </div>
   </div>
 
-  <p class="footer-note">資料來源：2026秋郊報名表（第二梯）｜如發現資訊有誤，請聯繫梯長 孔昱棠／劉妍廷</p>
+  <p class="footer-note">資料來源：2026秋郊報名表（第二梯）｜如發現資訊有誤，請聯繫梯長 孔昱棠／劉妍廷｜<a href="/edit.html" style="color:inherit;">梯長／福委後台</a></p>
 </div>
 
 <script src="/app.js"></script>
@@ -78,11 +80,92 @@
     try {
       const res = await CTBC.apiFetch('/api/reference');
       const data = await res.json();
+      document.getElementById('scheduleSection').innerHTML = renderDaySchedule(data.day_schedule);
       renderCombinedMap(data.combined_layout);
     } catch (err) {
       if (err && err.message === 'unauthorized') return;
     }
   })();
+
+  function trainStopsLine(stops) {
+    return stops.map(([st, t]) => st + ' ' + t).join(' → ');
+  }
+
+  function trainListHtml(trainsMap) {
+    return Object.keys(trainsMap)
+      .map(
+        (no) =>
+          '<div class="item"><div class="d">' + trainsMap[no][0][1] + ' 發車</div><div>高鐵 ' + no + ' 次：' +
+          trainStopsLine(trainsMap[no]) + '</div></div>'
+      )
+      .join('');
+  }
+
+  function eveningGroupHtml(g) {
+    if (!g) return '';
+    const extra = g.game_title
+      ? '<p class="muted" style="margin:4px 0 8px;">🏟 ' + g.game_title + '　開賽 ' + g.game_time + '（' + g.gate_open + ' 開放入場）</p>'
+      : '';
+    const gatherLabel = g.gather ? g.gather.time + ' ' + g.gather.label : g.gather_note || '';
+    return (
+      '<div class="chip" style="display:block; margin-bottom:10px;">' +
+      '<div style="font-weight:700; margin-bottom:6px;">' + g.label +
+      (g.match_evening ? '　<span class="muted" style="font-weight:400;">（' + g.match_evening + '）</span>' : '') + '</div>' +
+      extra +
+      (gatherLabel ? '<p class="muted" style="margin:4px 0 8px;">' + gatherLabel + '</p>' : '') +
+      '<div class="timeline">' + trainListHtml(g.trains) + '</div>' +
+      '</div>'
+    );
+  }
+
+  // Renders the master 行程說明 schedule (data/reference.json -> day_schedule),
+  // built from the official itinerary timetable photo the user provided.
+  function renderDaySchedule(schedule) {
+    if (!schedule) return '';
+    const og = schedule.outbound_gather;
+
+    const timelineHtml = schedule.timeline
+      .map(
+        (t) =>
+          '<div class="item"><div class="d">' + t.time + '</div><div>' + t.label +
+          (t.note ? '　<span class="muted">' + t.note + '</span>' : '') + '</div></div>'
+      )
+      .join('');
+
+    const afternoonHtml = schedule.afternoon_split
+      .map(
+        (a) =>
+          '<div class="item"><div class="d">' + a.time + '</div><div>' + a.label +
+          '　<span class="muted">（對應報名選項：' + a.matches_afternoon + '）</span></div></div>'
+      )
+      .join('');
+
+    return (
+      '<div class="card">' +
+      '<h2>當日行程時間表</h2>' +
+      '<p class="muted">以下時間依「行程說明」總表整理，實際請以當天梯長／工作人員現場公告為準。個人確切車次與座位，請至「行程查詢」輸入員工編號查看。</p>' +
+
+      '<h3>集合與高鐵去程</h3>' +
+      '<div class="timeline">' +
+      '<div class="item"><div class="d">' + og.time + '</div><div>' + og.label +
+      (og.note ? '　<span class="muted">' + og.note + '</span>' : '') + '</div></div>' +
+      trainListHtml(schedule.outbound_trains) +
+      '</div>' +
+
+      '<h3>台中行程</h3>' +
+      '<div class="timeline">' + timelineHtml + '</div>' +
+
+      '<h3>下午行程（依報名選擇擇一）</h3>' +
+      '<div class="timeline">' + afternoonHtml + '</div>' +
+
+      '<h3>晚間行程與回程（依報名選擇擇一）</h3>' +
+      eveningGroupHtml(schedule.evening_groups.return_early) +
+      eveningGroupHtml(schedule.evening_groups.baseball) +
+
+      '<p class="hint" style="margin-top:10px;">' + schedule.footer_note + '</p>' +
+      '</div>'
+    );
+  }
 
   const DEPT_COLORS = {
     '經策': { bg: '#D9EAF7', fg: '#1c4a72', label: '經營策略處' },

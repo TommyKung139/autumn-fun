@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>資料編輯後台 - 中信 2026 秋郊 第二梯</title>
+<link rel="stylesheet" href="/styles.css" />
+<style>
+  .editgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 10px; }
+  @media (max-width: 620px) { .editgrid { grid-template-columns: 1fr; } }
+  .editfield label { display: block; font-size: 12px; color: var(--ink-soft); margin-bottom: 4px; }
+  .editfield input[type="text"], .editfield input[type="number"] { width: 100%; box-sizing: border-box; min-width: 0; }
+  .editfield.checkline { display: flex; align-items: center; gap: 8px; }
+  .editfield.checkline label { margin: 0; font-size: 14px; color: var(--ink); }
+  .ticket-edit { border: 1.5px dashed var(--brand); border-radius: 12px; padding: 12px; margin-top: 6px; }
+  .ticket-edit h4 { margin: 0 0 8px; font-size: 13px; color: var(--brand-dark); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <div class="logo">秋</div>
+      <div>
+        <h1>2026 秋郊．第二梯</h1>
+        <p>資料編輯後台（梯長／福委專用）</p>
+      </div>
+    </div>
+    <nav class="tabs">
+      <a href="/index.html">行程查詢</a>
+      <a href="/info.html">行程介紹</a>
+      <a href="#" id="logoutLink">登出</a>
+    </nav>
+  </header>
+
+  <div id="loginCard" class="card" style="display:none;">
+    <h2>請輸入編輯密碼</h2>
+    <p class="muted">本頁可即時調整同仁的行程安排資料（不含身分證字號、生日、電話等個人資料），僅供梯長／福委使用，密碼與一般查詢密碼不同。</p>
+    <form id="editorLoginForm">
+      <div class="search-box" style="margin-top:10px;">
+        <input type="password" id="editorPassword" placeholder="請輸入編輯密碼" autocomplete="current-password" required />
+        <button type="submit">登入</button>
+      </div>
+    </form>
+    <div id="loginMsg" style="margin-top:12px;"></div>
+  </div>
+
+  <div id="toolArea" style="display:none;">
+    <div class="card">
+      <h2>搜尋員工資料</h2>
+      <p class="muted">輸入員工編號（例如 Z00012345）以查詢並編輯該員工的行程安排資料。</p>
+      <form id="searchForm" class="search-box">
+        <input type="text" id="empId" placeholder="請輸入員工編號" autocomplete="off" />
+        <button type="submit">查詢</button>
+      </form>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
+  <p class="footer-note">中信商業銀行 2026 秋郊活動｜編輯內容將即時反映於行程查詢頁</p>
+</div>
+
+<script src="/app.js"></script>
+<script>
+  const EDITABLE_HSR_KEYS = ['train_no', 'car', 'seat_letter', 'row_idx', 'station', 'note'];
+
+  async function checkEditorAuth() {
+    if (!CTBC.getToken()) return false;
+    try {
+      const res = await fetch('/api/verify', { headers: { Authorization: 'Bearer ' + CTBC.getToken() } });
+      if (!res.ok) return false;
+      const data = await res.json();
+      return data.role === 'editor';
+    } catch (e) {
+      return false;
+    }
+  }
+
+  async function init() {
+    const ok = await checkEditorAuth();
+    document.getElementById('loginCard').style.display = ok ? 'none' : 'block';
+    document.getElementById('toolArea').style.display = ok ? 'block' : 'none';
+  }
+  init();
+
+  document.getElementById('logoutLink').addEventListener('click', function (e) {
+    e.preventDefault();
+    CTBC.logout();
+  });
+
+  document.getElementById('editorLoginForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const password = document.getElementById('editorPassword').value;
+    const msg = document.getElementById('loginMsg');
+    msg.innerHTML = '<p class="muted">登入中...</p>';
+    try {
+      const res = await fetch('/api/editor-login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        msg.innerHTML = '<div class="error-box">' + (data.error || '登入失敗') + '</div>';
+        return;
+      }
+      CTBC.setToken(data.token);
+      msg.innerHTML = '';
+      init();
+    } catch (err) {
+      msg.innerHTML = '<div class="error-box">連線發生問題，請稍後再試。</div>';
+    }
+  });
+
+  document.getElementById('searchForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const id = document.getElementById('empId').value.trim();
+    if (id) doSearch(id);
+  });
+
+  function textField(key, label, value) {
+    return (
+      '<div class="editfield"><label>' + label + '</label>' +
+      '<input type="text" data-key="' + key + '" value="' + (value == null ? '' : String(value).replace(/"/g, '&quot;')) + '" /></div>'
+    );
+  }
+
+  function hsrEditor(prefix, title, hsr) {
+    hsr = hsr || {};
+    return (
+      '<div class="ticket-edit" data-hsr="' + prefix + '">' +
+      '<h4>' + title + '</h4>' +
+      '<div class="editgrid">' +
+      '<div class="editfield"><label>車次</label><input type="text" data-hsrkey="train_no" value="' + (hsr.train_no || '') + '" /></div>' +
+      '<div class="editfield"><label>車廂</label><input type="text" data-hsrkey="car" value="' + (hsr.car || '') + '" /></div>' +
+      '<div class="editfield"><label>座位排數</label><input type="number" data-hsrkey="row_idx" value="' + (hsr.row_idx != null ? hsr.row_idx : '') + '" /></div>' +
+      '<div class="editfield"><label>座位英文字母</label><input type="text" data-hsrkey="seat_letter" value="' + (hsr.seat_letter || '') + '" /></div>' +
+      '<div class="editfield"><label>上下車站別</label><input type="text" data-hsrkey="station" value="' + (hsr.station || '') + '" /></div>' +
+      '<div class="editfield"><label>備註</label><input type="text" data-hsrkey="note" value="' + (hsr.note || '') + '" /></div>' +
+      '</div>' +
+      '<p class="hint">若此員工尚未安排此段車票，請將「車次」留空，儲存時會自動視為未安排。</p>' +
+      '</div>'
+    );
+  }
+
+  async function doSearch(id) {
+    const box = document.getElementById('result');
+    box.innerHTML = '<div class="card"><p class="muted">查詢中...</p></div>';
+    try {
+      const res = await CTBC.apiFetch('/api/lookup?id=' + encodeURIComponent(id));
+      const data = await res.json();
+      if (!res.ok) {
+        box.innerHTML = '<div class="card"><div class="error-box">' + data.error + '</div></div>';
+        return;
+      }
+      const e = data.employee;
+      const fam = e.family_summary || {};
+
+      box.innerHTML =
+        '<div class="card">' +
+        '<h2>' + e.name + ' <span class="pill brand">' + e.emp_id + '</span> <span class="pill">' + e.batch + '</span></h2>' +
+        '<p class="hint">姓名、員編、梯次與眷屬名單為報名表原始資料，本頁不提供編輯，如需更正請直接調整報名表來源。</p>' +
+        '<form id="editForm" data-empid="' + e.emp_id + '">' +
+
+        '<h3>基本資訊</h3>' +
+        '<div class="editgrid">' +
+        textField('division', '處別', e.division) +
+        textField('department', '部門', e.department) +
+        textField('region', '地區', e.region) +
+        textField('emp_type', '員工類型', e.emp_type) +
+        textField('meal', '餐食（例：葷食／素食）', e.meal) +
+        '</div>' +
+
+        '<h3>攜眷</h3>' +
+        '<div class="editgrid">' +
+        '<div class="editfield checkline"><input type="checkbox" id="bring_family" ' + (e.bring_family ? 'checked' : '') + ' /><label for="bring_family">是否攜眷</label></div>' +
+        '</div>' +
+        '<div class="editgrid" style="margin-top:8px;">' +
+        '<div class="editfield"><label>成人</label><input type="number" data-famkey="adult" value="' + (fam.adult || 0) + '" /></div>' +
+        '<div class="editfield"><label>兒童（6-12歲）</label><input type="number" data-famkey="c6_12" value="' + (fam.c6_12 || 0) + '" /></div>' +
+        '<div class="editfield"><label>兒童（3-6歲）</label><input type="number" data-famkey="c3_6" value="' + (fam.c3_6 || 0) + '" /></div>' +
+        '<div class="editfield"><label>幼兒（3歲以下）</label><input type="number" data-famkey="under3" value="' + (fam.under3 || 0) + '" /></div>' +
+        '</div>' +
+
+        '<h3>下午／晚間行程選擇</h3>' +
+        '<div class="editgrid">' +
+        textField('afternoon_activity', '洲際下午行程', e.afternoon_activity) +
+        textField('evening_activity', '洲際晚間行程', e.evening_activity) +
+        '</div>' +
+
+        '<h3>遊覽車與宴會桌次</h3>' +
+        '<div class="editgrid">' +
+        textField('morning_bus', '上午集合遊覽車（例：第一車）', e.morning_bus) +
+        textField('activity_bus', '下午行程遊覽車（例：第五車）', e.activity_bus) +
+        textField('table', '午宴桌次（台中洲際島語）', e.table) +
+        textField('outbound_station', '高鐵去程站', e.outbound_station) +
+        textField('return_station', '高鐵回程站', e.return_station) +
+        '</div>' +
+
+        '<h3>高鐵車票</h3>' +
+        hsrEditor('hsr_outbound', '去程', e.hsr_outbound) +
+        hsrEditor('hsr_return', '回程', e.hsr_return) +
+
+        '<div style="margin-top:16px; display:flex; gap:10px; align-items:center;">' +
+        '<button type="submit">儲存變更</button>' +
+        '<span id="saveMsg"></span>' +
+        '</div>' +
+        '</form>' +
+        '</div>';
+
+      document.getElementById('editForm').addEventListener('submit', onSave);
+    } catch (err) {
+      if (err && err.message === 'unauthorized') return;
+      box.innerHTML = '<div class="card"><div class="error-box">查詢時發生問題，請稍後再試。</div></div>';
+    }
+  }
+
+  function readHsrBlock(prefix) {
+    const block = document.querySelector('.ticket-edit[data-hsr="' + prefix + '"]');
+    const trainNo = block.querySelector('[data-hsrkey="train_no"]').value.trim();
+    if (!trainNo) return null;
+    const out = {};
+    EDITABLE_HSR_KEYS.forEach((k) => {
+      const input = block.querySelector('[data-hsrkey="' + k + '"]');
+      let v = input.value.trim();
+      if (k === 'row_idx') {
+        out[k] = v === '' ? null : Number(v);
+      } else {
+        out[k] = v === '' ? null : v;
+      }
+    });
+    return out;
+  }
+
+  async function onSave(e) {
+    e.preventDefault();
+    const form = e.target;
+    const empId = form.getAttribute('data-empid');
+    const saveMsg = document.getElementById('saveMsg');
+    saveMsg.textContent = '儲存中...';
+
+    const patch = {};
+    form.querySelectorAll('[data-key]').forEach((input) => {
+      patch[input.getAttribute('data-key')] = input.value.trim() || null;
+    });
+    patch.bring_family = document.getElementById('bring_family').checked;
+    const fam = {};
+    form.querySelectorAll('[data-famkey]').forEach((input) => {
+      fam[input.getAttribute('data-famkey')] = Number(input.value) || 0;
+    });
+    patch.family_summary = fam;
+    patch.hsr_outbound = readHsrBlock('hsr_outbound');
+    patch.hsr_return = readHsrBlock('hsr_return');
+
+    try {
+      const res = await CTBC.apiFetch('/api/employee-update', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ emp_id: empId, patch: patch }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        saveMsg.innerHTML = '<span style="color:var(--danger);">' + (data.error || '儲存失敗') + '</span>';
+        return;
+      }
+      saveMsg.innerHTML = '<span style="color:var(--brand-dark); font-weight:700;">已儲存 ✓</span>';
+    } catch (err) {
+      if (err && err.message === 'unauthorized') return;
+      saveMsg.innerHTML = '<span style="color:var(--danger);">儲存時發生問題，請稍後再試。</span>';
+    }
+  }
+</script>
+</body>
+</html>

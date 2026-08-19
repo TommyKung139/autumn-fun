@@ -19,7 +19,7 @@
     </div>
     <nav class="tabs">
       <a href="/index.html">行程查詢</a>
-      <a href="/info.html">場地介紹</a>
+      <a href="/info.html">行程介紹</a>
       <a href="#" id="logoutLink">登出</a>
     </nav>
   </header>
@@ -36,7 +36,7 @@
 
   <div id="result"></div>
 
-  <p class="footer-note">資料來源：2026秋郊報名表（第二梯）｜如發現行程資訊有誤，請聯繫梯長 孔昱棠／劉妍廷</p>
+  <p class="footer-note">資料來源：2026秋郊報名表（第二梯）｜如發現行程資訊有誤，請聯繫梯長 孔昱棠／劉妍廷｜<a href="/edit.html" style="color:inherit;">梯長／福委後台</a></p>
 </div>
 
 <script src="/app.js"></script>
@@ -68,18 +68,43 @@
     return v || '<span class="muted">（未填寫／不適用）</span>';
   }
 
-  function renderHsr(hsr, title) {
+  function renderTimingLine(timing) {
+    if (!timing) return '';
+    const groupTag = timing.group_label ? '（' + timing.group_label + '）' : '';
+    if (timing.time) {
+      return (
+        '<div style="grid-column:1 / -1;"><div class="k">發車時間' + groupTag + '</div><div class="v" style="font-size:16px;">' +
+        timing.time + (timing.train_no ? '　車次 ' + timing.train_no : '') + '</div></div>'
+      );
+    }
+    if (timing.candidates && timing.candidates.length) {
+      return (
+        '<div style="grid-column:1 / -1;"><div class="k">可能發車時間' + groupTag + '</div><div class="v" style="font-size:13px; font-weight:600;">' +
+        timing.candidates.map((c) => c.train_no + '次 ' + c.time).join('／') +
+        '</div><p class="muted" style="margin:4px 0 0;">尚未確認確切車次，請以現場公告或梯長通知為準。</p></div>'
+      );
+    }
+    return '';
+  }
+
+  function renderHsr(hsr, title, timing) {
+    const timingHtml = renderTimingLine(timing);
     if (!hsr) {
       return (
         '<div class="ticket"><div class="ticket-head"><span class="t-brand">THSR 台灣高鐵</span><span class="pill">' +
         title +
-        '</span></div><p class="muted" style="margin:6px 0 0;">此梯次尚未指定明確車廂座位，將以現場公告或梯長通知為準。</p></div>'
+        '</span></div>' +
+        (timingHtml
+          ? '<div class="ticket-grid">' + timingHtml + '</div>'
+          : '<p class="muted" style="margin:6px 0 0;">此梯次尚未指定明確車廂座位，將以現場公告或梯長通知為準。</p>') +
+        '</div>'
       );
     }
     return (
       '<div class="ticket">' +
       '<div class="ticket-head"><span class="t-brand">THSR 台灣高鐵</span><span class="pill">' + title + '</span></div>' +
       '<div class="ticket-grid">' +
+      timingHtml +
       '<div><div class="k">車次</div><div class="v">' + (hsr.train_no || '-') + '</div></div>' +
       '<div><div class="k">車廂</div><div class="v">' + (hsr.car || '-') + '</div></div>' +
       '<div><div class="k">座位</div><div class="v">' + (hsr.row_idx != null ? hsr.row_idx : '') + (hsr.seat_letter || '') + '</div></div>' +
@@ -147,8 +172,8 @@
 
         '<h3>高鐵車票資訊（如已排定車廂座位）</h3>' +
         '<div class="grid2">' +
-        renderHsr(e.hsr_outbound, '去程') +
-        renderHsr(e.hsr_return, '回程') +
+        renderHsr(e.hsr_outbound, '去程', e.outbound_timing) +
+        renderHsr(e.hsr_return, '回程', e.return_timing) +
         '</div>' +
 
         '<h3>攜眷資訊</h3>' +
