@@ -1,2070 +1,2078 @@
 {
- "batch_overview": [
-  {
-   "seq": 1,
-   "location": "洲際",
-   "date": "8/15*球賽",
-   "unit": "國際個金事業總處(51)\n個金作業暨資訊處(個訊二(228)+作業規劃部(91))",
-   "leader": "建虹總處長",
-   "staff_count": 299,
-   "family_count": 37,
-   "total_count": 336,
-   "captain": "曾欽達"
-  },
-  {
-   "seq": 2,
-   "location": "洲際",
-   "date": "8/29*球賽",
-   "unit": "經營策略處(136) 、數位平台經營處(98)\n個金作業暨資訊處(個客服_ C(129))",
-   "leader": "竹屏/雅婷處長",
-   "staff_count": 309,
-   "family_count": 38,
-   "total_count": 347,
-   "captain": "孔昱棠\n劉妍廷"
-  },
-  {
-   "seq": 3,
-   "location": "洲際",
-   "date": "2026-09-12",
-   "unit": "財富管理經營處(79)、私人銀行處(65)\n個金作業暨資訊處(個客服_ B(206))",
-   "leader": "Jeffrey/John處長",
-   "staff_count": 319,
-   "family_count": 33,
-   "total_count": 352,
-   "captain": "梁妙瑜\n張雯琳"
-  },
-  {
-   "seq": 4,
-   "location": "洲際",
-   "date": "2026-10-03",
-   "unit": "財富管理產品處(307)+業務資訊整合小組(13)",
-   "leader": "隋爸總處長\nHenry處長",
-   "staff_count": 267,
-   "family_count": 28,
-   "total_count": 295,
-   "captain": "袁鈺雯"
-  },
-  {
-   "seq": 5,
-   "location": "洲際",
-   "date": "2026-11-14",
-   "unit": "消費金融事業處(債權經營部(381))",
-   "leader": "仕豐部長",
-   "staff_count": 314,
-   "family_count": 11,
-   "total_count": 325,
-   "captain": "廖淑雯"
-  },
-  {
-   "seq": 6,
-   "location": "洲際",
-   "date": "2026-12-05",
-   "unit": "支付金融事業處(164)、個金作業暨資訊處(個訊一(183))",
-   "leader": "德風處長",
-   "staff_count": 316,
-   "family_count": 30,
-   "total_count": 346,
-   "captain": "黃郁翔"
-  },
-  {
-   "seq": 7,
-   "location": "洲際",
-   "date": "2026-12-12",
-   "unit": "個金作業暨資訊處(個客服_ A(209))",
-   "leader": "重建處長",
-   "staff_count": 197,
-   "family_count": 8,
-   "total_count": 205,
-   "captain": "黃玉珍"
-  },
-  {
-   "seq": 8,
-   "location": "麗寶",
-   "date": "9/19*水陸",
-   "unit": "個金作業暨資訊處(集作(235)、洗防(125))",
-   "leader": "惠霖/恭賢部長",
-   "staff_count": 300,
-   "family_count": 21,
-   "total_count": 321,
-   "captain": "林螢偉"
-  },
-  {
-   "seq": 9,
-   "location": "麗寶",
-   "date": "10/31*水陸",
-   "unit": "消費金融事業處\n(擔保放款產品部(37)+無擔保放款產品部(台北/台中)(56)+\n擔保放款業務部(53)+無擔保放款業務部_台北LAC (130))",
-   "leader": "凱炫處長",
-   "staff_count": 271,
-   "family_count": 48,
-   "total_count": 319,
-   "captain": "楊朝景\n謝雅婷"
-  },
-  {
-   "seq": 10,
-   "location": "麗寶",
-   "date": "2026-11-07",
-   "unit": "消費金融事業處(無擔保放款業務部_台北TM (250))+\n無擔保放款業務部_高雄(79))",
-   "leader": "怡伸部長",
-   "staff_count": 251,
-   "family_count": 38,
-   "total_count": 289,
-   "captain": "(台北) 林怡君\n(高雄)陳姣蓓"
-  },
-  {
-   "seq": 11,
-   "location": "麗寶",
-   "date": "2026-11-21",
-   "unit": "消費金融事業處(無擔保放款業務部_台中 (314))",
-   "leader": "志宏部長",
-   "staff_count": 270,
-   "family_count": 19,
-   "total_count": 289,
-   "captain": "韓明娟"
-  }
- ],
- "milestones": [
-  {
-   "location": "洲際",
-   "batch_name": "第一梯",
-   "final_count_date": "2026-07-15",
-   "insurance_date": "2026-07-17",
-   "family_pay_date": "2026-07-30",
-   "seat_plan_date": "2026-08-03",
-   "edm_date": "2026-08-07",
-   "ticket_date": "2026-08-10",
-   "depart_date": "2026-08-15",
-   "captain": "曾欽達",
-   "staff": "潘萱蓉、呂家萱、何捷甫、吳仲閔"
-  },
-  {
-   "location": "洲際",
-   "batch_name": "第二梯",
-   "final_count_date": "2026-07-29",
-   "insurance_date": "2026-07-31",
-   "family_pay_date": "2026-08-13",
-   "seat_plan_date": "2026-08-17",
-   "edm_date": "2026-08-21",
-   "ticket_date": "2026-08-24",
-   "depart_date": "2026-08-29",
-   "captain": "孔昱棠",
-   "staff": "林芝萱、符永琦、劉妍廷、劉伯洪、陳彥旭、羅婉甄、李仲琦、范景婷"
-  },
-  {
-   "location": "洲際",
-   "batch_name": "第三梯",
-   "final_count_date": "2026-08-12",
-   "insurance_date": "2026-08-14",
-   "family_pay_date": "2026-08-27",
-   "seat_plan_date": "2026-08-31",
-   "edm_date": "2026-09-04",
-   "ticket_date": "2026-09-07",
-   "depart_date": "2026-09-12",
-   "captain": "梁妙瑜",
-   "staff": "張雯琳、陳佑任、廖曼君、黃筱雯、徐寶樹、葉倫佑、廖祿慶、蘇怡菱"
-  },
-  {
-   "location": "洲際",
-   "batch_name": "第四梯",
-   "final_count_date": "2026-09-02",
-   "insurance_date": "2026-09-04",
-   "family_pay_date": "2026-09-17",
-   "seat_plan_date": "2026-09-21",
-   "edm_date": "2026-09-25",
-   "ticket_date": "2026-09-28",
-   "depart_date": "2026-10-03",
-   "captain": "袁鈺雯",
-   "staff": "陳瀅伃、楊于萱、凃勝傑、呂卉蓁、江佳芸"
-  },
-  {
-   "location": "洲際",
-   "batch_name": "第五梯",
-   "final_count_date": "2026-10-14",
-   "insurance_date": "2026-10-16",
-   "family_pay_date": "2026-10-29",
-   "seat_plan_date": "2026-11-02",
-   "edm_date": "2026-11-06",
-   "ticket_date": "2026-11-09",
-   "depart_date": "2026-11-14",
-   "captain": "廖淑雯",
-   "staff": "NA"
-  },
-  {
-   "location": "洲際",
-   "batch_name": "第六梯",
-   "final_count_date": "2026-11-04",
-   "insurance_date": "2026-11-06",
-   "family_pay_date": "2026-11-19",
-   "seat_plan_date": "2026-11-23",
-   "edm_date": "2026-11-27",
-   "ticket_date": "2026-11-30",
-   "depart_date": "2026-12-05",
-   "captain": "黃郁翔",
-   "staff": "吳宗燁、謝亞承、陳呈睿、李翊綺、崔庭榕、康詩芸、陳冠中"
-  },
-  {
-   "location": "洲際",
-   "batch_name": "第七梯",
-   "final_count_date": "2026-11-11",
-   "insurance_date": "2026-11-13",
-   "family_pay_date": "2026-11-26",
-   "seat_plan_date": "2026-11-30",
-   "edm_date": "2026-12-04",
-   "ticket_date": "2026-12-07",
-   "depart_date": "2026-12-12",
-   "captain": "黃玉珍",
-   "staff": "蔡昇宏、陳逸凡、李成駿、葉淑惠、彭冠筌、吳杰濬"
-  },
-  {
-   "location": "麗寶",
-   "batch_name": "第八梯",
-   "final_count_date": "2026-08-19",
-   "insurance_date": "2026-08-21",
-   "family_pay_date": "2026-09-03",
-   "seat_plan_date": "2026-09-07",
-   "edm_date": "2026-09-11",
-   "ticket_date": "2026-09-14",
-   "depart_date": "2026-09-19",
-   "captain": "林螢偉",
-   "staff": "侯穎如"
-  },
-  {
-   "location": "麗寶",
-   "batch_name": "第九梯",
-   "final_count_date": "2026-09-30",
-   "insurance_date": "2026-10-02",
-   "family_pay_date": "2026-10-15",
-   "seat_plan_date": "2026-10-19",
-   "edm_date": "2026-10-23",
-   "ticket_date": "2026-10-26",
-   "depart_date": "2026-10-31",
-   "captain": "謝雅婷",
-   "staff": "邱莉淇、黃怡萍、林芳妤、楊朝景"
-  },
-  {
-   "location": "麗寶",
-   "batch_name": "第十梯",
-   "final_count_date": "2026-10-07",
-   "insurance_date": "2026-10-09",
-   "family_pay_date": "2026-10-22",
-   "seat_plan_date": "2026-10-26",
-   "edm_date": "2026-10-30",
-   "ticket_date": "2026-11-02",
-   "depart_date": "2026-11-07",
-   "captain": "(台北)林怡君",
-   "staff": "(高雄)陳姣蓓"
-  },
-  {
-   "location": "麗寶",
-   "batch_name": "第十一梯次",
-   "final_count_date": "2026-10-21",
-   "insurance_date": "2026-10-23",
-   "family_pay_date": "2026-11-05",
-   "seat_plan_date": "2026-11-09",
-   "edm_date": "2026-11-13",
-   "ticket_date": "2026-11-16",
-   "depart_date": "2026-11-21",
-   "captain": "韓明娟",
-   "staff": "NA"
-  }
- ],
- "family_pricing": [
-  {
-   "location": "洲際",
-   "region": "台北／高雄(含高鐵)",
-   "non_regular_staff": 6000,
-   "age_65_up": 4000,
-   "age_12_65": 4750,
-   "age_3_12_seat": 3000,
-   "age_3_12_noseat": 1250,
-   "under_3": 300
-  },
-  {
-   "location": "洲際",
-   "region": "台中(不含高鐵)",
-   "non_regular_staff": 4500,
-   "age_65_up": 3200,
-   "age_12_65": 3200,
-   "age_3_12_seat": 2300,
-   "age_3_12_noseat": 1250,
-   "under_3": 300
-  },
-  {
-   "location": "麗寶",
-   "region": "台北／高雄(含高鐵)",
-   "non_regular_staff": 6000,
-   "age_65_up": 5200,
-   "age_12_65": 5800,
-   "age_3_12_seat": 4000,
-   "age_3_12_noseat": 2000,
-   "under_3": 300
-  },
-  {
-   "location": "麗寶",
-   "region": "台中(不含高鐵)",
-   "non_regular_staff": 4800,
-   "age_65_up": 4500,
-   "age_12_65": 4300,
-   "age_3_12_seat": 3200,
-   "age_3_12_noseat": 2000,
-   "under_3": 300
-  }
- ],
- "table_zone_notes": [
-  "板前：6席",
-  "C區：85席",
-  "混合桌會標示席數"
- ],
- "venue_name": "台中洲際島語",
- "this_batch": "第二梯",
- "this_batch_date": "2026-08-29",
- "this_batch_units": "經營策略處、數位平台經營處、個金作業暨資訊處(個客服C)",
- "table_layout": {
-  "grid_rows": 59,
-  "grid_cols": 27,
-  "tables": [
-   {
-    "code": "板前",
-    "count": 6,
-    "dept_raw": "數平5／總務1",
-    "row": 3,
-    "col": 27,
-    "row_span": 2,
-    "col_span": 3,
-    "grid_row": 1,
-    "grid_col": 25
-   },
-   {
-    "code": "C6 C7",
-    "count": 7,
-    "dept_raw": "數平7",
-    "row": 6,
-    "col": 7,
-    "row_span": 1,
-    "col_span": 4,
-    "grid_row": 4,
-    "grid_col": 5
-   },
-   {
-    "code": "C1",
-    "count": 8,
-    "dept_raw": "數平8",
-    "row": 8,
-    "col": 3,
-    "row_span": 3,
-    "col_span": 1,
-    "grid_row": 6,
-    "grid_col": 1
-   },
-   {
-    "code": "A7 A8",
-    "count": 6,
-    "dept_raw": "經策6",
-    "row": 8,
-    "col": 26,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 6,
-    "grid_col": 24
-   },
-   {
-    "code": "C8 C9",
-    "count": 8,
-    "dept_raw": "數平8",
-    "row": 10,
-    "col": 8,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 8,
-    "grid_col": 6
-   },
-   {
-    "code": "A1",
-    "count": 5,
-    "dept_raw": "經策5",
-    "row": 10,
-    "col": 13,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 8,
-    "grid_col": 11
-   },
-   {
-    "code": "A2",
-    "count": 7,
-    "dept_raw": "經策7",
-    "row": 10,
-    "col": 17,
-    "row_span": 1,
-    "col_span": 4,
-    "grid_row": 8,
-    "grid_col": 15
-   },
-   {
-    "code": "A3",
-    "count": 5,
-    "dept_raw": "經策5",
-    "row": 10,
-    "col": 22,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 8,
-    "grid_col": 20
-   },
-   {
-    "code": "A9",
-    "count": 6,
-    "dept_raw": "經策3",
-    "row": 12,
-    "col": 27,
-    "row_span": 1,
-    "col_span": 2,
-    "grid_row": 10,
-    "grid_col": 25
-   },
-   {
-    "code": "C2",
-    "count": 8,
-    "dept_raw": "數平8",
-    "row": 13,
-    "col": 3,
-    "row_span": 3,
-    "col_span": 1,
-    "grid_row": 11,
-    "grid_col": 1
-   },
-   {
-    "code": "C10 C11",
-    "count": 7,
-    "dept_raw": "數平7",
-    "row": 14,
-    "col": 7,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 12,
-    "grid_col": 5
-   },
-   {
-    "code": "A4",
-    "count": 5,
-    "dept_raw": "經策5",
-    "row": 15,
-    "col": 13,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 13,
-    "grid_col": 11
-   },
-   {
-    "code": "A5",
-    "count": 7,
-    "dept_raw": "經策7",
-    "row": 15,
-    "col": 17,
-    "row_span": 1,
-    "col_span": 4,
-    "grid_row": 13,
-    "grid_col": 15
-   },
-   {
-    "code": "A6",
-    "count": 5,
-    "dept_raw": "經策5",
-    "row": 15,
-    "col": 22,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 13,
-    "grid_col": 20
-   },
-   {
-    "code": "A10",
-    "count": 6,
-    "dept_raw": "經策6",
-    "row": 16,
-    "col": 27,
-    "row_span": 1,
-    "col_span": 2,
-    "grid_row": 14,
-    "grid_col": 25
-   },
-   {
-    "code": "C12",
-    "count": 2,
-    "dept_raw": "數平2",
-    "row": 17,
-    "col": 8,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 15,
-    "grid_col": 6
-   },
-   {
-    "code": "C3",
-    "count": 5,
-    "dept_raw": "數平5",
-    "row": 19,
-    "col": 3,
-    "row_span": 3,
-    "col_span": 1,
-    "grid_row": 17,
-    "grid_col": 1
-   },
-   {
-    "code": "C13 C14",
-    "count": 7,
-    "dept_raw": "數平7",
-    "row": 20,
-    "col": 7,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 18,
-    "grid_col": 5
-   },
-   {
-    "code": "A23",
-    "count": 6,
-    "dept_raw": "經策6",
-    "row": 21,
-    "col": 28,
-    "row_span": 2,
-    "col_span": 1,
-    "grid_row": 19,
-    "grid_col": 26
-   },
-   {
-    "code": "C4",
-    "count": 5,
-    "dept_raw": "數平5",
-    "row": 24,
-    "col": 3,
-    "row_span": 3,
-    "col_span": 1,
-    "grid_row": 22,
-    "grid_col": 1
-   },
-   {
-    "code": "C15 C16",
-    "count": 7,
-    "dept_raw": "數平7",
-    "row": 24,
-    "col": 7,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 22,
-    "grid_col": 5
-   },
-   {
-    "code": "A24",
-    "count": 5,
-    "dept_raw": "經策5",
-    "row": 25,
-    "col": 28,
-    "row_span": 2,
-    "col_span": 1,
-    "grid_row": 23,
-    "grid_col": 26
-   },
-   {
-    "code": "A11 A12",
-    "count": 6,
-    "dept_raw": "經策8",
-    "row": 26,
-    "col": 13,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 24,
-    "grid_col": 11
-   },
-   {
-    "code": "A12 A13",
-    "count": 7,
-    "dept_raw": "經策9",
-    "row": 26,
-    "col": 17,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 24,
-    "grid_col": 15
-   },
-   {
-    "code": "A19",
-    "count": 2,
-    "dept_raw": "經策2",
-    "row": 26,
-    "col": 22,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 24,
-    "grid_col": 20
-   },
-   {
-    "code": "A21",
-    "count": 3,
-    "dept_raw": "經策3",
-    "row": 26,
-    "col": 24,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 24,
-    "grid_col": 22
-   },
-   {
-    "code": "C17 C18",
-    "count": 7,
-    "dept_raw": "數平7",
-    "row": 28,
-    "col": 7,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 26,
-    "grid_col": 5
-   },
-   {
-    "code": "C5",
-    "count": 8,
-    "dept_raw": "數平8",
-    "row": 29,
-    "col": 3,
-    "row_span": 3,
-    "col_span": 1,
-    "grid_row": 27,
-    "grid_col": 1
-   },
-   {
-    "code": "A25",
-    "count": 5,
-    "dept_raw": "經策5",
-    "row": 29,
-    "col": 28,
-    "row_span": 2,
-    "col_span": 1,
-    "grid_row": 27,
-    "grid_col": 26
-   },
-   {
-    "code": "A14",
-    "count": 4,
-    "dept_raw": "經策4",
-    "row": 30,
-    "col": 15,
-    "row_span": 2,
-    "col_span": 1,
-    "grid_row": 28,
-    "grid_col": 13
-   },
-   {
-    "code": "A15",
-    "count": 4,
-    "dept_raw": "經策4",
-    "row": 30,
-    "col": 19,
-    "row_span": 2,
-    "col_span": 1,
-    "grid_row": 28,
-    "grid_col": 17
-   },
-   {
-    "code": "A20",
-    "count": 2,
-    "dept_raw": "經策2",
-    "row": 31,
-    "col": 22,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 29,
-    "grid_col": 20
-   },
-   {
-    "code": "A22",
-    "count": 3,
-    "dept_raw": "經策3",
-    "row": 31,
-    "col": 24,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 29,
-    "grid_col": 22
-   },
-   {
-    "code": "C19",
-    "count": 2,
-    "dept_raw": "數平2",
-    "row": 32,
-    "col": 7,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 30,
-    "grid_col": 5
-   },
-   {
-    "code": "C20",
-    "count": 4,
-    "dept_raw": "數平4",
-    "row": 32,
-    "col": 11,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 30,
-    "grid_col": 9
-   },
-   {
-    "code": "A26",
-    "count": 6,
-    "dept_raw": "經策6",
-    "row": 32,
-    "col": 28,
-    "row_span": 2,
-    "col_span": 1,
-    "grid_row": 30,
-    "grid_col": 26
-   },
-   {
-    "code": "A16 A17",
-    "count": 6,
-    "dept_raw": "數平8",
-    "row": 35,
-    "col": 13,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 33,
-    "grid_col": 11
-   },
-   {
-    "code": "A17 A18",
-    "count": 7,
-    "dept_raw": "數平9",
-    "row": 35,
-    "col": 17,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 33,
-    "grid_col": 15
-   },
-   {
-    "code": "B1",
-    "count": 5,
-    "dept_raw": "作資5",
-    "row": 38,
-    "col": 3,
-    "row_span": 3,
-    "col_span": 1,
-    "grid_row": 36,
-    "grid_col": 1
-   },
-   {
-    "code": "B5",
-    "count": 2,
-    "dept_raw": "作資2",
-    "row": 39,
-    "col": 6,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 37,
-    "grid_col": 4
-   },
-   {
-    "code": "B8",
-    "count": 2,
-    "dept_raw": "作資2",
-    "row": 39,
-    "col": 8,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 37,
-    "grid_col": 6
-   },
-   {
-    "code": "A33",
-    "count": 2,
-    "dept_raw": "經策2",
-    "row": 39,
-    "col": 28,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 37,
-    "grid_col": 26
-   },
-   {
-    "code": "B11",
-    "count": 4,
-    "dept_raw": "作資4",
-    "row": 41,
-    "col": 11,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 39,
-    "grid_col": 9
-   },
-   {
-    "code": "B2",
-    "count": 5,
-    "dept_raw": "作資5",
-    "row": 42,
-    "col": 3,
-    "row_span": 3,
-    "col_span": 1,
-    "grid_row": 40,
-    "grid_col": 1
-   },
-   {
-    "code": "A27 A28",
-    "count": 6,
-    "dept_raw": "經策10",
-    "row": 42,
-    "col": 14,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 40,
-    "grid_col": 12
-   },
-   {
-    "code": "A28 A29",
-    "count": 7,
-    "dept_raw": "經策7",
-    "row": 42,
-    "col": 18,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 40,
-    "grid_col": 16
-   },
-   {
-    "code": "B6",
-    "count": 2,
-    "dept_raw": "作資2",
-    "row": 43,
-    "col": 6,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 41,
-    "grid_col": 4
-   },
-   {
-    "code": "B9",
-    "count": 2,
-    "dept_raw": "作資2",
-    "row": 43,
-    "col": 8,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 41,
-    "grid_col": 6
-   },
-   {
-    "code": "A34",
-    "count": 8,
-    "dept_raw": "經策8",
-    "row": 43,
-    "col": 26,
-    "row_span": 1,
-    "col_span": 4,
-    "grid_row": 41,
-    "grid_col": 24
-   },
-   {
-    "code": "B12",
-    "count": 4,
-    "dept_raw": "作資4",
-    "row": 45,
-    "col": 11,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 43,
-    "grid_col": 9
-   },
-   {
-    "code": "B3",
-    "count": 5,
-    "dept_raw": "作資5",
-    "row": 46,
-    "col": 3,
-    "row_span": 3,
-    "col_span": 1,
-    "grid_row": 44,
-    "grid_col": 1
-   },
-   {
-    "code": "B7",
-    "count": 2,
-    "dept_raw": "作資2",
-    "row": 47,
-    "col": 6,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 45,
-    "grid_col": 4
-   },
-   {
-    "code": "B10",
-    "count": 2,
-    "dept_raw": "作資2",
-    "row": 47,
-    "col": 8,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 45,
-    "grid_col": 6
-   },
-   {
-    "code": "A30 A31",
-    "count": 6,
-    "dept_raw": "作資7／空位3",
-    "row": 47,
-    "col": 14,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 45,
-    "grid_col": 12
-   },
-   {
-    "code": "A31 A32",
-    "count": 7,
-    "dept_raw": "經策3／作資3／空位1",
-    "row": 47,
-    "col": 18,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 45,
-    "grid_col": 16
-   },
-   {
-    "code": "A35",
-    "count": 5,
-    "dept_raw": "經策5",
-    "row": 47,
-    "col": 25,
-    "row_span": 1,
-    "col_span": 2,
-    "grid_row": 45,
-    "grid_col": 23
-   },
-   {
-    "code": "A36",
-    "count": 4,
-    "dept_raw": "經策3／空位1",
-    "row": 47,
-    "col": 28,
-    "row_span": 1,
-    "col_span": 2,
-    "grid_row": 45,
-    "grid_col": 26
-   },
-   {
-    "code": "B13",
-    "count": 2,
-    "dept_raw": "作資2",
-    "row": 49,
-    "col": 10,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 47,
-    "grid_col": 8
-   },
-   {
-    "code": "B4",
-    "count": 6,
-    "dept_raw": "作資6",
-    "row": 50,
-    "col": 3,
-    "row_span": 3,
-    "col_span": 1,
-    "grid_row": 48,
-    "grid_col": 1
-   },
-   {
-    "code": "A38",
-    "count": 5,
-    "dept_raw": "空位5",
-    "row": 51,
-    "col": 27,
-    "row_span": 1,
-    "col_span": 2,
-    "grid_row": 49,
-    "grid_col": 25
-   },
-   {
-    "code": "A37",
-    "count": 3,
-    "dept_raw": "空位3",
-    "row": 52,
-    "col": 23,
-    "row_span": 1,
-    "col_span": 1,
-    "grid_row": 50,
-    "grid_col": 21
-   },
-   {
-    "code": "B14",
-    "count": 4,
-    "dept_raw": "作資4",
-    "row": 53,
-    "col": 10,
-    "row_span": 1,
-    "col_span": 2,
-    "grid_row": 51,
-    "grid_col": 8
-   },
-   {
-    "code": "B15",
-    "count": 8,
-    "dept_raw": "作資8",
-    "row": 57,
-    "col": 6,
-    "row_span": 1,
-    "col_span": 3,
-    "grid_row": 55,
-    "grid_col": 4
-   },
-   {
-    "code": "B16",
-    "count": 4,
-    "dept_raw": "作資4",
-    "row": 60,
-    "col": 7,
-    "row_span": 2,
-    "col_span": 1,
-    "grid_row": 58,
-    "grid_col": 5
-   }
-  ]
- },
- "buffet_stations": {
-  "grid_rows": 5,
-  "grid_cols": 9,
-  "entrance_label": "入口",
-  "stations": [
-   {
-    "code": "極",
-    "theme": "串揚劇場",
-    "col": 4,
-    "row": 1,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "code": "燦",
-    "theme": "酥香炙宴",
-    "col": 5,
-    "row": 1,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "code": "煲",
-    "theme": "暖心食補",
-    "col": 6,
-    "row": 1,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "code": "膳",
-    "theme": "經典華筵",
-    "col": 7,
-    "row": 1,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "code": "炙",
-    "theme": "炭火盛宴",
-    "col": 8,
-    "row": 1,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "code": "洗手台",
-    "theme": "洗手台",
-    "col": 9,
-    "row": 1,
-    "col_span": 1,
-    "row_span": 1,
-    "is_facility": true
-   },
-   {
-    "code": "鮮",
-    "theme": "大海巡禮",
-    "col": 5,
-    "row": 2,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "code": "盛",
-    "theme": "旬味和韻",
-    "col": 3,
-    "row": 3,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "code": "沁",
-    "theme": "微醺序章",
-    "col": 5,
-    "row": 3,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "code": "自助飲料",
-    "theme": "自助飲料",
-    "col": 1,
-    "row": 3,
-    "col_span": 1,
-    "row_span": 1,
-    "is_facility": true
-   },
-   {
-    "code": "續",
-    "theme": "甜點樂章",
-    "col": 1,
-    "row": 4,
-    "col_span": 1,
-    "row_span": 1
-   }
-  ],
-  "entrance": {
-   "col": 5,
-   "row": 5
-  }
- },
- "combined_layout": {
-  "grid_rows": 52,
-  "grid_cols": 64,
-  "items": [
-   {
-    "type": "table",
-    "code": "板前",
-    "dept_raw": "數平5／總務1",
-    "count": 6,
-    "col": 15,
-    "row": 1,
-    "col_span": 8,
-    "row_span": 7
-   },
-   {
-    "type": "table",
-    "code": "C6 C7",
-    "dept_raw": "數平7",
-    "count": 7,
-    "col": 13,
-    "row": 34,
-    "col_span": 6,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "C1",
-    "dept_raw": "數平8",
-    "count": 8,
-    "col": 7,
-    "row": 35,
-    "col_span": 2,
-    "row_span": 2
-   },
-   {
-    "type": "table",
-    "code": "A7 A8",
-    "dept_raw": "經策6",
-    "count": 6,
-    "col": 62,
-    "row": 1,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "C8 C9",
-    "dept_raw": "數平8",
-    "count": 8,
-    "col": 15,
-    "row": 37,
-    "col_span": 5,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A1",
-    "dept_raw": "經策5",
-    "count": 5,
-    "col": 54,
-    "row": 3,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A2",
-    "dept_raw": "經策7",
-    "count": 7,
-    "col": 57,
-    "row": 3,
-    "col_span": 3,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A3",
-    "dept_raw": "經策5",
-    "count": 5,
-    "col": 60,
-    "row": 3,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A9",
-    "dept_raw": "經策3",
-    "count": 6,
-    "col": 63,
-    "row": 5,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "C2",
-    "dept_raw": "數平8",
-    "count": 8,
-    "col": 7,
-    "row": 39,
-    "col_span": 2,
-    "row_span": 2
-   },
-   {
-    "type": "table",
-    "code": "C10 C11",
-    "dept_raw": "數平7",
-    "count": 7,
-    "col": 13,
-    "row": 40,
-    "col_span": 5,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A4",
-    "dept_raw": "經策5",
-    "count": 5,
-    "col": 54,
-    "row": 7,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A5",
-    "dept_raw": "經策7",
-    "count": 7,
-    "col": 57,
-    "row": 7,
-    "col_span": 3,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A6",
-    "dept_raw": "經策5",
-    "count": 5,
-    "col": 60,
-    "row": 7,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A10",
-    "dept_raw": "經策6",
-    "count": 6,
-    "col": 63,
-    "row": 8,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "C12",
-    "dept_raw": "數平2",
-    "count": 2,
-    "col": 15,
-    "row": 42,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "C3",
-    "dept_raw": "數平5",
-    "count": 5,
-    "col": 7,
-    "row": 43,
-    "col_span": 2,
-    "row_span": 2
-   },
-   {
-    "type": "table",
-    "code": "C13 C14",
-    "dept_raw": "數平7",
-    "count": 7,
-    "col": 13,
-    "row": 44,
-    "col_span": 5,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A23",
-    "dept_raw": "經策6",
-    "count": 6,
-    "col": 64,
-    "row": 13,
-    "col_span": 1,
-    "row_span": 2
-   },
-   {
-    "type": "table",
-    "code": "C4",
-    "dept_raw": "數平5",
-    "count": 5,
-    "col": 7,
-    "row": 47,
-    "col_span": 2,
-    "row_span": 2
-   },
-   {
-    "type": "table",
-    "code": "C15 C16",
-    "dept_raw": "數平7",
-    "count": 7,
-    "col": 13,
-    "row": 47,
-    "col_span": 5,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A24",
-    "dept_raw": "經策5",
-    "count": 5,
-    "col": 64,
-    "row": 16,
-    "col_span": 1,
-    "row_span": 2
-   },
-   {
-    "type": "table",
-    "code": "A11 A12",
-    "dept_raw": "經策8",
-    "count": 6,
-    "col": 54,
-    "row": 17,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A12 A13",
-    "dept_raw": "經策9",
-    "count": 7,
-    "col": 57,
-    "row": 17,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A19",
-    "dept_raw": "經策2",
-    "count": 2,
-    "col": 60,
-    "row": 17,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A21",
-    "dept_raw": "經策3",
-    "count": 3,
-    "col": 61,
-    "row": 17,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "C17 C18",
-    "dept_raw": "數平7",
-    "count": 7,
-    "col": 13,
-    "row": 49,
-    "col_span": 5,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "C5",
-    "dept_raw": "數平8",
-    "count": 8,
-    "col": 7,
-    "row": 50,
-    "col_span": 2,
-    "row_span": 2
-   },
-   {
-    "type": "table",
-    "code": "A25",
-    "dept_raw": "經策5",
-    "count": 5,
-    "col": 64,
-    "row": 20,
-    "col_span": 1,
-    "row_span": 2
-   },
-   {
-    "type": "table",
-    "code": "A14",
-    "dept_raw": "經策4",
-    "count": 4,
-    "col": 55,
-    "row": 21,
-    "col_span": 1,
-    "row_span": 2
-   },
-   {
-    "type": "table",
-    "code": "A15",
-    "dept_raw": "經策4",
-    "count": 4,
-    "col": 58,
-    "row": 21,
-    "col_span": 1,
-    "row_span": 2
-   },
-   {
-    "type": "table",
-    "code": "A20",
-    "dept_raw": "經策2",
-    "count": 2,
-    "col": 60,
-    "row": 21,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A22",
-    "dept_raw": "經策3",
-    "count": 3,
-    "col": 61,
-    "row": 21,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "C19",
-    "dept_raw": "數平2",
-    "count": 2,
-    "col": 13,
-    "row": 52,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "C20",
-    "dept_raw": "數平4",
-    "count": 4,
-    "col": 19,
-    "row": 52,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A26",
-    "dept_raw": "經策6",
-    "count": 6,
-    "col": 64,
-    "row": 22,
-    "col_span": 1,
-    "row_span": 2
-   },
-   {
-    "type": "table",
-    "code": "A16 A17",
-    "dept_raw": "數平8",
-    "count": 6,
-    "col": 54,
-    "row": 25,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A17 A18",
-    "dept_raw": "數平9",
-    "count": 7,
-    "col": 57,
-    "row": 25,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "B1",
-    "dept_raw": "作資5",
-    "count": 5,
-    "col": 20,
-    "row": 40,
-    "col_span": 2,
-    "row_span": 2
-   },
-   {
-    "type": "table",
-    "code": "B5",
-    "dept_raw": "作資2",
-    "count": 2,
-    "col": 26,
-    "row": 41,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "B8",
-    "dept_raw": "作資2",
-    "count": 2,
-    "col": 29,
-    "row": 41,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A33",
-    "dept_raw": "經策2",
-    "count": 2,
-    "col": 64,
-    "row": 29,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "B11",
-    "dept_raw": "作資4",
-    "count": 4,
-    "col": 35,
-    "row": 42,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "B2",
-    "dept_raw": "作資5",
-    "count": 5,
-    "col": 20,
-    "row": 42,
-    "col_span": 2,
-    "row_span": 2
-   },
-   {
-    "type": "table",
-    "code": "A27 A28",
-    "dept_raw": "經策10",
-    "count": 6,
-    "col": 55,
-    "row": 31,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A28 A29",
-    "dept_raw": "經策7",
-    "count": 7,
-    "col": 57,
-    "row": 31,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "B6",
-    "dept_raw": "作資2",
-    "count": 2,
-    "col": 26,
-    "row": 43,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "B9",
-    "dept_raw": "作資2",
-    "count": 2,
-    "col": 29,
-    "row": 43,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A34",
-    "dept_raw": "經策8",
-    "count": 8,
-    "col": 62,
-    "row": 32,
-    "col_span": 3,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "B12",
-    "dept_raw": "作資4",
-    "count": 4,
-    "col": 35,
-    "row": 44,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "B3",
-    "dept_raw": "作資5",
-    "count": 5,
-    "col": 20,
-    "row": 44,
-    "col_span": 2,
-    "row_span": 2
-   },
-   {
-    "type": "table",
-    "code": "B7",
-    "dept_raw": "作資2",
-    "count": 2,
-    "col": 26,
-    "row": 45,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "B10",
-    "dept_raw": "作資2",
-    "count": 2,
-    "col": 29,
-    "row": 45,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A30 A31",
-    "dept_raw": "作資7／空位3",
-    "count": 6,
-    "col": 55,
-    "row": 36,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A31 A32",
-    "dept_raw": "經策3／作資3／空位1",
-    "count": 7,
-    "col": 57,
-    "row": 36,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A35",
-    "dept_raw": "經策5",
-    "count": 5,
-    "col": 62,
-    "row": 36,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A36",
-    "dept_raw": "經策3／空位1",
-    "count": 4,
-    "col": 64,
-    "row": 36,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "B13",
-    "dept_raw": "作資2",
-    "count": 2,
-    "col": 33,
-    "row": 46,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "B4",
-    "dept_raw": "作資6",
-    "count": 6,
-    "col": 20,
-    "row": 46,
-    "col_span": 2,
-    "row_span": 2
-   },
-   {
-    "type": "table",
-    "code": "A38",
-    "dept_raw": "空位5",
-    "count": 5,
-    "col": 63,
-    "row": 39,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "A37",
-    "dept_raw": "空位3",
-    "count": 3,
-    "col": 60,
-    "row": 40,
-    "col_span": 1,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "B14",
-    "dept_raw": "作資4",
-    "count": 4,
-    "col": 33,
-    "row": 48,
-    "col_span": 4,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "B15",
-    "dept_raw": "作資8",
-    "count": 8,
-    "col": 26,
-    "row": 50,
-    "col_span": 6,
-    "row_span": 1
-   },
-   {
-    "type": "table",
-    "code": "B16",
-    "dept_raw": "作資4",
-    "count": 4,
-    "col": 28,
-    "row": 52,
-    "col_span": 2,
-    "row_span": 1
-   },
-   {
-    "type": "food",
-    "code": "極",
-    "theme": "串揚劇場",
-    "col": 24,
-    "row": 1,
-    "col_span": 6,
-    "row_span": 9
-   },
-   {
-    "type": "food",
-    "code": "燦",
-    "theme": "酥香炙宴",
-    "col": 30,
-    "row": 1,
-    "col_span": 6,
-    "row_span": 9
-   },
-   {
-    "type": "food",
-    "code": "煲",
-    "theme": "暖心食補",
-    "col": 36,
-    "row": 1,
-    "col_span": 6,
-    "row_span": 9
-   },
-   {
-    "type": "food",
-    "code": "膳",
-    "theme": "經典華筵",
-    "col": 42,
-    "row": 1,
-    "col_span": 6,
-    "row_span": 9
-   },
-   {
-    "type": "food",
-    "code": "炙",
-    "theme": "炭火盛宴",
-    "col": 48,
-    "row": 1,
-    "col_span": 6,
-    "row_span": 9
-   },
-   {
-    "type": "food",
-    "code": "盛",
-    "theme": "旬味和韻",
-    "col": 24,
-    "row": 10,
-    "col_span": 3,
-    "row_span": 18
-   },
-   {
-    "type": "food",
-    "code": "鮮",
-    "theme": "大海巡禮",
-    "col": 28,
-    "row": 13,
-    "col_span": 10,
-    "row_span": 7
-   },
-   {
-    "type": "food",
-    "code": "沁",
-    "theme": "微醺序章",
-    "col": 28,
-    "row": 20,
-    "col_span": 10,
-    "row_span": 7
-   },
-   {
-    "type": "food",
-    "code": "自助飲料",
-    "theme": "自助飲料",
-    "col": 6,
-    "row": 27,
-    "col_span": 8,
-    "row_span": 7,
-    "is_facility": true
-   },
-   {
-    "type": "food",
-    "code": "續",
-    "theme": "甜點樂章",
-    "col": 1,
-    "row": 40,
-    "col_span": 5,
-    "row_span": 9
-   },
-   {
-    "type": "facility",
-    "code": "服務台",
-    "col": 58,
-    "row": 20,
-    "col_span": 6,
-    "row_span": 7
-   },
-   {
-    "type": "facility",
-    "code": "柱",
-    "col": 44,
-    "row": 27,
-    "col_span": 5,
-    "row_span": 6
-   }
-  ],
-  "entrance": {
-   "col": 37,
-   "row": 49,
-   "col_span": 6,
-   "row_span": 4,
-   "label": "大門 入口"
-  }
- },
- "day_schedule": {
-  "date_label": "8/29（六）",
-  "outbound_gather": {
-   "time": "08:30",
-   "label": "台中同仁－公司集合出發",
-   "note": "台中同仁不需搭乘高鐵，於當地集合即可"
-  },
-  "outbound_trains": {
-   "609": [
-    [
-     "南港",
-     "07:35"
-    ],
-    [
-     "桃園",
-     "08:10"
-    ],
-    [
-     "新竹",
-     "08:22"
-    ],
-    [
-     "台中",
-     "08:46"
-    ]
-   ],
-   "205": [
-    [
-     "台北",
-     "07:51"
-    ],
-    [
-     "板橋",
-     "07:59"
-    ],
-    [
-     "台中",
-     "08:38"
-    ]
-   ],
-   "1505": [
-    [
-     "南港",
-     "07:25"
-    ],
-    [
-     "台北",
-     "07:36"
-    ],
-    [
-     "台中",
-     "08:42"
-    ]
-   ]
-  },
-  "timeline": [
-   {
-    "time": "09:05",
-    "label": "高鐵台中站 集合出發"
-   },
-   {
-    "time": "09:45－10:45",
-    "label": "成美文化園",
-    "note": "威全提供園區專人導覽，自由聆聽"
-   },
-   {
-    "time": "10:45－11:30",
-    "label": "前往漢神洲際購物廣場"
-   },
-   {
-    "time": "11:35－14:00",
-    "label": "午餐－島語 台中洲際店"
-   }
-  ],
-  "afternoon_split": [
-   {
-    "time": "14:00－16:15",
-    "label": "漢神洲際購物廣場 自由逛",
-    "matches_afternoon": "(B)洲際漢神踩點巡禮"
-   },
-   {
-    "time": "14:00－16:30",
-    "label": "臺中綠美圖",
-    "matches_afternoon": "(A)台中綠美圖踏青"
-   }
-  ],
-  "evening_groups": {
-   "return_early": {
-    "match_evening": "(B)賦歸",
-    "label": "快樂賦歸",
-    "gather_note": "前往高鐵站／公司",
-    "trains": {
-     "666": [
-      [
-       "台中",
-       "18:00"
-      ],
-      [
-       "新竹",
-       "18:23"
-      ],
-      [
-       "桃園",
-       "18:36"
-      ]
-     ],
-     "144": [
-      [
-       "台中",
-       "17:39"
-      ],
-      [
-       "板橋",
-       "18:20"
-      ],
-      [
-       "台北",
-       "18:29"
-      ],
-      [
-       "南港",
-       "18:40"
-      ]
-     ],
-     "663": [
-      [
-       "台中",
-       "17:48"
-      ],
-      [
-       "左營",
-       "18:45"
-      ]
-     ]
-    }
-   },
-   "baseball": {
-    "match_evening": "(A)洲際球場觀賽",
-    "label": "球賽",
-    "game_title": "中華職棒37年例行賽 富邦悍將 vs 中信兄弟",
-    "game_time": "17:05",
-    "gate_open": "14:00",
-    "gather": {
-     "time": "20:00",
-     "label": "集合，前往高鐵台中站／公司"
+  "batch_overview": [
+    {
+      "seq": 1,
+      "location": "洲際",
+      "date": "8/15*球賽",
+      "unit": "國際個金事業總處(51)\n個金作業暨資訊處(個訊二(228)+作業規劃部(91))",
+      "leader": "建虹總處長",
+      "staff_count": 299,
+      "family_count": 37,
+      "total_count": 336,
+      "captain": "曾欽達"
     },
-    "trains": {
-     "684": [
-      [
-       "台中",
-       "21:00"
-      ],
-      [
-       "新竹",
-       "21:23"
-      ],
-      [
-       "桃園",
-       "21:36"
-      ],
-      [
-       "板橋",
-       "21:50"
-      ],
-      [
-       "台北",
-       "21:59"
-      ],
-      [
-       "南港",
-       "22:10"
-      ]
-     ]
+    {
+      "seq": 2,
+      "location": "洲際",
+      "date": "8/29*球賽",
+      "unit": "經營策略處(136) 、數位平台經營處(98)\n個金作業暨資訊處(個客服_ C(129))",
+      "leader": "竹屏/雅婷處長",
+      "staff_count": 309,
+      "family_count": 38,
+      "total_count": 347,
+      "captain": "孔昱棠\n劉妍廷"
+    },
+    {
+      "seq": 3,
+      "location": "洲際",
+      "date": "2026-09-12",
+      "unit": "財富管理經營處(79)、私人銀行處(65)\n個金作業暨資訊處(個客服_ B(206))",
+      "leader": "Jeffrey/John處長",
+      "staff_count": 319,
+      "family_count": 33,
+      "total_count": 352,
+      "captain": "梁妙瑜\n張雯琳"
+    },
+    {
+      "seq": 4,
+      "location": "洲際",
+      "date": "2026-10-03",
+      "unit": "財富管理產品處(307)+業務資訊整合小組(13)",
+      "leader": "隋爸總處長\nHenry處長",
+      "staff_count": 267,
+      "family_count": 28,
+      "total_count": 295,
+      "captain": "袁鈺雯"
+    },
+    {
+      "seq": 5,
+      "location": "洲際",
+      "date": "2026-11-14",
+      "unit": "消費金融事業處(債權經營部(381))",
+      "leader": "仕豐部長",
+      "staff_count": 314,
+      "family_count": 11,
+      "total_count": 325,
+      "captain": "廖淑雯"
+    },
+    {
+      "seq": 6,
+      "location": "洲際",
+      "date": "2026-12-05",
+      "unit": "支付金融事業處(164)、個金作業暨資訊處(個訊一(183))",
+      "leader": "德風處長",
+      "staff_count": 316,
+      "family_count": 30,
+      "total_count": 346,
+      "captain": "黃郁翔"
+    },
+    {
+      "seq": 7,
+      "location": "洲際",
+      "date": "2026-12-12",
+      "unit": "個金作業暨資訊處(個客服_ A(209))",
+      "leader": "重建處長",
+      "staff_count": 197,
+      "family_count": 8,
+      "total_count": 205,
+      "captain": "黃玉珍"
+    },
+    {
+      "seq": 8,
+      "location": "麗寶",
+      "date": "9/19*水陸",
+      "unit": "個金作業暨資訊處(集作(235)、洗防(125))",
+      "leader": "惠霖/恭賢部長",
+      "staff_count": 300,
+      "family_count": 21,
+      "total_count": 321,
+      "captain": "林螢偉"
+    },
+    {
+      "seq": 9,
+      "location": "麗寶",
+      "date": "10/31*水陸",
+      "unit": "消費金融事業處\n(擔保放款產品部(37)+無擔保放款產品部(台北/台中)(56)+\n擔保放款業務部(53)+無擔保放款業務部_台北LAC (130))",
+      "leader": "凱炫處長",
+      "staff_count": 271,
+      "family_count": 48,
+      "total_count": 319,
+      "captain": "楊朝景\n謝雅婷"
+    },
+    {
+      "seq": 10,
+      "location": "麗寶",
+      "date": "2026-11-07",
+      "unit": "消費金融事業處(無擔保放款業務部_台北TM (250))+\n無擔保放款業務部_高雄(79))",
+      "leader": "怡伸部長",
+      "staff_count": 251,
+      "family_count": 38,
+      "total_count": 289,
+      "captain": "(台北) 林怡君\n(高雄)陳姣蓓"
+    },
+    {
+      "seq": 11,
+      "location": "麗寶",
+      "date": "2026-11-21",
+      "unit": "消費金融事業處(無擔保放款業務部_台中 (314))",
+      "leader": "志宏部長",
+      "staff_count": 270,
+      "family_count": 19,
+      "total_count": 289,
+      "captain": "韓明娟"
     }
-   }
+  ],
+  "milestones": [
+    {
+      "location": "洲際",
+      "batch_name": "第一梯",
+      "final_count_date": "2026-07-15",
+      "insurance_date": "2026-07-17",
+      "family_pay_date": "2026-07-30",
+      "seat_plan_date": "2026-08-03",
+      "edm_date": "2026-08-07",
+      "ticket_date": "2026-08-10",
+      "depart_date": "2026-08-15",
+      "captain": "曾欽達",
+      "staff": "潘萱蓉、呂家萱、何捷甫、吳仲閔"
+    },
+    {
+      "location": "洲際",
+      "batch_name": "第二梯",
+      "final_count_date": "2026-07-29",
+      "insurance_date": "2026-07-31",
+      "family_pay_date": "2026-08-13",
+      "seat_plan_date": "2026-08-17",
+      "edm_date": "2026-08-21",
+      "ticket_date": "2026-08-24",
+      "depart_date": "2026-08-29",
+      "captain": "孔昱棠",
+      "staff": "林芝萱、符永琦、劉妍廷、劉伯洪、陳彥旭、羅婉甄、李仲琦、范景婷"
+    },
+    {
+      "location": "洲際",
+      "batch_name": "第三梯",
+      "final_count_date": "2026-08-12",
+      "insurance_date": "2026-08-14",
+      "family_pay_date": "2026-08-27",
+      "seat_plan_date": "2026-08-31",
+      "edm_date": "2026-09-04",
+      "ticket_date": "2026-09-07",
+      "depart_date": "2026-09-12",
+      "captain": "梁妙瑜",
+      "staff": "張雯琳、陳佑任、廖曼君、黃筱雯、徐寶樹、葉倫佑、廖祿慶、蘇怡菱"
+    },
+    {
+      "location": "洲際",
+      "batch_name": "第四梯",
+      "final_count_date": "2026-09-02",
+      "insurance_date": "2026-09-04",
+      "family_pay_date": "2026-09-17",
+      "seat_plan_date": "2026-09-21",
+      "edm_date": "2026-09-25",
+      "ticket_date": "2026-09-28",
+      "depart_date": "2026-10-03",
+      "captain": "袁鈺雯",
+      "staff": "陳瀅伃、楊于萱、凃勝傑、呂卉蓁、江佳芸"
+    },
+    {
+      "location": "洲際",
+      "batch_name": "第五梯",
+      "final_count_date": "2026-10-14",
+      "insurance_date": "2026-10-16",
+      "family_pay_date": "2026-10-29",
+      "seat_plan_date": "2026-11-02",
+      "edm_date": "2026-11-06",
+      "ticket_date": "2026-11-09",
+      "depart_date": "2026-11-14",
+      "captain": "廖淑雯",
+      "staff": "NA"
+    },
+    {
+      "location": "洲際",
+      "batch_name": "第六梯",
+      "final_count_date": "2026-11-04",
+      "insurance_date": "2026-11-06",
+      "family_pay_date": "2026-11-19",
+      "seat_plan_date": "2026-11-23",
+      "edm_date": "2026-11-27",
+      "ticket_date": "2026-11-30",
+      "depart_date": "2026-12-05",
+      "captain": "黃郁翔",
+      "staff": "吳宗燁、謝亞承、陳呈睿、李翊綺、崔庭榕、康詩芸、陳冠中"
+    },
+    {
+      "location": "洲際",
+      "batch_name": "第七梯",
+      "final_count_date": "2026-11-11",
+      "insurance_date": "2026-11-13",
+      "family_pay_date": "2026-11-26",
+      "seat_plan_date": "2026-11-30",
+      "edm_date": "2026-12-04",
+      "ticket_date": "2026-12-07",
+      "depart_date": "2026-12-12",
+      "captain": "黃玉珍",
+      "staff": "蔡昇宏、陳逸凡、李成駿、葉淑惠、彭冠筌、吳杰濬"
+    },
+    {
+      "location": "麗寶",
+      "batch_name": "第八梯",
+      "final_count_date": "2026-08-19",
+      "insurance_date": "2026-08-21",
+      "family_pay_date": "2026-09-03",
+      "seat_plan_date": "2026-09-07",
+      "edm_date": "2026-09-11",
+      "ticket_date": "2026-09-14",
+      "depart_date": "2026-09-19",
+      "captain": "林螢偉",
+      "staff": "侯穎如"
+    },
+    {
+      "location": "麗寶",
+      "batch_name": "第九梯",
+      "final_count_date": "2026-09-30",
+      "insurance_date": "2026-10-02",
+      "family_pay_date": "2026-10-15",
+      "seat_plan_date": "2026-10-19",
+      "edm_date": "2026-10-23",
+      "ticket_date": "2026-10-26",
+      "depart_date": "2026-10-31",
+      "captain": "謝雅婷",
+      "staff": "邱莉淇、黃怡萍、林芳妤、楊朝景"
+    },
+    {
+      "location": "麗寶",
+      "batch_name": "第十梯",
+      "final_count_date": "2026-10-07",
+      "insurance_date": "2026-10-09",
+      "family_pay_date": "2026-10-22",
+      "seat_plan_date": "2026-10-26",
+      "edm_date": "2026-10-30",
+      "ticket_date": "2026-11-02",
+      "depart_date": "2026-11-07",
+      "captain": "(台北)林怡君",
+      "staff": "(高雄)陳姣蓓"
+    },
+    {
+      "location": "麗寶",
+      "batch_name": "第十一梯次",
+      "final_count_date": "2026-10-21",
+      "insurance_date": "2026-10-23",
+      "family_pay_date": "2026-11-05",
+      "seat_plan_date": "2026-11-09",
+      "edm_date": "2026-11-13",
+      "ticket_date": "2026-11-16",
+      "depart_date": "2026-11-21",
+      "captain": "韓明娟",
+      "staff": "NA"
+    }
+  ],
+  "family_pricing": [
+    {
+      "location": "洲際",
+      "region": "台北／高雄(含高鐵)",
+      "non_regular_staff": 6000,
+      "age_65_up": 4000,
+      "age_12_65": 4750,
+      "age_3_12_seat": 3000,
+      "age_3_12_noseat": 1250,
+      "under_3": 300
+    },
+    {
+      "location": "洲際",
+      "region": "台中(不含高鐵)",
+      "non_regular_staff": 4500,
+      "age_65_up": 3200,
+      "age_12_65": 3200,
+      "age_3_12_seat": 2300,
+      "age_3_12_noseat": 1250,
+      "under_3": 300
+    },
+    {
+      "location": "麗寶",
+      "region": "台北／高雄(含高鐵)",
+      "non_regular_staff": 6000,
+      "age_65_up": 5200,
+      "age_12_65": 5800,
+      "age_3_12_seat": 4000,
+      "age_3_12_noseat": 2000,
+      "under_3": 300
+    },
+    {
+      "location": "麗寶",
+      "region": "台中(不含高鐵)",
+      "non_regular_staff": 4800,
+      "age_65_up": 4500,
+      "age_12_65": 4300,
+      "age_3_12_seat": 3200,
+      "age_3_12_noseat": 2000,
+      "under_3": 300
+    }
+  ],
+  "table_zone_notes": [
+    "板前：6席",
+    "C區：85席",
+    "混合桌會標示席數"
+  ],
+  "venue_name": "台中洲際島語",
+  "this_batch": "第二梯",
+  "this_batch_date": "2026-08-29",
+  "this_batch_units": "經營策略處、數位平台經營處、個金作業暨資訊處(個客服C)",
+  "table_layout": {
+    "grid_rows": 59,
+    "grid_cols": 27,
+    "tables": [
+      {
+        "code": "板前",
+        "count": 6,
+        "dept_raw": "數平5／總務1",
+        "row": 3,
+        "col": 27,
+        "row_span": 2,
+        "col_span": 3,
+        "grid_row": 1,
+        "grid_col": 25
+      },
+      {
+        "code": "C6 C7",
+        "count": 7,
+        "dept_raw": "數平7",
+        "row": 6,
+        "col": 7,
+        "row_span": 1,
+        "col_span": 4,
+        "grid_row": 4,
+        "grid_col": 5
+      },
+      {
+        "code": "C1",
+        "count": 8,
+        "dept_raw": "數平8",
+        "row": 8,
+        "col": 3,
+        "row_span": 3,
+        "col_span": 1,
+        "grid_row": 6,
+        "grid_col": 1
+      },
+      {
+        "code": "A7 A8",
+        "count": 6,
+        "dept_raw": "經策6",
+        "row": 8,
+        "col": 26,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 6,
+        "grid_col": 24
+      },
+      {
+        "code": "C8 C9",
+        "count": 8,
+        "dept_raw": "數平8",
+        "row": 10,
+        "col": 8,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 8,
+        "grid_col": 6
+      },
+      {
+        "code": "A1",
+        "count": 5,
+        "dept_raw": "經策5",
+        "row": 10,
+        "col": 13,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 8,
+        "grid_col": 11
+      },
+      {
+        "code": "A2",
+        "count": 7,
+        "dept_raw": "經策7",
+        "row": 10,
+        "col": 17,
+        "row_span": 1,
+        "col_span": 4,
+        "grid_row": 8,
+        "grid_col": 15
+      },
+      {
+        "code": "A3",
+        "count": 5,
+        "dept_raw": "經策5",
+        "row": 10,
+        "col": 22,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 8,
+        "grid_col": 20
+      },
+      {
+        "code": "A9",
+        "count": 6,
+        "dept_raw": "經策3",
+        "row": 12,
+        "col": 27,
+        "row_span": 1,
+        "col_span": 2,
+        "grid_row": 10,
+        "grid_col": 25
+      },
+      {
+        "code": "C2",
+        "count": 8,
+        "dept_raw": "數平8",
+        "row": 13,
+        "col": 3,
+        "row_span": 3,
+        "col_span": 1,
+        "grid_row": 11,
+        "grid_col": 1
+      },
+      {
+        "code": "C10 C11",
+        "count": 7,
+        "dept_raw": "數平7",
+        "row": 14,
+        "col": 7,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 12,
+        "grid_col": 5
+      },
+      {
+        "code": "A4",
+        "count": 5,
+        "dept_raw": "經策5",
+        "row": 15,
+        "col": 13,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 13,
+        "grid_col": 11
+      },
+      {
+        "code": "A5",
+        "count": 7,
+        "dept_raw": "經策7",
+        "row": 15,
+        "col": 17,
+        "row_span": 1,
+        "col_span": 4,
+        "grid_row": 13,
+        "grid_col": 15
+      },
+      {
+        "code": "A6",
+        "count": 5,
+        "dept_raw": "經策5",
+        "row": 15,
+        "col": 22,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 13,
+        "grid_col": 20
+      },
+      {
+        "code": "A10",
+        "count": 6,
+        "dept_raw": "經策6",
+        "row": 16,
+        "col": 27,
+        "row_span": 1,
+        "col_span": 2,
+        "grid_row": 14,
+        "grid_col": 25
+      },
+      {
+        "code": "C12",
+        "count": 2,
+        "dept_raw": "數平2",
+        "row": 17,
+        "col": 8,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 15,
+        "grid_col": 6
+      },
+      {
+        "code": "C3",
+        "count": 5,
+        "dept_raw": "數平5",
+        "row": 19,
+        "col": 3,
+        "row_span": 3,
+        "col_span": 1,
+        "grid_row": 17,
+        "grid_col": 1
+      },
+      {
+        "code": "C13 C14",
+        "count": 7,
+        "dept_raw": "數平7",
+        "row": 20,
+        "col": 7,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 18,
+        "grid_col": 5
+      },
+      {
+        "code": "A23",
+        "count": 6,
+        "dept_raw": "經策6",
+        "row": 21,
+        "col": 28,
+        "row_span": 2,
+        "col_span": 1,
+        "grid_row": 19,
+        "grid_col": 26
+      },
+      {
+        "code": "C4",
+        "count": 5,
+        "dept_raw": "數平5",
+        "row": 24,
+        "col": 3,
+        "row_span": 3,
+        "col_span": 1,
+        "grid_row": 22,
+        "grid_col": 1
+      },
+      {
+        "code": "C15 C16",
+        "count": 7,
+        "dept_raw": "數平7",
+        "row": 24,
+        "col": 7,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 22,
+        "grid_col": 5
+      },
+      {
+        "code": "A24",
+        "count": 5,
+        "dept_raw": "經策5",
+        "row": 25,
+        "col": 28,
+        "row_span": 2,
+        "col_span": 1,
+        "grid_row": 23,
+        "grid_col": 26
+      },
+      {
+        "code": "A11 A12",
+        "count": 6,
+        "dept_raw": "經策8",
+        "row": 26,
+        "col": 13,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 24,
+        "grid_col": 11
+      },
+      {
+        "code": "A12 A13",
+        "count": 7,
+        "dept_raw": "經策9",
+        "row": 26,
+        "col": 17,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 24,
+        "grid_col": 15
+      },
+      {
+        "code": "A19",
+        "count": 2,
+        "dept_raw": "經策2",
+        "row": 26,
+        "col": 22,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 24,
+        "grid_col": 20
+      },
+      {
+        "code": "A21",
+        "count": 3,
+        "dept_raw": "經策3",
+        "row": 26,
+        "col": 24,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 24,
+        "grid_col": 22
+      },
+      {
+        "code": "C17 C18",
+        "count": 7,
+        "dept_raw": "數平7",
+        "row": 28,
+        "col": 7,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 26,
+        "grid_col": 5
+      },
+      {
+        "code": "C5",
+        "count": 8,
+        "dept_raw": "數平8",
+        "row": 29,
+        "col": 3,
+        "row_span": 3,
+        "col_span": 1,
+        "grid_row": 27,
+        "grid_col": 1
+      },
+      {
+        "code": "A25",
+        "count": 5,
+        "dept_raw": "經策5",
+        "row": 29,
+        "col": 28,
+        "row_span": 2,
+        "col_span": 1,
+        "grid_row": 27,
+        "grid_col": 26
+      },
+      {
+        "code": "A14",
+        "count": 4,
+        "dept_raw": "經策4",
+        "row": 30,
+        "col": 15,
+        "row_span": 2,
+        "col_span": 1,
+        "grid_row": 28,
+        "grid_col": 13
+      },
+      {
+        "code": "A15",
+        "count": 4,
+        "dept_raw": "經策4",
+        "row": 30,
+        "col": 19,
+        "row_span": 2,
+        "col_span": 1,
+        "grid_row": 28,
+        "grid_col": 17
+      },
+      {
+        "code": "A20",
+        "count": 2,
+        "dept_raw": "經策2",
+        "row": 31,
+        "col": 22,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 29,
+        "grid_col": 20
+      },
+      {
+        "code": "A22",
+        "count": 3,
+        "dept_raw": "經策3",
+        "row": 31,
+        "col": 24,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 29,
+        "grid_col": 22
+      },
+      {
+        "code": "C19",
+        "count": 2,
+        "dept_raw": "數平2",
+        "row": 32,
+        "col": 7,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 30,
+        "grid_col": 5
+      },
+      {
+        "code": "C20",
+        "count": 4,
+        "dept_raw": "數平4",
+        "row": 32,
+        "col": 11,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 30,
+        "grid_col": 9
+      },
+      {
+        "code": "A26",
+        "count": 6,
+        "dept_raw": "經策6",
+        "row": 32,
+        "col": 28,
+        "row_span": 2,
+        "col_span": 1,
+        "grid_row": 30,
+        "grid_col": 26
+      },
+      {
+        "code": "A16 A17",
+        "count": 6,
+        "dept_raw": "數平8",
+        "row": 35,
+        "col": 13,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 33,
+        "grid_col": 11
+      },
+      {
+        "code": "A17 A18",
+        "count": 7,
+        "dept_raw": "數平9",
+        "row": 35,
+        "col": 17,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 33,
+        "grid_col": 15
+      },
+      {
+        "code": "B1",
+        "count": 5,
+        "dept_raw": "作資5",
+        "row": 38,
+        "col": 3,
+        "row_span": 3,
+        "col_span": 1,
+        "grid_row": 36,
+        "grid_col": 1
+      },
+      {
+        "code": "B5",
+        "count": 2,
+        "dept_raw": "作資2",
+        "row": 39,
+        "col": 6,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 37,
+        "grid_col": 4
+      },
+      {
+        "code": "B8",
+        "count": 2,
+        "dept_raw": "作資2",
+        "row": 39,
+        "col": 8,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 37,
+        "grid_col": 6
+      },
+      {
+        "code": "A33",
+        "count": 2,
+        "dept_raw": "經策2",
+        "row": 39,
+        "col": 28,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 37,
+        "grid_col": 26
+      },
+      {
+        "code": "B11",
+        "count": 4,
+        "dept_raw": "作資4",
+        "row": 41,
+        "col": 11,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 39,
+        "grid_col": 9
+      },
+      {
+        "code": "B2",
+        "count": 5,
+        "dept_raw": "作資5",
+        "row": 42,
+        "col": 3,
+        "row_span": 3,
+        "col_span": 1,
+        "grid_row": 40,
+        "grid_col": 1
+      },
+      {
+        "code": "A27 A28",
+        "count": 6,
+        "dept_raw": "經策10",
+        "row": 42,
+        "col": 14,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 40,
+        "grid_col": 12
+      },
+      {
+        "code": "A28 A29",
+        "count": 7,
+        "dept_raw": "經策7",
+        "row": 42,
+        "col": 18,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 40,
+        "grid_col": 16
+      },
+      {
+        "code": "B6",
+        "count": 2,
+        "dept_raw": "作資2",
+        "row": 43,
+        "col": 6,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 41,
+        "grid_col": 4
+      },
+      {
+        "code": "B9",
+        "count": 2,
+        "dept_raw": "作資2",
+        "row": 43,
+        "col": 8,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 41,
+        "grid_col": 6
+      },
+      {
+        "code": "A34",
+        "count": 8,
+        "dept_raw": "經策8",
+        "row": 43,
+        "col": 26,
+        "row_span": 1,
+        "col_span": 4,
+        "grid_row": 41,
+        "grid_col": 24
+      },
+      {
+        "code": "B12",
+        "count": 4,
+        "dept_raw": "作資4",
+        "row": 45,
+        "col": 11,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 43,
+        "grid_col": 9
+      },
+      {
+        "code": "B3",
+        "count": 5,
+        "dept_raw": "作資5",
+        "row": 46,
+        "col": 3,
+        "row_span": 3,
+        "col_span": 1,
+        "grid_row": 44,
+        "grid_col": 1
+      },
+      {
+        "code": "B7",
+        "count": 2,
+        "dept_raw": "作資2",
+        "row": 47,
+        "col": 6,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 45,
+        "grid_col": 4
+      },
+      {
+        "code": "B10",
+        "count": 2,
+        "dept_raw": "作資2",
+        "row": 47,
+        "col": 8,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 45,
+        "grid_col": 6
+      },
+      {
+        "code": "A30 A31",
+        "count": 6,
+        "dept_raw": "作資7／空位3",
+        "row": 47,
+        "col": 14,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 45,
+        "grid_col": 12
+      },
+      {
+        "code": "A31 A32",
+        "count": 7,
+        "dept_raw": "經策3／作資3／空位1",
+        "row": 47,
+        "col": 18,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 45,
+        "grid_col": 16
+      },
+      {
+        "code": "A35",
+        "count": 5,
+        "dept_raw": "經策5",
+        "row": 47,
+        "col": 25,
+        "row_span": 1,
+        "col_span": 2,
+        "grid_row": 45,
+        "grid_col": 23
+      },
+      {
+        "code": "A36",
+        "count": 4,
+        "dept_raw": "經策3／空位1",
+        "row": 47,
+        "col": 28,
+        "row_span": 1,
+        "col_span": 2,
+        "grid_row": 45,
+        "grid_col": 26
+      },
+      {
+        "code": "B13",
+        "count": 2,
+        "dept_raw": "作資2",
+        "row": 49,
+        "col": 10,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 47,
+        "grid_col": 8
+      },
+      {
+        "code": "B4",
+        "count": 6,
+        "dept_raw": "作資6",
+        "row": 50,
+        "col": 3,
+        "row_span": 3,
+        "col_span": 1,
+        "grid_row": 48,
+        "grid_col": 1
+      },
+      {
+        "code": "A38",
+        "count": 5,
+        "dept_raw": "空位5",
+        "row": 51,
+        "col": 27,
+        "row_span": 1,
+        "col_span": 2,
+        "grid_row": 49,
+        "grid_col": 25
+      },
+      {
+        "code": "A37",
+        "count": 3,
+        "dept_raw": "空位3",
+        "row": 52,
+        "col": 23,
+        "row_span": 1,
+        "col_span": 1,
+        "grid_row": 50,
+        "grid_col": 21
+      },
+      {
+        "code": "B14",
+        "count": 4,
+        "dept_raw": "作資4",
+        "row": 53,
+        "col": 10,
+        "row_span": 1,
+        "col_span": 2,
+        "grid_row": 51,
+        "grid_col": 8
+      },
+      {
+        "code": "B15",
+        "count": 8,
+        "dept_raw": "作資8",
+        "row": 57,
+        "col": 6,
+        "row_span": 1,
+        "col_span": 3,
+        "grid_row": 55,
+        "grid_col": 4
+      },
+      {
+        "code": "B16",
+        "count": 4,
+        "dept_raw": "作資4",
+        "row": 60,
+        "col": 7,
+        "row_span": 2,
+        "col_span": 1,
+        "grid_row": 58,
+        "grid_col": 5
+      }
+    ]
   },
-  "footer_note": "以上時間僅供參考，行程安排以當天實際狀況為主。"
- }
+  "buffet_stations": {
+    "grid_rows": 5,
+    "grid_cols": 9,
+    "entrance_label": "入口",
+    "stations": [
+      {
+        "code": "極",
+        "theme": "串揚劇場",
+        "col": 4,
+        "row": 1,
+        "col_span": 1,
+        "row_span": 1
+      },
+      {
+        "code": "燦",
+        "theme": "酥香炙宴",
+        "col": 5,
+        "row": 1,
+        "col_span": 1,
+        "row_span": 1
+      },
+      {
+        "code": "煲",
+        "theme": "暖心食補",
+        "col": 6,
+        "row": 1,
+        "col_span": 1,
+        "row_span": 1
+      },
+      {
+        "code": "膳",
+        "theme": "經典華筵",
+        "col": 7,
+        "row": 1,
+        "col_span": 1,
+        "row_span": 1
+      },
+      {
+        "code": "炙",
+        "theme": "炭火盛宴",
+        "col": 8,
+        "row": 1,
+        "col_span": 1,
+        "row_span": 1
+      },
+      {
+        "code": "洗手台",
+        "theme": "洗手台",
+        "col": 9,
+        "row": 1,
+        "col_span": 1,
+        "row_span": 1,
+        "is_facility": true
+      },
+      {
+        "code": "鮮",
+        "theme": "大海巡禮",
+        "col": 5,
+        "row": 2,
+        "col_span": 1,
+        "row_span": 1
+      },
+      {
+        "code": "盛",
+        "theme": "旬味和韻",
+        "col": 3,
+        "row": 3,
+        "col_span": 1,
+        "row_span": 1
+      },
+      {
+        "code": "沁",
+        "theme": "微醺序章",
+        "col": 5,
+        "row": 3,
+        "col_span": 1,
+        "row_span": 1
+      },
+      {
+        "code": "自助飲料",
+        "theme": "自助飲料",
+        "col": 1,
+        "row": 3,
+        "col_span": 1,
+        "row_span": 1,
+        "is_facility": true
+      },
+      {
+        "code": "續",
+        "theme": "甜點樂章",
+        "col": 1,
+        "row": 4,
+        "col_span": 1,
+        "row_span": 1
+      }
+    ],
+    "entrance": {
+      "col": 5,
+      "row": 5
+    }
+  },
+  "combined_layout": {
+    "grid_rows": 56,
+    "grid_cols": 100,
+    "items": [
+      {
+        "type": "table",
+        "code": "板前",
+        "dept_raw": "數平5／總務1",
+        "count": 6,
+        "col": 28,
+        "row": 2,
+        "col_span": 2,
+        "row_span": 4
+      },
+      {
+        "type": "food",
+        "code": "極",
+        "theme": "串揚劇場",
+        "col": 30,
+        "row": 2,
+        "col_span": 8,
+        "row_span": 3
+      },
+      {
+        "type": "food",
+        "code": "燦",
+        "theme": "酥香炙宴",
+        "col": 38,
+        "row": 2,
+        "col_span": 8,
+        "row_span": 3
+      },
+      {
+        "type": "food",
+        "code": "煲",
+        "theme": "暖心食補",
+        "col": 46,
+        "row": 2,
+        "col_span": 8,
+        "row_span": 3
+      },
+      {
+        "type": "food",
+        "code": "膳",
+        "theme": "經典華筵",
+        "col": 54,
+        "row": 2,
+        "col_span": 9,
+        "row_span": 3
+      },
+      {
+        "type": "food",
+        "code": "炙",
+        "theme": "炭火盛宴",
+        "col": 63,
+        "row": 2,
+        "col_span": 9,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "A4",
+        "dept_raw": "經策5",
+        "count": 5,
+        "col": 78,
+        "row": 2,
+        "col_span": 5,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "A1",
+        "dept_raw": "經策5",
+        "count": 5,
+        "col": 83,
+        "row": 2,
+        "col_span": 5,
+        "row_span": 3
+      },
+      {
+        "type": "food",
+        "code": "盛",
+        "theme": "旬味和韻",
+        "col": 28,
+        "row": 6,
+        "col_span": 3,
+        "row_span": 11
+      },
+      {
+        "type": "food",
+        "code": "鮮",
+        "theme": "大海巡禮",
+        "col": 33,
+        "row": 6,
+        "col_span": 14,
+        "row_span": 3
+      },
+      {
+        "type": "food",
+        "code": "沁",
+        "theme": "微醺序章",
+        "col": 33,
+        "row": 9,
+        "col_span": 14,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "A30 A31",
+        "dept_raw": "作資7／空位3",
+        "count": 6,
+        "col": 53,
+        "row": 6,
+        "col_span": 4,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "A31 A32",
+        "dept_raw": "經策3／作資3／空位1",
+        "count": 7,
+        "col": 53,
+        "row": 9,
+        "col_span": 4,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "A27 A28",
+        "dept_raw": "經策10",
+        "count": 6,
+        "col": 58,
+        "row": 6,
+        "col_span": 4,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "A28 A29",
+        "dept_raw": "經策7",
+        "count": 7,
+        "col": 58,
+        "row": 9,
+        "col_span": 4,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "A14",
+        "dept_raw": "經策4",
+        "count": 4,
+        "col": 63,
+        "row": 6,
+        "col_span": 3,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "A15",
+        "dept_raw": "經策4",
+        "count": 4,
+        "col": 63,
+        "row": 9,
+        "col_span": 3,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "A16 A17",
+        "dept_raw": "數平8",
+        "count": 6,
+        "col": 66,
+        "row": 6,
+        "col_span": 4,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "A17 A18",
+        "dept_raw": "數平9",
+        "count": 7,
+        "col": 66,
+        "row": 9,
+        "col_span": 4,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "A11 A12",
+        "dept_raw": "經策8",
+        "count": 6,
+        "col": 71,
+        "row": 6,
+        "col_span": 4,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "A12 A13",
+        "dept_raw": "經策9",
+        "count": 7,
+        "col": 71,
+        "row": 9,
+        "col_span": 4,
+        "row_span": 3
+      },
+      {
+        "type": "facility",
+        "code": "服務台",
+        "col": 75,
+        "row": 6,
+        "col_span": 3,
+        "row_span": 5
+      },
+      {
+        "type": "table",
+        "code": "A5",
+        "dept_raw": "經策7",
+        "count": 7,
+        "col": 78,
+        "row": 6,
+        "col_span": 5,
+        "row_span": 5
+      },
+      {
+        "type": "table",
+        "code": "A2",
+        "dept_raw": "經策7",
+        "count": 7,
+        "col": 83,
+        "row": 6,
+        "col_span": 5,
+        "row_span": 5
+      },
+      {
+        "type": "table",
+        "code": "A6",
+        "dept_raw": "經策5",
+        "count": 5,
+        "col": 78,
+        "row": 11,
+        "col_span": 5,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "A3",
+        "dept_raw": "經策5",
+        "count": 5,
+        "col": 83,
+        "row": 11,
+        "col_span": 5,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "A37",
+        "dept_raw": "空位3",
+        "count": 3,
+        "col": 61,
+        "row": 14,
+        "col_span": 3,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "A35",
+        "dept_raw": "經策5",
+        "count": 5,
+        "col": 65,
+        "row": 14,
+        "col_span": 4,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "A36",
+        "dept_raw": "經策3／空位1",
+        "count": 4,
+        "col": 69,
+        "row": 14,
+        "col_span": 4,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "A20",
+        "dept_raw": "經策2",
+        "count": 2,
+        "col": 74,
+        "row": 14,
+        "col_span": 2,
+        "row_span": 1
+      },
+      {
+        "type": "table",
+        "code": "A19",
+        "dept_raw": "經策2",
+        "count": 2,
+        "col": 76,
+        "row": 14,
+        "col_span": 2,
+        "row_span": 1
+      },
+      {
+        "type": "table",
+        "code": "A22",
+        "dept_raw": "經策3",
+        "count": 3,
+        "col": 74,
+        "row": 15,
+        "col_span": 2,
+        "row_span": 1
+      },
+      {
+        "type": "table",
+        "code": "A21",
+        "dept_raw": "經策3",
+        "count": 3,
+        "col": 76,
+        "row": 15,
+        "col_span": 2,
+        "row_span": 1
+      },
+      {
+        "type": "table",
+        "code": "A38",
+        "dept_raw": "空位5",
+        "count": 5,
+        "col": 60,
+        "row": 17,
+        "col_span": 4,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "A34",
+        "dept_raw": "經策8",
+        "count": 8,
+        "col": 65,
+        "row": 17,
+        "col_span": 4,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "A33",
+        "dept_raw": "經策2",
+        "count": 2,
+        "col": 70,
+        "row": 17,
+        "col_span": 2,
+        "row_span": 1
+      },
+      {
+        "type": "facility",
+        "code": "柱",
+        "col": 72,
+        "row": 17,
+        "col_span": 3,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "A26",
+        "dept_raw": "經策6",
+        "count": 6,
+        "col": 76,
+        "row": 17,
+        "col_span": 4,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "A25",
+        "dept_raw": "經策5",
+        "count": 5,
+        "col": 80,
+        "row": 17,
+        "col_span": 4,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "A24",
+        "dept_raw": "經策5",
+        "count": 5,
+        "col": 84,
+        "row": 17,
+        "col_span": 4,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "A23",
+        "dept_raw": "經策6",
+        "count": 6,
+        "col": 88,
+        "row": 17,
+        "col_span": 4,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "A10",
+        "dept_raw": "經策6",
+        "count": 6,
+        "col": 92,
+        "row": 17,
+        "col_span": 4,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "A9",
+        "dept_raw": "經策3",
+        "count": 6,
+        "col": 96,
+        "row": 17,
+        "col_span": 4,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "A7 A8",
+        "dept_raw": "經策6",
+        "count": 6,
+        "col": 92,
+        "row": 19,
+        "col_span": 8,
+        "row_span": 3
+      },
+      {
+        "type": "food",
+        "code": "自助飲料",
+        "theme": "自助飲料",
+        "col": 9,
+        "row": 17,
+        "col_span": 11,
+        "row_span": 2,
+        "is_facility": true
+      },
+      {
+        "type": "table",
+        "code": "B11",
+        "dept_raw": "作資4",
+        "count": 4,
+        "col": 24,
+        "row": 17,
+        "col_span": 3,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "B12",
+        "dept_raw": "作資4",
+        "count": 4,
+        "col": 29,
+        "row": 17,
+        "col_span": 3,
+        "row_span": 2
+      },
+      {
+        "type": "food",
+        "code": "續",
+        "theme": "甜點樂章",
+        "col": 13,
+        "row": 19,
+        "col_span": 6,
+        "row_span": 12
+      },
+      {
+        "type": "table",
+        "code": "B8",
+        "dept_raw": "作資2",
+        "count": 2,
+        "col": 23,
+        "row": 20,
+        "col_span": 3,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "B9",
+        "dept_raw": "作資2",
+        "count": 2,
+        "col": 27,
+        "row": 20,
+        "col_span": 3,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "B10",
+        "dept_raw": "作資2",
+        "count": 2,
+        "col": 31,
+        "row": 20,
+        "col_span": 3,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "B13",
+        "dept_raw": "作資2",
+        "count": 2,
+        "col": 36,
+        "row": 19,
+        "col_span": 3,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "B5",
+        "dept_raw": "作資2",
+        "count": 2,
+        "col": 23,
+        "row": 23,
+        "col_span": 3,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "B6",
+        "dept_raw": "作資2",
+        "count": 2,
+        "col": 27,
+        "row": 23,
+        "col_span": 3,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "B7",
+        "dept_raw": "作資2",
+        "count": 2,
+        "col": 31,
+        "row": 23,
+        "col_span": 3,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "B15",
+        "dept_raw": "作資8",
+        "count": 8,
+        "col": 44,
+        "row": 19,
+        "col_span": 3,
+        "row_span": 4
+      },
+      {
+        "type": "table",
+        "code": "B16",
+        "dept_raw": "作資4",
+        "count": 4,
+        "col": 48,
+        "row": 19,
+        "col_span": 3,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "B1",
+        "dept_raw": "作資5",
+        "count": 5,
+        "col": 23,
+        "row": 25,
+        "col_span": 3,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "B2",
+        "dept_raw": "作資5",
+        "count": 5,
+        "col": 27,
+        "row": 25,
+        "col_span": 4,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "B3",
+        "dept_raw": "作資5",
+        "count": 5,
+        "col": 31,
+        "row": 25,
+        "col_span": 3,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "B4",
+        "dept_raw": "作資6",
+        "count": 6,
+        "col": 35,
+        "row": 25,
+        "col_span": 4,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "B14",
+        "dept_raw": "作資4",
+        "count": 4,
+        "col": 35,
+        "row": 21,
+        "col_span": 4,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "C20",
+        "dept_raw": "數平4",
+        "count": 4,
+        "col": 2,
+        "row": 31,
+        "col_span": 3,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "C19",
+        "dept_raw": "數平2",
+        "count": 2,
+        "col": 6,
+        "row": 31,
+        "col_span": 3,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "C17 C18",
+        "dept_raw": "數平7",
+        "count": 7,
+        "col": 3,
+        "row": 33,
+        "col_span": 7,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "C5",
+        "dept_raw": "數平8",
+        "count": 8,
+        "col": 10,
+        "row": 35,
+        "col_span": 3,
+        "row_span": 4
+      },
+      {
+        "type": "table",
+        "code": "C15 C16",
+        "dept_raw": "數平7",
+        "count": 7,
+        "col": 3,
+        "row": 35,
+        "col_span": 7,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "C4",
+        "dept_raw": "數平5",
+        "count": 5,
+        "col": 3,
+        "row": 37,
+        "col_span": 3,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "C13 C14",
+        "dept_raw": "數平7",
+        "count": 7,
+        "col": 3,
+        "row": 39,
+        "col_span": 7,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "C12",
+        "dept_raw": "數平2",
+        "count": 2,
+        "col": 5,
+        "row": 42,
+        "col_span": 3,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "C3",
+        "dept_raw": "數平5",
+        "count": 5,
+        "col": 3,
+        "row": 44,
+        "col_span": 3,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "C10 C11",
+        "dept_raw": "數平7",
+        "count": 7,
+        "col": 3,
+        "row": 46,
+        "col_span": 7,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "C2",
+        "dept_raw": "數平8",
+        "count": 8,
+        "col": 3,
+        "row": 48,
+        "col_span": 3,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "C8 C9",
+        "dept_raw": "數平8",
+        "count": 8,
+        "col": 3,
+        "row": 51,
+        "col_span": 7,
+        "row_span": 2
+      },
+      {
+        "type": "table",
+        "code": "C1",
+        "dept_raw": "數平8",
+        "count": 8,
+        "col": 10,
+        "row": 53,
+        "col_span": 3,
+        "row_span": 3
+      },
+      {
+        "type": "table",
+        "code": "C6 C7",
+        "dept_raw": "數平7",
+        "count": 7,
+        "col": 3,
+        "row": 53,
+        "col_span": 7,
+        "row_span": 2
+      },
+      {
+        "type": "facility",
+        "code": "櫃台",
+        "col": 51,
+        "row": 19,
+        "col_span": 2,
+        "row_span": 4
+      }
+    ],
+    "entrance": {
+      "col": 53,
+      "row": 19,
+      "col_span": 4,
+      "row_span": 2,
+      "label": "大門"
+    }
+  },
+  "day_schedule": {
+    "date_label": "8/29（六）",
+    "outbound_gather": {
+      "time": "08:30",
+      "label": "台中同仁－公司集合出發",
+      "note": "台中同仁不需搭乘高鐵，於當地集合即可"
+    },
+    "outbound_trains": {
+      "205": [
+        [
+          "台北",
+          "07:51"
+        ],
+        [
+          "板橋",
+          "07:59"
+        ],
+        [
+          "台中",
+          "08:38"
+        ]
+      ],
+      "609": [
+        [
+          "南港",
+          "07:35"
+        ],
+        [
+          "桃園",
+          "08:10"
+        ],
+        [
+          "新竹",
+          "08:22"
+        ],
+        [
+          "台中",
+          "08:46"
+        ]
+      ],
+      "1505": [
+        [
+          "南港",
+          "07:25"
+        ],
+        [
+          "台北",
+          "07:36"
+        ],
+        [
+          "台中",
+          "08:42"
+        ]
+      ]
+    },
+    "timeline": [
+      {
+        "time": "09:05",
+        "label": "高鐵台中站 集合出發"
+      },
+      {
+        "time": "09:45－10:45",
+        "label": "成美文化園",
+        "note": "威全提供園區專人導覽，自由聆聽"
+      },
+      {
+        "time": "10:45－11:30",
+        "label": "前往漢神洲際購物廣場"
+      },
+      {
+        "time": "11:35－14:00",
+        "label": "午餐－島語 台中洲際店"
+      }
+    ],
+    "afternoon_split": [
+      {
+        "time": "14:00－16:15",
+        "label": "漢神洲際購物廣場 自由逛",
+        "matches_afternoon": "(B)洲際漢神踩點巡禮"
+      },
+      {
+        "time": "14:00－16:30",
+        "label": "臺中綠美圖",
+        "matches_afternoon": "(A)台中綠美圖踏青"
+      }
+    ],
+    "evening_groups": {
+      "return_early": {
+        "match_evening": "(B)賦歸",
+        "label": "快樂賦歸",
+        "gather_note": "前往高鐵站／公司",
+        "trains": {
+          "144": [
+            [
+              "台中",
+              "17:39"
+            ],
+            [
+              "板橋",
+              "18:20"
+            ],
+            [
+              "台北",
+              "18:29"
+            ],
+            [
+              "南港",
+              "18:40"
+            ]
+          ],
+          "663": [
+            [
+              "台中",
+              "17:48"
+            ],
+            [
+              "左營",
+              "18:45"
+            ]
+          ],
+          "666": [
+            [
+              "台中",
+              "18:00"
+            ],
+            [
+              "新竹",
+              "18:23"
+            ],
+            [
+              "桃園",
+              "18:36"
+            ]
+          ]
+        }
+      },
+      "baseball": {
+        "match_evening": "(A)洲際球場觀賽",
+        "label": "球賽",
+        "game_title": "中華職棒37年例行賽 富邦悍將 vs 中信兄弟",
+        "game_time": "17:05",
+        "gate_open": "14:00",
+        "gather": {
+          "time": "20:00",
+          "label": "集合，前往高鐵台中站／公司"
+        },
+        "trains": {
+          "684": [
+            [
+              "台中",
+              "21:00"
+            ],
+            [
+              "新竹",
+              "21:23"
+            ],
+            [
+              "桃園",
+              "21:36"
+            ],
+            [
+              "板橋",
+              "21:50"
+            ],
+            [
+              "台北",
+              "21:59"
+            ],
+            [
+              "南港",
+              "22:10"
+            ]
+          ]
+        }
+      }
+    },
+    "footer_note": "以上時間僅供參考，行程安排以當天實際狀況為主。"
+  }
 }

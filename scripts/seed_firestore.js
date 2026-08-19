@@ -32,7 +32,17 @@ async function main() {
   const projectId = requireEnv('FIREBASE_PROJECT_ID');
   const clientEmail = requireEnv('FIREBASE_CLIENT_EMAIL');
   const privateKeyRaw = requireEnv('FIREBASE_PRIVATE_KEY');
-  const privateKey = privateKeyRaw.replace(/\\n/g, '\n');
+  let privateKey = privateKeyRaw.trim();
+  if ((privateKey.startsWith('"') && privateKey.endsWith('"')) || (privateKey.startsWith("'") && privateKey.endsWith("'"))) {
+    privateKey = privateKey.slice(1, -1).trim();
+  }
+  if (privateKey.indexOf('\\n') !== -1) {
+    privateKey = privateKey.replace(/\\n/g, '\n');
+  }
+  if (!privateKey.includes('BEGIN PRIVATE KEY')) {
+    console.error('FIREBASE_PRIVATE_KEY 格式不正確（找不到 "BEGIN PRIVATE KEY" 標頭），請確認是完整複製服務帳戶 JSON 檔的 private_key 欄位值。');
+    process.exit(1);
+  }
 
   let admin;
   try {
