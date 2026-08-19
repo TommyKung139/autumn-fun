@@ -84,17 +84,36 @@
       return '<div style="grid-column:1 / -1;"><div class="k">回程</div><div class="v" style="font-size:15px;">自行回家（未搭乘團體回程高鐵）</div></div>';
     }
     const groupTag = timing.group_label ? '（' + timing.group_label + '）' : '';
-    if (timing.time) {
+
+    // One leg: 台北 07:51 發車 → 台中 08:38 抵達
+    function legText(leg) {
       return (
-        '<div style="grid-column:1 / -1;"><div class="k">發車時間' + groupTag + '</div><div class="v" style="font-size:16px;">' +
-        timing.time + (timing.train_no ? '　車次 ' + timing.train_no : '') + '</div></div>'
+        leg.depart_station + ' ' + leg.depart_time + ' 發車　→　' +
+        leg.arrive_station + ' ' + leg.arrive_time + ' 抵達'
+      );
+    }
+
+    // The seating chart occasionally names a train that does not call at the
+    // employee's station; show the train that actually does, and say so.
+    const conflictNote = timing.assigned_train_no
+      ? '<p class="muted" style="margin:4px 0 0;">座位表登記為 ' + timing.assigned_train_no +
+        ' 次，但該車次未停靠此站，上方時間為實際停靠此站的班次，請以實體車票或梯長通知為準。</p>'
+      : '';
+
+    if (timing.depart_time) {
+      return (
+        '<div style="grid-column:1 / -1;"><div class="k">發車／抵達時間' + groupTag + '</div>' +
+        '<div class="v" style="font-size:15px;">' + legText(timing) + '（' + timing.train_no + ' 次）</div>' +
+        conflictNote + '</div>'
       );
     }
     if (timing.candidates && timing.candidates.length) {
       return (
-        '<div style="grid-column:1 / -1;"><div class="k">可能發車時間' + groupTag + '</div><div class="v" style="font-size:13px; font-weight:600;">' +
-        timing.candidates.map((c) => c.train_no + '次 ' + c.time).join('／') +
-        '</div><p class="muted" style="margin:4px 0 0;">尚未確認確切車次，請以現場公告或梯長通知為準。</p></div>'
+        '<div style="grid-column:1 / -1;"><div class="k">可能的班次' + groupTag + '</div>' +
+        '<div class="v" style="font-size:13px; font-weight:600; line-height:1.7;">' +
+        timing.candidates.map((c) => c.train_no + '次：' + legText(c)).join('<br>') +
+        '</div><p class="muted" style="margin:4px 0 0;">尚未確認確切車次，請以現場公告或梯長通知為準。</p>' +
+        conflictNote + '</div>'
       );
     }
     return '';
