@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>分車座位表 - 中信 2026 秋郊 第二梯</title>
+<link rel="stylesheet" href="/styles.css" />
+<style>
+  .seg { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 4px; }
+  .seg button {
+    padding:9px 15px; border-radius:999px; font-size:13.5px; font-weight:600;
+    background:#fff; color:var(--brand-dark); border:1px solid var(--line); cursor:pointer;
+  }
+  .seg button.on { background:var(--brand); color:#fff; border-color:var(--brand); }
+  .seg button:hover { background:var(--brand-soft); }
+  .seg button.on:hover { background:var(--brand-dark); }
+
+  /* collapsible unit (one carriage / one coach / one table) */
+  details.unit { border:1px solid var(--line); border-radius:14px; background:#fffefb; margin-bottom:12px; }
+  details.unit > summary {
+    list-style:none; cursor:pointer; padding:12px 14px; border-radius:14px;
+    display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+  }
+  details.unit > summary::-webkit-details-marker { display:none; }
+  details.unit > summary::before {
+    content:'▸'; color:var(--brand); font-size:13px; transition:transform .15s; flex:none;
+  }
+  details.unit[open] > summary::before { transform:rotate(90deg); }
+  details.unit[open] > summary { border-bottom:1px solid var(--line); border-radius:14px 14px 0 0; }
+  details.unit > summary:hover { background:#fdf8f0; }
+  details.unit .ttl { font-weight:800; font-size:14px; color:var(--brand-dark); }
+  details.unit .sub { font-size:12px; color:var(--ink-soft); }
+  details.unit .body { padding:14px; }
+  .mebadge {
+    font-size:11px; font-weight:800; padding:2px 8px; border-radius:999px;
+    background:#fff7cc; border:1px solid #e8a33d; color:#8a5a12;
+  }
+
+  .seatgrid { display:grid; grid-template-columns:auto repeat(3, 1fr) 20px repeat(2, 1fr); gap:5px; min-width:560px; }
+  .seatgrid .hd { font-size:11px; color:var(--ink-soft); text-align:center; font-weight:700; padding-bottom:2px; }
+  .seatgrid .rw { font-size:11px; color:var(--ink-soft); display:flex; align-items:center; justify-content:flex-end; padding-right:4px; }
+  .seat {
+    border-radius:7px; padding:5px 4px; font-size:11.5px; line-height:1.3; text-align:center;
+    border:1.5px solid transparent; min-height:34px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+  }
+  .seat .nm { font-weight:700; }
+  .seat .mt { font-size:9.5px; opacity:.75; }
+  .seat.empty { background:#f6f4ef; border-color:#ece8df; color:#c9c2b6; }
+  .seat.hl { outline:3px solid #e8a33d; outline-offset:1px; background:#fff7cc !important; }
+  .seat.conflict { border-color:var(--danger); }
+
+  .names { display:flex; flex-wrap:wrap; gap:6px; }
+  .nametag { font-size:12px; padding:4px 9px; border-radius:8px; background:#f4f1ea; color:var(--ink); border:1px solid transparent; }
+  .nametag.hl { background:#fff7cc; border-color:#e8a33d; font-weight:800; }
+  .nametag.dep { opacity:.72; font-style:italic; }
+
+  .cols { display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:12px; }
+  .scrollx { overflow-x:auto; }
+  .findbar { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:4px; }
+  .findbar input { min-width:180px; }
+  .toolrow { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin:10px 0 2px; }
+  .toolrow button { padding:7px 13px; font-size:12.5px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <div class="logo">秋</div>
+      <div>
+        <h1>2026 秋郊．第二梯行程查詢</h1>
+        <p>8/29（六）｜高鐵座位表・遊覽車分車表・島語分桌表</p>
+      </div>
+    </div>
+    <nav class="tabs">
+      <a href="/index.html">行程查詢</a>
+      <a href="/info.html">行程介紹</a>
+      <a href="/charts.html">分車座位表</a>
+      <a href="#" id="logoutLink">登出</a>
+    </nav>
+  </header>
+
+  <div class="card">
+    <h2>分車座位表</h2>
+    <p class="muted">高鐵車廂座位、遊覽車分車、島語分桌的完整編排。內容直接讀取目前系統中的同仁資料，在「梯長／福委後台」改過的座位會一併反映在這裡。</p>
+    <div class="findbar">
+      <input type="text" id="who" placeholder="輸入姓名標示自己的位置，例如 王小明" autocomplete="off" />
+      <button type="button" id="clearWho" class="secondary">清除標示</button>
+    </div>
+    <div class="toolrow">
+      <button type="button" id="expandAll" class="secondary">全部展開</button>
+      <button type="button" id="collapseAll" class="secondary">全部收合</button>
+      <button type="button" id="refreshNow" class="secondary">立即重新讀取</button>
+      <span class="muted" id="freshness"></span>
+    </div>
+    <p class="hint">＊本頁僅顯示姓名與座位／車次／桌次編排，不含身分證字號、生日、電話等個人資料。內容僅供出團當天使用，請勿外流。</p>
+    <div class="seg" id="tabs">
+      <button data-view="hsr" class="on">高鐵座位表</button>
+      <button data-view="bus">遊覽車分車表</button>
+      <button data-view="table">島語分桌表</button>
+    </div>
+  </div>
+
+  <div id="view"></div>
+
+  <p class="footer-note">資料來源：系統中的同仁行程資料｜如發現編排有誤，請聯繫梯長 孔昱棠／劉妍廷｜<a href="/edit.html" style="color:inherit;">梯長／福委後台</a></p>
+</div>
+
+<script src="/app.js"></script>
+<script>
+  let DATA = null;
+  let VIEW = 'hsr';
+  let WHO = '';
+
+  const DEPT_COLORS = {
+    '經策': { bg:'#D9EAF7', fg:'#1c4a72' },
+    '數平': { bg:'#E2F0D9', fg:'#2f5c1c' },
+    '作資': { bg:'#FCE4D6', fg:'#8a3d15' },
+    '總務': { bg:'#EAE0F5', fg:'#5b3a8a' },
+  };
+
+  function deptStyle(dept) {
+    const key = Object.keys(DEPT_COLORS).find((k) => String(dept || '').indexOf(k) !== -1);
+    const c = DEPT_COLORS[key] || { bg:'#f4f1ea', fg:'var(--ink)' };
+    return 'background:' + c.bg + '; color:' + c.fg + ';';
+  }
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, (m) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[m]));
+  }
+
+  // A cell counts as "me" when the searched name appears in it. Dependents are
+  // written 王小明(眷), so a colleague's family lights up alongside them.
+  function isMe(name) {
+    if (!WHO || !name) return false;
+    const norm = (s) => String(s).replace(/\s+/g, '');
+    return norm(name).indexOf(norm(WHO)) !== -1;
+  }
+
+  // Wraps one carriage / coach / table in a collapsible block. `hasMe` decides
+  // whether it springs open when someone searches for their name.
+  function unit(title, sub, bodyHtml, hasMe) {
+    return '<details class="unit"' + (hasMe ? ' open' : '') + '>' +
+      '<summary><span class="ttl">' + title + '</span>' +
+      '<span class="sub">' + sub + '</span>' +
+      (hasMe ? '<span class="mebadge">★ 你在這裡</span>' : '') + '</summary>' +
+      '<div class="body">' + bodyHtml + '</div></details>';
+  }
+
+  // ---------------- HSR carriage maps ----------------
+  function renderHsr() {
+    const sections = [
+      { key:'outbound', label:'去程（上午前往台中）' },
+      { key:'return',   label:'回程（傍晚／賽後返程）' },
+    ];
+    return sections.map((sec) => {
+      const blocks = DATA.hsr[sec.key] || [];
+      if (!blocks.length) {
+        return '<div class="card"><h2>' + sec.label + '</h2><p class="muted">目前沒有已排定車廂座位的資料。</p></div>';
+      }
+      return '<div class="card"><h2>' + sec.label + '</h2>' +
+        '<p class="hint">座位以「排數 ＋ A/B/C ｜ D/E」呈現，中間留空處為走道。點各車廂標題可展開／收合。' +
+        '眷屬座位與未指名的預留席不在此表中（眷屬座位請看實體車票）。</p>' +
+        blocks.map(renderCoach).join('') + '</div>';
+    }).join('');
+  }
+
+  function renderCoach(block) {
+    const hasMe = block.seats.some((s) => isMe(s.name));
+    const rows = block.seats.reduce((m, s) => { (m[s.row] = m[s.row] || []).push(s); return m; }, {});
+    const rowNos = Object.keys(rows).map(Number).sort((a, b) => a - b);
+    const LETTERS = ['A', 'B', 'C', null, 'D', 'E'];
+
+    let cells = '<div class="hd"></div>' +
+      LETTERS.map((l) => l ? '<div class="hd">' + l + '</div>' : '<div></div>').join('');
+
+    rowNos.forEach((rn) => {
+      cells += '<div class="rw">' + rn + '</div>';
+      LETTERS.forEach((l) => {
+        if (!l) { cells += '<div></div>'; return; }
+        const s = rows[rn].find((x) => x.letter === l);
+        if (!s) { cells += '<div class="seat empty">·</div>'; return; }
+        const meta = [s.station, s.note].filter(Boolean).join('　');
+        cells += '<div class="seat' + (isMe(s.name) ? ' hl' : '') + (s.conflict ? ' conflict' : '') +
+          '" style="' + deptStyle(s.dept) + '" title="' +
+          esc([s.name, s.dept, s.station, s.note, s.conflict ? '⚠ 此座位有重複指派' : ''].filter(Boolean).join('｜')) + '">' +
+          '<div class="nm">' + esc(s.name) + '</div>' +
+          (meta ? '<div class="mt">' + esc(meta) + '</div>' : '') + '</div>';
+      });
+    });
+
+    const sub = block.seats.length + ' 人' +
+      (block.stations && block.stations.length ? '　' + block.stations.join('／') : '') +
+      (block.conflicts ? '　⚠ ' + block.conflicts + ' 個座位重複指派' : '');
+    const body = '<div class="scrollx"><div class="seatgrid">' + cells + '</div></div>';
+    return unit(esc(block.train_no) + ' 次　' + esc(block.car), sub, body, hasMe);
+  }
+
+  // ---------------- coach manifests ----------------
+  function renderBus() {
+    return (DATA.buses || []).map((tbl) => {
+      if (!tbl.cars.length) {
+        return '<div class="card"><h2>' + esc(tbl.title) + '</h2><p class="muted">目前沒有分車資料。</p></div>';
+      }
+      const missing = (DATA.unassigned && DATA.unassigned[tbl.field]) || [];
+      return '<div class="card"><h2>' + esc(tbl.title) + '</h2>' +
+        '<p class="hint">點各車標題可展開／收合。斜體為眷屬，與同仁同車。</p>' +
+        (missing.length
+          ? '<p class="hint">尚未分車：' + missing.map(esc).join('、') + '</p>'
+          : '') +
+        '<div class="cols">' +
+        tbl.cars.map((car) => {
+          const hasMe = car.members.some((m) => isMe(m.name));
+          return unit(esc(car.label),
+            (car.depts.join('／') || '') + '　共 ' + car.members.length + ' 人',
+            '<div class="names">' + car.members.map(nameTag).join('') + '</div>', hasMe);
+        }).join('') + '</div></div>';
+    }).join('');
+  }
+
+  // ---------------- lunch tables ----------------
+  function renderTables() {
+    const list = DATA.tables || [];
+    if (!list.length) return '<div class="card"><p class="muted">目前沒有分桌資料。</p></div>';
+    const zones = list.reduce((m, t) => { (m[t.zone || '其他'] = m[t.zone || '其他'] || []).push(t); return m; }, {});
+    const missing = (DATA.unassigned && DATA.unassigned.table) || [];
+    return Object.keys(zones).sort().map((z, i) =>
+      '<div class="card"><h2>' + esc(z) + ' 區</h2>' +
+      '<p class="hint">點各桌標題可展開／收合。斜體為眷屬，與同仁同桌。桌次在平面圖上的位置，請看' +
+      '<a href="/info.html#seatmap">行程介紹頁的島語午宴位置圖</a>。</p>' +
+      (i === 0 && missing.length ? '<p class="hint">尚未分桌：' + missing.map(esc).join('、') + '</p>' : '') +
+      '<div class="cols">' +
+      zones[z].map((t) => {
+        const hasMe = t.members.some((m) => isMe(m.name));
+        return unit(esc(t.code),
+          (t.depts.join('／') || '') + '　共 ' + t.members.length + ' 人',
+          '<div class="names">' + t.members.map(nameTag).join('') + '</div>', hasMe);
+      }).join('') + '</div></div>'
+    ).join('');
+  }
+
+  function nameTag(m) {
+    const cls = 'nametag' + (isMe(m.name) ? ' hl' : '') + (m.dependent ? ' dep' : '');
+    return '<div class="' + cls + '" title="' + esc([m.name, m.dept].filter(Boolean).join('｜')) + '">' +
+      esc(m.name) + '</div>';
+  }
+
+  function setAllOpen(open) {
+    document.querySelectorAll('#view details.unit').forEach((d) => { d.open = open; });
+  }
+
+  function render() {
+    const el = document.getElementById('view');
+    if (!DATA) { el.innerHTML = '<div class="card"><p class="muted">載入中...</p></div>'; return; }
+    el.innerHTML = VIEW === 'hsr' ? renderHsr() : VIEW === 'bus' ? renderBus() : renderTables();
+    if (WHO) {
+      const first = document.querySelector('#view .hl');
+      if (first) first.scrollIntoView({ behavior:'smooth', block:'center', inline:'center' });
+    }
+  }
+
+  document.getElementById('tabs').addEventListener('click', function (e) {
+    const btn = e.target.closest('button[data-view]');
+    if (!btn) return;
+    VIEW = btn.getAttribute('data-view');
+    [].forEach.call(this.querySelectorAll('button'), (b) => b.classList.toggle('on', b === btn));
+    render();
+  });
+
+  document.getElementById('expandAll').addEventListener('click', () => setAllOpen(true));
+  document.getElementById('collapseAll').addEventListener('click', () => setAllOpen(false));
+
+  let whoTimer = null;
+  document.getElementById('who').addEventListener('input', function () {
+    WHO = this.value.trim();
+    clearTimeout(whoTimer);
+    whoTimer = setTimeout(render, 200);
+  });
+  document.getElementById('clearWho').addEventListener('click', function () {
+    WHO = '';
+    document.getElementById('who').value = '';
+    render();
+  });
+
+  (async function init() {
+    const ok = await CTBC.requireAuthOrRedirect();
+    if (!ok) return;
+    CTBC.highlightNav();
+    document.getElementById('logoutLink').addEventListener('click', function (e) {
+      e.preventDefault();
+      CTBC.logout();
+    });
+
+    const params = new URLSearchParams(location.search);
+    const v = params.get('view');
+    if (v && ['hsr', 'bus', 'table'].indexOf(v) !== -1) {
+      VIEW = v;
+      [].forEach.call(document.querySelectorAll('#tabs button'), (b) =>
+        b.classList.toggle('on', b.getAttribute('data-view') === v));
+    }
+    WHO = (params.get('name') || '').trim();
+    if (WHO) document.getElementById('who').value = WHO;
+
+    render();
+    await load(false);
+  })();
+
+  // The API caches its collection read for a few minutes to stay well inside the
+  // Firestore free quota, so a just-saved seat change may take a moment to appear.
+  // `fresh` skips that cache for people who have just edited something.
+  async function load(fresh) {
+    try {
+      const res = await CTBC.apiFetch('/api/charts' + (fresh ? '?fresh=1' : ''));
+      const data = await res.json();
+      if (data.error) throw new Error(data.error);
+      DATA = data;
+      const when = DATA.generated_at ? new Date(DATA.generated_at) : null;
+      document.getElementById('freshness').textContent =
+        '共 ' + DATA.total_employees + ' 位同仁' +
+        (when ? '　資料讀取於 ' + when.toLocaleTimeString('zh-TW', { hour12:false }) : '') +
+        (DATA.cache_seconds ? '（每 ' + Math.round(DATA.cache_seconds / 60) + ' 分鐘自動更新）' : '');
+      render();
+    } catch (err) {
+      if (err && err.message === 'unauthorized') return;
+      document.getElementById('view').innerHTML =
+        '<div class="card"><div class="error-box">載入分車座位表時發生問題：' + esc(err && err.message) + '</div></div>';
+    }
+  }
+
+  document.getElementById('refreshNow').addEventListener('click', async function () {
+    this.disabled = true;
+    const label = this.textContent;
+    this.textContent = '讀取中...';
+    await load(true);
+    this.textContent = label;
+    this.disabled = false;
+  });
+</script>
+</body>
+</html>

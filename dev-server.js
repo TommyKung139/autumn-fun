@@ -18,7 +18,9 @@ const editorLogin = require('./api/editor-login');
 const verify = require('./api/verify');
 const lookup = require('./api/lookup');
 const reference = require('./api/reference');
+const charts = require('./api/charts');
 const employeeUpdate = require('./api/employee-update');
+const employeeCreate = require('./api/employee-create');
 
 const routes = {
   '/api/login': login,
@@ -26,7 +28,9 @@ const routes = {
   '/api/verify': verify,
   '/api/lookup': lookup,
   '/api/reference': reference,
+  '/api/charts': charts,
   '/api/employee-update': employeeUpdate,
+  '/api/employee-create': employeeCreate,
 };
 
 function augmentRes(res) {

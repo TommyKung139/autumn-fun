@@ -30,6 +30,7 @@
     <nav class="tabs">
       <a href="/index.html">行程查詢</a>
       <a href="/info.html">行程介紹</a>
+      <a href="/charts.html">分車座位表</a>
       <a href="#" id="logoutLink">登出</a>
     </nav>
   </header>
@@ -54,6 +55,61 @@
         <input type="text" id="empId" placeholder="請輸入員工編號" autocomplete="off" />
         <button type="submit">查詢</button>
       </form>
+      <p class="hint">查無資料的同仁（例如後來才補報名的），可以用下方「新增同仁」建立一筆新資料。</p>
+    </div>
+
+    <div class="card">
+      <h2>新增同仁</h2>
+      <p class="muted">建立一筆新的出團資料。只有<b>員工編號</b>與<b>姓名</b>是必填，其餘欄位可以先留空，建立後再用上方「搜尋員工資料」慢慢補齊。</p>
+      <button type="button" id="toggleCreate" class="secondary">＋ 新增一位同仁</button>
+      <div id="createArea" style="display:none; margin-top:14px;">
+        <form id="createForm">
+          <h3>必填</h3>
+          <div class="editgrid">
+            <div class="editfield"><label>員工編號 *</label><input type="text" data-new="emp_id" placeholder="例如 Z00012345" autocomplete="off" /></div>
+            <div class="editfield"><label>姓名 *</label><input type="text" data-new="name" autocomplete="off" /></div>
+          </div>
+
+          <h3>基本資訊</h3>
+          <div class="editgrid">
+            <div class="editfield"><label>梯次</label><input type="text" data-new="batch" value="第二梯" /></div>
+            <div class="editfield"><label>處別</label><input type="text" data-new="division" placeholder="例如 數位平台經營處" /></div>
+            <div class="editfield"><label>部門</label><input type="text" data-new="department" /></div>
+            <div class="editfield"><label>地區</label><input type="text" data-new="region" placeholder="例如 台北" /></div>
+            <div class="editfield"><label>員工類型</label><input type="text" data-new="emp_type" placeholder="例如 正職" /></div>
+            <div class="editfield"><label>餐食</label><input type="text" data-new="meal" placeholder="例如 葷食／素食" /></div>
+          </div>
+
+          <h3>行程安排</h3>
+          <div class="editgrid">
+            <div class="editfield"><label>高鐵去程上車站</label><input type="text" data-new="outbound_station" placeholder="例如 台北高鐵站" /></div>
+            <div class="editfield"><label>高鐵回程下車站</label><input type="text" data-new="return_station" placeholder="例如 台北高鐵站" /></div>
+            <div class="editfield"><label>洲際下午行程</label><input type="text" data-new="afternoon_activity" placeholder="(A)台中綠美圖踏青 或 (B)洲際漢神踩點巡禮" /></div>
+            <div class="editfield"><label>洲際晚間行程</label><input type="text" data-new="evening_activity" placeholder="(A)洲際球場觀賽 或 (B)賦歸" /></div>
+            <div class="editfield"><label>上午集合遊覽車</label><input type="text" data-new="morning_bus" placeholder="例如 第一車" /></div>
+            <div class="editfield"><label>下午行程遊覽車</label><input type="text" data-new="activity_bus" placeholder="例如 第五車" /></div>
+            <div class="editfield"><label>午宴桌次</label><input type="text" data-new="table" placeholder="例如 A14" /></div>
+          </div>
+
+          <h3>攜眷</h3>
+          <div class="editgrid">
+            <div class="editfield checkline"><input type="checkbox" id="new_bring_family" /><label for="new_bring_family">是否攜眷</label></div>
+          </div>
+          <div class="editgrid" style="margin-top:8px;">
+            <div class="editfield"><label>成人</label><input type="number" data-newfam="adult" value="0" /></div>
+            <div class="editfield"><label>兒童（6-12歲）</label><input type="number" data-newfam="c6_12" value="0" /></div>
+            <div class="editfield"><label>兒童（3-6歲）</label><input type="number" data-newfam="c3_6" value="0" /></div>
+            <div class="editfield"><label>幼兒（3歲以下）</label><input type="number" data-newfam="under3" value="0" /></div>
+          </div>
+          <p class="hint">眷屬明細（姓名、關係、年齡分類）目前只能從報名表來源匯入，本頁僅記錄人數。</p>
+
+          <div style="margin-top:16px; display:flex; gap:10px; align-items:center;">
+            <button type="submit">建立資料</button>
+            <button type="button" id="cancelCreate" class="secondary">取消</button>
+            <span id="createMsg"></span>
+          </div>
+        </form>
+      </div>
     </div>
 
     <div id="result"></div>
@@ -118,6 +174,71 @@
     e.preventDefault();
     const id = document.getElementById('empId').value.trim();
     if (id) doSearch(id);
+  });
+
+  // ---------------- add a new person ----------------
+  const createArea = document.getElementById('createArea');
+  const createForm = document.getElementById('createForm');
+
+  function setCreateOpen(open) {
+    createArea.style.display = open ? 'block' : 'none';
+    document.getElementById('toggleCreate').textContent = open ? '收起新增表單' : '＋ 新增一位同仁';
+  }
+  document.getElementById('toggleCreate').addEventListener('click', function () {
+    setCreateOpen(createArea.style.display === 'none');
+  });
+  document.getElementById('cancelCreate').addEventListener('click', function () {
+    createForm.reset();
+    document.getElementById('createMsg').innerHTML = '';
+    setCreateOpen(false);
+  });
+
+  createForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const msg = document.getElementById('createMsg');
+    const payload = {};
+    createForm.querySelectorAll('[data-new]').forEach((input) => {
+      const v = input.value.trim();
+      if (v) payload[input.getAttribute('data-new')] = v;
+    });
+    payload.bring_family = document.getElementById('new_bring_family').checked;
+    const fam = {};
+    createForm.querySelectorAll('[data-newfam]').forEach((input) => {
+      fam[input.getAttribute('data-newfam')] = Number(input.value) || 0;
+    });
+    payload.family_summary = fam;
+
+    if (!payload.emp_id || !payload.name) {
+      msg.innerHTML = '<span style="color:var(--danger);">員工編號與姓名為必填。</span>';
+      return;
+    }
+
+    msg.textContent = '建立中...';
+    try {
+      const res = await CTBC.apiFetch('/api/employee-create', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        msg.innerHTML = '<span style="color:var(--danger);">' + (data.error || '建立失敗') + '</span>';
+        return;
+      }
+      const created = data.employee;
+      msg.innerHTML = '<span style="color:var(--brand-dark); font-weight:700;">已建立 ' +
+        created.name + '（' + created.emp_id + '）✓</span>';
+      createForm.reset();
+      document.getElementById('new_bring_family').checked = false;
+      setCreateOpen(false);
+      // Drop straight into the edit form for the new person so remaining
+      // fields can be filled in right away.
+      document.getElementById('empId').value = created.emp_id;
+      doSearch(created.emp_id);
+    } catch (err) {
+      if (err && err.message === 'unauthorized') return;
+      msg.innerHTML = '<span style="color:var(--danger);">建立時發生問題，請稍後再試。</span>';
+    }
   });
 
   function textField(key, label, value) {
