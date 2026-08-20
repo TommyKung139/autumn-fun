@@ -1,5 +1,5 @@
 const { requireEditor } = require('../lib/auth');
-const { getEmployee, updateEmployee } = require('../lib/firestore');
+const { resolveEmployee, updateEmployee } = require('../lib/firestore');
 
 // Fields a 梯長／福委 is allowed to adjust from the edit page. Identity fields
 // (emp_id, name, batch) and dependents (which have their own source-of-truth rows
@@ -43,12 +43,15 @@ module.exports = async (req, res) => {
   }
 
   try {
-    const existing = await getEmployee(empId);
-    if (!existing) {
+    // Resolve to the ID the record is actually stored under - one record came in
+    // from the registration sheet with a lower-case employee number, and
+    // Firestore document IDs are case-sensitive.
+    const hit = await resolveEmployee(empId);
+    if (!hit) {
       res.status(404).json({ error: '查無此員工編號' });
       return;
     }
-    const updated = await updateEmployee(empId, patch);
+    const updated = await updateEmployee(hit.empId, patch);
     res.status(200).json({ employee: updated });
   } catch (err) {
     res.status(500).json({ error: '更新時發生問題（' + (err && err.message) + '）' });

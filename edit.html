@@ -50,9 +50,9 @@
   <div id="toolArea" style="display:none;">
     <div class="card">
       <h2>搜尋員工資料</h2>
-      <p class="muted">輸入員工編號（例如 Z00012345）以查詢並編輯該員工的行程安排資料。</p>
+      <p class="muted">輸入<b>員工編號</b>（例如 Z00012345）或<b>姓名</b>以查詢並編輯該員工的行程安排資料。同名時會列出來讓你選。</p>
       <form id="searchForm" class="search-box">
-        <input type="text" id="empId" placeholder="請輸入員工編號" autocomplete="off" />
+        <input type="text" id="empId" placeholder="員工編號或姓名" autocomplete="off" />
         <button type="submit">查詢</button>
       </form>
       <p class="hint">查無資料的同仁（例如後來才補報名的），可以用下方「新增同仁」建立一筆新資料。</p>
@@ -274,6 +274,25 @@
       const data = await res.json();
       if (!res.ok) {
         box.innerHTML = '<div class="card"><div class="error-box">' + data.error + '</div></div>';
+        return;
+      }
+      // A name search that matched several colleagues: let the user pick one.
+      if (data.matches) {
+        box.innerHTML =
+          '<div class="card"><h2>找到 ' + data.matches.length + ' 位同仁，請選擇</h2>' +
+          '<div class="chips">' +
+          data.matches.map((m) =>
+            '<button type="button" class="secondary pick" data-id="' + m.emp_id + '" ' +
+            'style="text-align:left; padding:10px 14px;">' + m.name +
+            '<span class="muted" style="display:block; font-size:11.5px;">' + m.emp_id +
+            (m.division ? '｜' + m.division : '') + (m.department ? '／' + m.department : '') +
+            '</span></button>'
+          ).join('') + '</div></div>';
+        box.querySelectorAll('.pick').forEach((btn) =>
+          btn.addEventListener('click', () => {
+            document.getElementById('empId').value = btn.getAttribute('data-id');
+            doSearch(btn.getAttribute('data-id'));
+          }));
         return;
       }
       const e = data.employee;

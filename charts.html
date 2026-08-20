@@ -37,6 +37,11 @@
     background:#fff7cc; border:1px solid #e8a33d; color:#8a5a12;
   }
 
+  .carblock + .carblock { margin-top:18px; padding-top:16px; border-top:1px dashed var(--line); }
+  .carhd { display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; margin-bottom:8px; }
+  .carhd .ttl { font-weight:800; font-size:13.5px; color:var(--brand-dark); }
+  .carhd .sub { font-size:12px; color:var(--ink-soft); }
+
   .seatgrid { display:grid; grid-template-columns:auto repeat(3, 1fr) 20px repeat(2, 1fr); gap:5px; min-width:560px; }
   .seatgrid .hd { font-size:11px; color:var(--ink-soft); text-align:center; font-weight:700; padding-bottom:2px; }
   .seatgrid .rw { font-size:11px; color:var(--ink-soft); display:flex; align-items:center; justify-content:flex-end; padding-right:4px; }
@@ -161,14 +166,22 @@
         return '<div class="card"><h2>' + sec.label + '</h2><p class="muted">目前沒有已排定車廂座位的資料。</p></div>';
       }
       return '<div class="card"><h2>' + sec.label + '</h2>' +
-        '<p class="hint">座位以「排數 ＋ A/B/C ｜ D/E」呈現，中間留空處為走道。點各車廂標題可展開／收合。' +
-        '眷屬座位與未指名的預留席不在此表中（眷屬座位請看實體車票）。</p>' +
-        blocks.map(renderCoach).join('') + '</div>';
+        '<p class="hint">一個車次收合成一區，展開後可看到該車次的每一節車廂。座位以「排數 ＋ A/B/C ｜ D/E」呈現，' +
+        '中間留空處為走道。眷屬座位與未指名的預留席不在此表中（眷屬座位請看實體車票）。</p>' +
+        blocks.map(renderTrain).join('') + '</div>';
     }).join('');
   }
 
+  function renderTrain(train) {
+    const hasMe = train.cars.some((c) => c.seats.some((s) => isMe(s.name)));
+    const sub = train.cars.map((c) => c.car).join('、') + '　共 ' + train.seat_count + ' 人' +
+      (train.stations.length ? '　' + train.stations.join('／') : '') +
+      (train.conflicts ? '　⚠ ' + train.conflicts + ' 個座位重複指派' : '');
+    const body = train.cars.map(renderCoach).join('');
+    return unit(esc(train.train_no) + ' 次', sub, body, hasMe);
+  }
+
   function renderCoach(block) {
-    const hasMe = block.seats.some((s) => isMe(s.name));
     const rows = block.seats.reduce((m, s) => { (m[s.row] = m[s.row] || []).push(s); return m; }, {});
     const rowNos = Object.keys(rows).map(Number).sort((a, b) => a - b);
     const LETTERS = ['A', 'B', 'C', null, 'D', 'E'];
@@ -191,11 +204,15 @@
       });
     });
 
+    // Rendered inside its train's collapsible block, so this is a plain heading
+    // rather than another layer of expand/collapse.
     const sub = block.seats.length + ' 人' +
       (block.stations && block.stations.length ? '　' + block.stations.join('／') : '') +
       (block.conflicts ? '　⚠ ' + block.conflicts + ' 個座位重複指派' : '');
-    const body = '<div class="scrollx"><div class="seatgrid">' + cells + '</div></div>';
-    return unit(esc(block.train_no) + ' 次　' + esc(block.car), sub, body, hasMe);
+    return '<div class="carblock">' +
+      '<div class="carhd"><span class="ttl">' + esc(block.car) + '</span>' +
+      '<span class="sub">' + sub + '</span></div>' +
+      '<div class="scrollx"><div class="seatgrid">' + cells + '</div></div></div>';
   }
 
   // ---------------- coach manifests ----------------
